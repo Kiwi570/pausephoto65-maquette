@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="fr" data-v="1" data-gabarit="galerie" data-page="galerie" data-curseur>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Galerie : portraits, regard personnel et portraits pro, PausePhoto65</title>
+<meta name="description" content="La galerie de PausePhoto65, photographe à Tarbes : portraits individuels et de famille, regard personnel, portraits professionnels et petits créateurs.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://pausephoto65-maquette.vercel.app/galerie">
+<style>:root{--fond:#f2ece3;--texte:#1e1a17;--voile-fond:#1e1a17;--ouverture-fond:#f2ece3;--menu-fond:#f2ece3}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) [data-voile] { transform: none; visibility: visible; } html.calme [data-voile], html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var calme = false;
+try { calme = !!ls && ls.getItem('socle:calme') === 'oui'; } catch (e) {}
+if (!calme && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) calme = true;
+if (calme) d.classList.add('calme');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var retourSection = false;
+try { retourSection = !!ss.getItem('socle:calme-retour'); } catch (e) {}
+var mode = type === 'back_forward' || retourSection ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+if (!retourSection) history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/manrope.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#f2ece3">
+<link rel="icon" href="/assets/images/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/assets/images/favicon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PausePhoto65">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Galerie : portraits, regard personnel et portraits pro, PausePhoto65">
+<meta property="og:description" content="La galerie de PausePhoto65, photographe à Tarbes : portraits individuels et de famille, regard personnel, portraits professionnels et petits créateurs.">
+<meta property="og:url" content="https://pausephoto65-maquette.vercel.app/galerie">
+<meta property="og:image" content="https://pausephoto65-maquette.vercel.app/assets/partage/galerie-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Galerie de PausePhoto65 : portraits en studio et en extérieur">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"PausePhoto65","description":"Photographe à Tarbes, dans les Hautes-Pyrénées : portraits individuels et de famille, portraits professionnels, mariages et événements, au studio ou en extérieur.","url":"https://pausephoto65-maquette.vercel.app/","email":"Pausephoto65@gmail.com","address":{"@type":"PostalAddress","streetAddress":"62 rue André Fourcade","postalCode":"65000","addressLocality":"Tarbes","addressCountry":"FR"},"areaServed":["Tarbes","Lourdes","Bagnères-de-Bigorre","Lannemezan","Pau"],"priceRange":"75 € – 1 100 €","sameAs":["https://www.facebook.com/pausephoto65/","https://www.instagram.com/pausephoto65/"]}</script>
+</head>
+<body id="haut">
+<div data-voile aria-hidden="true"><div class="voile-contenu"><svg class="voile-iris" viewBox="-100 -100 200 200" aria-hidden="true" focusable="false">
+<path class="iris-lames" fill-rule="evenodd" d="M-100 0a100 100 0 1 0 200 0a100 100 0 1 0 -200 0ZM0 -30.00L23.45 -18.70L29.25 6.68L13.02 27.03L-13.02 27.03L-29.25 6.68L-23.45 -18.70Z"/>
+<path class="iris-aretes" d="M23.45 -18.70L98.47 17.42M29.25 6.68L47.78 87.85M13.02 27.03L-38.90 92.13M-13.02 27.03L-96.28 27.03M-29.25 6.68L-81.16 -58.42M-23.45 -18.70L-4.93 -99.88M0 -30.00L75.02 -66.13"/>
+<circle class="iris-bague" r="98.5"/>
+</svg><span data-voile-libelle>Galerie</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true" data-gouttiere="#f2ece3">
+  <div class="iris" style="--flou:url(/assets/images/photos/studio-lumiere-fenetre-flou.webp)">
+    <div class="iris-photo"><img src="/assets/images/photos/studio-lumiere-fenetre-640.webp" alt="" width="640" height="881" decoding="async"></div>
+    <svg class="iris-svg" viewBox="-100 -100 200 200" aria-hidden="true" focusable="false">
+<path class="iris-lames" fill-rule="evenodd" d="M-100 0a100 100 0 1 0 200 0a100 100 0 1 0 -200 0ZM0 -58.00L45.35 -36.16L56.55 12.91L25.17 52.26L-25.17 52.26L-56.55 12.91L-45.35 -36.16Z"/>
+<path class="iris-aretes" d="M45.35 -36.16L99.49 -10.09M56.55 12.91L69.92 71.49M25.17 52.26L-12.30 99.24M-25.17 52.26L-85.26 52.26M-56.55 12.91L-94.01 -34.08M-45.35 -36.16L-31.97 -94.75M0 -58.00L54.14 -84.07"/>
+<circle class="iris-bague" r="98.5"/>
+</svg>
+  </div>
+  <p class="ouverture-nom">PausePhoto65</p>
+  <p class="ouverture-ligne">Photographe à Tarbes</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil">
+      <img src="/assets/images/logo/logo-72.webp" alt="" width="36" height="36"><span>PausePhoto65</span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/galerie" data-libelle="Galerie" aria-current="page">Galerie</a></li><li><a href="/seances" data-libelle="Séances &amp; tarifs">Séances &amp; tarifs</a></li><li><a href="/evenements" data-libelle="Événements">Événements</a></li><li><a href="/a-propos" data-libelle="À propos &amp; contact">À propos &amp; contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton bouton--petit" href="/seances#reservation" data-libelle="Séances &amp; tarifs" data-magnetique>Réserver</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span class="menu-icone" aria-hidden="true"><span></span><span></span></span><span data-libelle-bouton>Menu</span></button>
+    </div>
+  </div>
+</header>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="menu-grille">
+    <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil"><span class="menu-num" aria-hidden="true">01</span><span>Accueil</span></a></li><li style="--i:1"><a href="/galerie" class="menu-lien" data-libelle="Galerie" aria-current="page"><span class="menu-num" aria-hidden="true">02</span><span>Galerie</span></a></li><li style="--i:2"><a href="/seances" class="menu-lien" data-libelle="Séances &amp; tarifs"><span class="menu-num" aria-hidden="true">03</span><span>Séances &amp; tarifs</span></a></li><li style="--i:3"><a href="/evenements" class="menu-lien" data-libelle="Événements"><span class="menu-num" aria-hidden="true">04</span><span>Événements</span></a></li><li style="--i:4"><a href="/a-propos" class="menu-lien" data-libelle="À propos &amp; contact"><span class="menu-num" aria-hidden="true">05</span><span>À propos &amp; contact</span></a></li></ul>
+    <div class="menu-cote">
+      <p><a class="bouton" href="/seances#reservation" data-libelle="Séances &amp; tarifs">Réserver une séance</a></p>
+      <p><a class="lien-fort" href="mailto:Pausephoto65@gmail.com">Pausephoto65@gmail.com</a></p>
+      <p class="menu-adresse">62 rue André Fourcade, 65000 Tarbes</p>
+      <p class="menu-reseaux"><a href="https://www.instagram.com/pausephoto65/" target="_blank" rel="noopener">Instagram<span class="visuellement-cache"> (nouvel onglet)</span></a> · <a href="https://www.facebook.com/pausephoto65/" target="_blank" rel="noopener">Facebook<span class="visuellement-cache"> (nouvel onglet)</span></a></p>
+      <p><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></p>
+    </div>
+  </div>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="galerie-tete ecran" id="ouverture">
+  <div class="galerie-tete-texte">
+    <h1 class="titre-page" data-anime="gsap" data-entree>Galerie</h1>
+    <p class="texte-large" data-anime="gsap" data-entree>Trois univers, 40 photos. Choisissez un univers ou parcourez toute la galerie, puis ouvrez une photo pour la voir en grand.</p>
+    <div class="filtres" role="group" aria-label="Filtrer la galerie" data-filtres data-anime="gsap" data-entree>
+      <button type="button" class="filtre" data-filtre="tous" aria-pressed="true">Tout <span class="filtre-n chiffres">40</span></button>
+      <button type="button" class="filtre" data-filtre="portraits" aria-pressed="false">Portraits <span class="filtre-n chiffres">20</span></button><button type="button" class="filtre" data-filtre="regard" aria-pressed="false">Regard personnel <span class="filtre-n chiffres">9</span></button><button type="button" class="filtre" data-filtre="pro" aria-pressed="false">Portrait pro <span class="filtre-n chiffres">11</span></button>
+    </div>
+    <p class="actions" data-anime="gsap" data-entree><a class="bouton" href="/seances#reservation" data-libelle="Séances &amp; tarifs" data-action-principale data-magnetique>Réserver une séance</a> <span class="info-cle" data-info-cle>Séances d&#39;une heure dès 80 €</span></p>
+  </div>
+  <div class="mosaique" data-visuel>
+    <figure data-hero data-mise-au-point class="media mosaique-photo mosaique-photo--1" style="--flou:url(/assets/images/photos/studio-lumiere-fenetre-flou.webp);--cadrage:50% 35%">
+  <picture>
+    <img src="/assets/images/photos/studio-lumiere-fenetre-1280.webp" srcset="/assets/images/photos/studio-lumiere-fenetre-640.webp 640w, /assets/images/photos/studio-lumiere-fenetre-1280.webp 1280w, /assets/images/photos/studio-lumiere-fenetre-1920.webp 1920w" sizes="(max-width: 760px) 44vw, 22vw" alt="Jeune femme assise près d&#39;une chaise, la lumière d&#39;une fenêtre dessinée sur le fond sombre" width="1280" height="1763" fetchpriority="high" loading="eager" decoding="async">
+  </picture>
+</figure><figure data-mise-au-point class="media mosaique-photo mosaique-photo--2" style="--flou:url(/assets/images/photos/lisbonne-pont-portrait-flou.webp);--cadrage:50% 35%">
+  <picture>
+    <img src="/assets/images/photos/lisbonne-pont-portrait-1280.webp" srcset="/assets/images/photos/lisbonne-pont-portrait-640.webp 640w, /assets/images/photos/lisbonne-pont-portrait-1280.webp 1280w, /assets/images/photos/lisbonne-pont-portrait-1920.webp 1920w" sizes="(max-width: 760px) 44vw, 22vw" alt="Jeune femme accoudée à une rambarde, un pont suspendu en arrière-plan" width="1280" height="837" loading="lazy" decoding="async">
+  </picture>
+</figure><figure data-mise-au-point class="media mosaique-photo mosaique-photo--3" style="--flou:url(/assets/images/photos/creatrice-atelier-flou.webp);--cadrage:50% 35%">
+  <picture>
+    <img src="/assets/images/photos/creatrice-atelier-1280.webp" srcset="/assets/images/photos/creatrice-atelier-640.webp 640w, /assets/images/photos/creatrice-atelier-1280.webp 1280w, /assets/images/photos/creatrice-atelier-1920.webp 1920w" sizes="(max-width: 760px) 44vw, 22vw" alt="Créatrice souriante à sa table de travail, entourée de pétales" width="1280" height="1661" loading="lazy" decoding="async">
+  </picture>
+</figure><figure data-mise-au-point class="media mosaique-photo mosaique-photo--4" style="--flou:url(/assets/images/photos/coquelicots-chapeau-dos-flou.webp);--cadrage:50% 35%">
+  <picture>
+    <img src="/assets/images/photos/coquelicots-chapeau-dos-1280.webp" srcset="/assets/images/photos/coquelicots-chapeau-dos-640.webp 640w, /assets/images/photos/coquelicots-chapeau-dos-1280.webp 1280w, /assets/images/photos/coquelicots-chapeau-dos-1920.webp 1920w" sizes="(max-width: 760px) 44vw, 22vw" alt="Femme au chapeau de paille, de dos, dans un champ de coquelicots" width="1280" height="1581" loading="lazy" decoding="async">
+  </picture>
+</figure><figure data-mise-au-point class="media mosaique-photo mosaique-photo--5" style="--flou:url(/assets/images/photos/oeil-chat-flou.webp);--cadrage:50% 35%">
+  <picture>
+    <img src="/assets/images/photos/oeil-chat-1024.webp" srcset="/assets/images/photos/oeil-chat-640.webp 640w, /assets/images/photos/oeil-chat-1024.webp 1024w" sizes="(max-width: 760px) 44vw, 22vw" alt="Gros plan sur l&#39;œil d&#39;un chat" width="1024" height="575" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  </div>
+</section>
+<section class="salle ecran epingle" id="portraits" data-salle="portraits" data-entete-cache style="--teinte:#6c5142">
+  <div class="salle-tete conteneur">
+    <p class="salle-num chiffres" aria-hidden="true">01</p>
+    <h2 class="salle-titre">Portraits — individuel &amp; famille</h2>
+    <p class="salle-texte">Au studio ou dehors, en solo, à deux ou en famille : des portraits sincères, en lumière naturelle ou travaillée. <span class="salle-n">20 photos</span></p>
+  </div>
+  <div class="piste salle-piste" data-galerie tabindex="0" role="region" aria-label="Photos de l&#39;univers Portraits, défilement horizontal">
+    <a class="cadre" id="photo-portraits-01" href="#photo-portraits-01" data-photo="portraits-01" data-couleur="#6c5142" style="--r:0.6667" data-sans-transition aria-label="Ouvrir la photo : Portrait rapproché d&#39;une femme qui regarde par-dessus son épaule, boucles d&#39;oreilles fleuries">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/regard-epaule-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/regard-epaule-1280.webp" srcset="/assets/images/photos/regard-epaule-640.webp 640w, /assets/images/photos/regard-epaule-1280.webp 1280w, /assets/images/photos/regard-epaule-1920.webp 1920w" sizes="(max-width: 760px) 70vw, 40vh" alt="Portrait rapproché d&#39;une femme qui regarde par-dessus son épaule, boucles d&#39;oreilles fleuries" width="1280" height="1920" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-portraits-02" href="#photo-portraits-02" data-photo="portraits-02" data-couleur="#766457" style="--r:0.6833" data-sans-transition aria-label="Ouvrir la photo : Jeune femme en blouson de cuir noir, main dans les cheveux, sur fond beige">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/studio-blouson-cuir-main-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/studio-blouson-cuir-main-1280.webp" srcset="/assets/images/photos/studio-blouson-cuir-main-640.webp 640w, /assets/images/photos/studio-blouson-cuir-main-1280.webp 1280w, /assets/images/photos/studio-blouson-cuir-main-1920.webp 1920w" sizes="(max-width: 760px) 70vw, 40vh" alt="Jeune femme en blouson de cuir noir, main dans les cheveux, sur fond beige" width="1280" height="1873" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-portraits-03" href="#photo-portraits-03" data-photo="portraits-03" data-couleur="#a48877" style="--r:0.6873" data-sans-transition aria-label="Ouvrir la photo : Jeune femme de dos qui se retourne vers l&#39;objectif, haut noir, fond beige">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/studio-dos-noir-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/studio-dos-noir-1280.webp" srcset="/assets/images/photos/studio-dos-noir-640.webp 640w, /assets/images/photos/studio-dos-noir-1280.webp 1280w, /assets/images/photos/studio-dos-noir-1920.webp 1920w" sizes="(max-width: 760px) 70vw, 40vh" alt="Jeune femme de dos qui se retourne vers l&#39;objectif, haut noir, fond beige" width="1280" height="1862" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-portraits-04" href="#photo-portraits-04" data-photo="portraits-04" data-couleur="#c0a672" style="--r:0.8097" data-sans-transition aria-label="Ouvrir la photo : Femme au chapeau de paille, de dos, dans un champ de coquelicots">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/coquelicots-chapeau-dos-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/coquelicots-chapeau-dos-1280.webp" srcset="/assets/images/photos/coquelicots-chapeau-dos-640.webp 640w, /assets/images/photos/coquelicots-chapeau-dos-1280.webp 1280w, /assets/images/photos/coquelicots-chapeau-dos-1920.webp 1920w" sizes="(max-width: 760px) 70vw, 40vh" alt="Femme au chapeau de paille, de dos, dans un champ de coquelicots" width="1280" height="1581" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-portraits-05" href="#photo-portraits-05" data-photo="portraits-05" data-couleur="#d39d7a" style="--r:0.7719" data-sans-transition aria-label="Ouvrir la photo : Femme souriante au chapeau de paille, les yeux fermés, parmi les coquelicots">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/coquelicots-chapeau-sourire-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/coquelicots-chapeau-sourire-1280.webp" srcset="/assets/images/photos/coquelicots-chapeau-sourire-640.webp 640w, /assets/images/photos/coquelicots-chapeau-sourire-1280.webp 1280w, /assets/images/photos/coquelicots-chapeau-sourire-1920.webp 1920w" sizes="(max-width: 760px) 70vw, 40vh" alt="Femme souriante au chapeau de paille, les yeux fermés, parmi les coquelicots" width="1280" height="1658" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-portraits-06" href="#photo-portraits-06" data-photo="portraits-06" data-couleur="#966d5d" style="--r:1.5" data-sans-transition aria-label="Ouvrir la photo : Jeune femme souriante, accoudée, des fleurs dans les cheveux">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/sourire-fleurs-accoudee-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/sourire-fleurs-accoudee-1280.webp" srcset="/assets/images/photos/sourire-fleurs-accoudee-640.webp 640w, /assets/images/photos/sourire-fleurs-accoudee-1280.webp 1280w, /assets/images/photos/sourire-fleurs-accoudee-1920.webp 1920w" sizes="(max-width: 760px) 70vw, 40vh" alt="Jeune femme souriante, accoudée, des fleurs dans les cheveux" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-portraits-07" href="#photo-portraits-07" data-photo="portraits-07" data-couleur="#3e383b" style="--r:0.7262" data-sans-transition aria-label="Ouvrir la photo : Jeune femme assise près d&#39;une chaise, la lumière d&#39;une fenêtre dessinée sur le fond sombre">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/studio-lumiere-fenetre-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/studio-lumiere-fenetre-1280.webp" srcset="/assets/images/photos/studio-lumiere-fenetre-640.webp 640w, /assets/images/photos/studio-lumiere-fenetre-1280.webp 1280w, /assets/images/photos/studio-lumiere-fenetre-1920.webp 1920w" sizes="(max-width: 760px) 70vw, 40vh" alt="Jeune femme assise près d&#39;une chaise, la lumière d&#39;une fenêtre dessinée sur le fond sombre" width="1280" height="1763" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-portraits-08" href="#photo-portraits-08" data-photo="portraits-08" data-couleur="#a9a2a9" style="--r:0.7573" data-sans-transition aria-label="Ouvrir la photo : Jeune femme assise sur une chaise, pull blanc, la main contre la joue">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/studio-chaise-pull-blanc-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/studio-chaise-pull-blanc-1280.webp" srcset="/assets/images/photos/studio-chaise-pull-blanc-640.webp 640w, /assets/images/photos/studio-chaise-pull-blanc-1280.webp 1280w, /assets/images/photos/studio-chaise-pull-blanc-1920.webp 1920w" sizes="(max-width: 760px) 70vw, 40vh" alt="Jeune femme assise sur une chaise, pull blanc, la main contre la joue" width="1280" height="1690" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-portraits-09" href="#photo-portraits-09" data-photo="portraits-09" data-couleur="#d6c3af" style="--r:0.7199" data-sans-transition aria-label="Ouvrir la photo : Jeune femme assise sur un pouf blanc, pull gris, regard pensif">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/studio-pouf-pull-gris-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/studio-pouf-pull-gris-1280.webp" srcset="/assets/images/photos/studio-pouf-pull-gris-640.webp 640w, /assets/images/photos/studio-pouf-pull-gris-1280.webp 1280w, /assets/images/photos/studio-pouf-pull-gris-1920.webp 1920w" sizes="(max-width: 760px) 70vw, 40vh" alt="Jeune femme assise sur un pouf blanc, pull gris, regard pensif" width="1280" height="1778" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-portraits-10" href="#photo-portraits-10" data-photo="portraits-10" data-couleur="#d5b396" style="--r:0.8278" data-sans-transition aria-label="Ouvrir la photo : Femme en robe de satin noir, de dos, les bras levés, fond beige">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/studio-robe-satin-dos-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/studio-robe-satin-dos-1280.webp" srcset="/assets/images/photos/studio-robe-satin-dos-640.webp 640w, /assets/images/photos/studio-robe-satin-dos-1280.webp 1280w, /assets/images/photos/studio-robe-satin-dos-1920.webp 1920w" sizes="(max-width: 760px) 70vw, 40vh" alt="Femme en robe de satin noir, de dos, les bras levés, fond beige" width="1280" height="1546" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-portraits-11" href="#photo-portraits-11" data-photo="portraits-11" data-couleur="#a2846c" style="--r:1.0605" data-sans-transition aria-label="Ouvrir la photo : Femme souriante en robe noire, une main dans les cheveux, fond beige">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/studio-robe-noire-sourire-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/studio-robe-noire-sourire-1280.webp" srcset="/assets/images/photos/studio-robe-noire-sourire-640.webp 640w, /assets/images/photos/studio-robe-noire-sourire-1280.webp 1280w, /assets/images/photos/studio-robe-noire-sourire-1920.webp 1920w" sizes="(max-width: 760px) 70vw, 40vh" alt="Femme souriante en robe noire, une main dans les cheveux, fond beige" width="1280" height="1207" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-portraits-12" href="#photo-portraits-12" data-photo="portraits-12" data-couleur="#a69fa7" style="--r:0.755" data-sans-transition aria-label="Ouvrir la photo : Jeune femme assise au sol sur fond clair, chemisier ajouré et jean">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/studio-assise-fond-blanc-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/studio-assise-fond-blanc-1280.webp" srcset="/assets/images/photos/studio-assise-fond-blanc-640.webp 640w, /assets/images/photos/studio-assise-fond-blanc-1280.webp 1280w, /assets/images/photos/studio-assise-fond-blanc-1920.webp 1920w" sizes="(max-width: 760px) 70vw, 40vh" alt="Jeune femme assise au sol sur fond clair, chemisier ajouré et jean" width="1280" height="1695" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-portraits-13" href="#photo-portraits-13" data-photo="portraits-13" data-couleur="#977a62" style="--r:0.7125" data-sans-transition aria-label="Ouvrir la photo : Femme enceinte de profil en robe noire, une main sur le ventre">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/grossesse-profil-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/grossesse-profil-1280.webp" srcset="/assets/images/photos/grossesse-profil-640.webp 640w, /assets/images/photos/grossesse-profil-1280.webp 1280w, /assets/images/photos/grossesse-profil-1920.webp 1920w" sizes="(max-width: 760px) 70vw, 40vh" alt="Femme enceinte de profil en robe noire, une main sur le ventre" width="1280" height="1796" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-portraits-14" href="#photo-portraits-14" data-photo="portraits-14" data-couleur="#a78564" style="--r:0.7418" data-sans-transition aria-label="Ouvrir la photo : Femme enceinte assise, les mains en cœur sur le ventre">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/grossesse-mains-coeur-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/grossesse-mains-coeur-1280.webp" srcset="/assets/images/photos/grossesse-mains-coeur-640.webp 640w, /assets/images/photos/grossesse-mains-coeur-1280.webp 1280w, /assets/images/photos/grossesse-mains-coeur-1920.webp 1920w" sizes="(max-width: 760px) 70vw, 40vh" alt="Femme enceinte assise, les mains en cœur sur le ventre" width="1280" height="1725" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-portraits-15" href="#photo-portraits-15" data-photo="portraits-15" data-couleur="#968175" style="--r:0.823" data-sans-transition aria-label="Ouvrir la photo : Maman qui serre son bébé contre elle sur un canapé">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/famille-maman-bebe-canape-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/famille-maman-bebe-canape-1280.webp" srcset="/assets/images/photos/famille-maman-bebe-canape-640.webp 640w, /assets/images/photos/famille-maman-bebe-canape-1280.webp 1280w, /assets/images/photos/famille-maman-bebe-canape-1920.webp 1920w" sizes="(max-width: 760px) 70vw, 40vh" alt="Maman qui serre son bébé contre elle sur un canapé" width="1280" height="1555" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-portraits-16" href="#photo-portraits-16" data-photo="portraits-16" data-couleur="#7c5a4a" style="--r:0.7557" data-sans-transition aria-label="Ouvrir la photo : Parents qui embrassent leur nouveau-né">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/famille-nouveau-ne-couleur-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/famille-nouveau-ne-couleur-1280.webp" srcset="/assets/images/photos/famille-nouveau-ne-couleur-640.webp 640w, /assets/images/photos/famille-nouveau-ne-couleur-1280.webp 1280w, /assets/images/photos/famille-nouveau-ne-couleur-1920.webp 1920w" sizes="(max-width: 760px) 70vw, 40vh" alt="Parents qui embrassent leur nouveau-né" width="1280" height="1694" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-portraits-17" href="#photo-portraits-17" data-photo="portraits-17" data-couleur="#8b7865" style="--r:0.6958" data-sans-transition aria-label="Ouvrir la photo : Un couple et son bébé en forêt, à l&#39;automne">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/automne-famille-bebe-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/automne-famille-bebe-1280.webp" srcset="/assets/images/photos/automne-famille-bebe-640.webp 640w, /assets/images/photos/automne-famille-bebe-1280.webp 1280w, /assets/images/photos/automne-famille-bebe-1920.webp 1920w" sizes="(max-width: 760px) 70vw, 40vh" alt="Un couple et son bébé en forêt, à l&#39;automne" width="1280" height="1840" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-portraits-18" href="#photo-portraits-18" data-photo="portraits-18" data-couleur="#816a59" style="--r:0.7859" data-sans-transition aria-label="Ouvrir la photo : Maman et sa petite fille dans un décor de Noël, plaid et sapin">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/hiver-noel-maman-fille-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/hiver-noel-maman-fille-1280.webp" srcset="/assets/images/photos/hiver-noel-maman-fille-640.webp 640w, /assets/images/photos/hiver-noel-maman-fille-1280.webp 1280w, /assets/images/photos/hiver-noel-maman-fille-1920.webp 1920w" sizes="(max-width: 760px) 70vw, 40vh" alt="Maman et sa petite fille dans un décor de Noël, plaid et sapin" width="1280" height="1629" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-portraits-19" href="#photo-portraits-19" data-photo="portraits-19" data-couleur="#575557" style="--r:0.7032" data-sans-transition aria-label="Ouvrir la photo : Jeune femme debout dans un sous-bois d&#39;automne, manteau clair et jean bleu">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/automne-foret-debout-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/automne-foret-debout-1280.webp" srcset="/assets/images/photos/automne-foret-debout-640.webp 640w, /assets/images/photos/automne-foret-debout-1280.webp 1280w, /assets/images/photos/automne-foret-debout-1920.webp 1920w" sizes="(max-width: 760px) 70vw, 40vh" alt="Jeune femme debout dans un sous-bois d&#39;automne, manteau clair et jean bleu" width="1280" height="1820" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-portraits-20" href="#photo-portraits-20" data-photo="portraits-20" data-couleur="#bebebe" style="--r:1.5" data-sans-transition aria-label="Ouvrir la photo : Portrait en noir et blanc d&#39;une jeune femme assise au sol, jambes repliées">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/studio-nb-assise-sol-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/studio-nb-assise-sol-1280.webp" srcset="/assets/images/photos/studio-nb-assise-sol-640.webp 640w, /assets/images/photos/studio-nb-assise-sol-1280.webp 1280w, /assets/images/photos/studio-nb-assise-sol-1920.webp 1920w" sizes="(max-width: 760px) 70vw, 40vh" alt="Portrait en noir et blanc d&#39;une jeune femme assise au sol, jambes repliées" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a>
+  </div>
+  <div class="salle-pied conteneur">
+    <div class="galerie-progres" aria-hidden="true"><span></span></div>
+    <p class="indice-glisser" aria-hidden="true">Faites glisser <svg class="icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></p>
+  </div>
+</section><section class="salle ecran epingle" id="regard" data-salle="regard" data-entete-cache style="--teinte:#635c58">
+  <div class="salle-tete conteneur">
+    <p class="salle-num chiffres" aria-hidden="true">02</p>
+    <h2 class="salle-titre">Regard personnel</h2>
+    <p class="salle-texte">Ses images personnelles : voyages, paysages, rencontres. <span class="salle-n">9 photos</span></p>
+  </div>
+  <div class="piste salle-piste" data-galerie tabindex="0" role="region" aria-label="Photos de l&#39;univers Regard personnel, défilement horizontal">
+    <a class="cadre" id="photo-regard-01" href="#photo-regard-01" data-photo="regard-01" data-couleur="#635c58" style="--r:0.7225" data-sans-transition aria-label="Ouvrir la photo : Rue de Lisbonne avec ses rails de tramway et ses passants">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/lisbonne-rue-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/lisbonne-rue-1280.webp" srcset="/assets/images/photos/lisbonne-rue-640.webp 640w, /assets/images/photos/lisbonne-rue-1280.webp 1280w, /assets/images/photos/lisbonne-rue-1920.webp 1920w" sizes="(max-width: 760px) 70vw, 40vh" alt="Rue de Lisbonne avec ses rails de tramway et ses passants" width="1280" height="1772" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-regard-02" href="#photo-regard-02" data-photo="regard-02" data-couleur="#7b858e" style="--r:0.7689" data-sans-transition aria-label="Ouvrir la photo : Deux colonnes de pierre dans l&#39;eau, face à un grand pont suspendu, à Lisbonne">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/lisbonne-pont-colonnes-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/lisbonne-pont-colonnes-1280.webp" srcset="/assets/images/photos/lisbonne-pont-colonnes-640.webp 640w, /assets/images/photos/lisbonne-pont-colonnes-1280.webp 1280w, /assets/images/photos/lisbonne-pont-colonnes-1920.webp 1920w" sizes="(max-width: 760px) 70vw, 40vh" alt="Deux colonnes de pierre dans l&#39;eau, face à un grand pont suspendu, à Lisbonne" width="1280" height="1665" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-regard-03" href="#photo-regard-03" data-photo="regard-03" data-couleur="#76674e" style="--r:0.6667" data-sans-transition aria-label="Ouvrir la photo : Promeneuse au pied d&#39;une paroi rocheuse sculptée par l&#39;érosion">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/lisbonne-rocher-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/lisbonne-rocher-1280.webp" srcset="/assets/images/photos/lisbonne-rocher-640.webp 640w, /assets/images/photos/lisbonne-rocher-1280.webp 1280w, /assets/images/photos/lisbonne-rocher-1920.webp 1920w" sizes="(max-width: 760px) 70vw, 40vh" alt="Promeneuse au pied d&#39;une paroi rocheuse sculptée par l&#39;érosion" width="1280" height="1920" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-regard-04" href="#photo-regard-04" data-photo="regard-04" data-couleur="#c1b4a7" style="--r:1.5298" data-sans-transition aria-label="Ouvrir la photo : Jeune femme accoudée à une rambarde, un pont suspendu en arrière-plan">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/lisbonne-pont-portrait-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/lisbonne-pont-portrait-1280.webp" srcset="/assets/images/photos/lisbonne-pont-portrait-640.webp 640w, /assets/images/photos/lisbonne-pont-portrait-1280.webp 1280w, /assets/images/photos/lisbonne-pont-portrait-1920.webp 1920w" sizes="(max-width: 760px) 70vw, 40vh" alt="Jeune femme accoudée à une rambarde, un pont suspendu en arrière-plan" width="1280" height="837" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-regard-05" href="#photo-regard-05" data-photo="regard-05" data-couleur="#7c573e" style="--r:2" data-sans-transition aria-label="Ouvrir la photo : Coucher de soleil orangé sur des collines boisées">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/coucher-soleil-collines-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/coucher-soleil-collines-1280.webp" srcset="/assets/images/photos/coucher-soleil-collines-640.webp 640w, /assets/images/photos/coucher-soleil-collines-1280.webp 1280w, /assets/images/photos/coucher-soleil-collines-1920.webp 1920w" sizes="(max-width: 760px) 70vw, 40vh" alt="Coucher de soleil orangé sur des collines boisées" width="1280" height="640" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-regard-06" href="#photo-regard-06" data-photo="regard-06" data-couleur="#4c4164" style="--r:0.667" data-sans-transition aria-label="Ouvrir la photo : Ciel violet au crépuscule au-dessus de la mer">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/crepuscule-mer-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/crepuscule-mer-683.webp" srcset="/assets/images/photos/crepuscule-mer-640.webp 640w, /assets/images/photos/crepuscule-mer-683.webp 683w" sizes="(max-width: 760px) 70vw, 40vh" alt="Ciel violet au crépuscule au-dessus de la mer" width="683" height="1024" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-regard-07" href="#photo-regard-07" data-photo="regard-07" data-couleur="#96989d" style="--r:0.667" data-sans-transition aria-label="Ouvrir la photo : Côte rocheuse dans la brume">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/cote-brume-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/cote-brume-683.webp" srcset="/assets/images/photos/cote-brume-640.webp 640w, /assets/images/photos/cote-brume-683.webp 683w" sizes="(max-width: 760px) 70vw, 40vh" alt="Côte rocheuse dans la brume" width="683" height="1024" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-regard-08" href="#photo-regard-08" data-photo="regard-08" data-couleur="#bfbdbb" style="--r:1.4993" data-sans-transition aria-label="Ouvrir la photo : Deux petits oiseaux de rivage sur un rocher">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/oiseaux-rocher-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/oiseaux-rocher-1024.webp" srcset="/assets/images/photos/oiseaux-rocher-640.webp 640w, /assets/images/photos/oiseaux-rocher-1024.webp 1024w" sizes="(max-width: 760px) 70vw, 40vh" alt="Deux petits oiseaux de rivage sur un rocher" width="1024" height="683" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-regard-09" href="#photo-regard-09" data-photo="regard-09" data-couleur="#79746c" style="--r:1.7809" data-sans-transition aria-label="Ouvrir la photo : Gros plan sur l&#39;œil d&#39;un chat">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/oeil-chat-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/oeil-chat-1024.webp" srcset="/assets/images/photos/oeil-chat-640.webp 640w, /assets/images/photos/oeil-chat-1024.webp 1024w" sizes="(max-width: 760px) 70vw, 40vh" alt="Gros plan sur l&#39;œil d&#39;un chat" width="1024" height="575" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a>
+  </div>
+  <div class="salle-pied conteneur">
+    <div class="galerie-progres" aria-hidden="true"><span></span></div>
+    <p class="indice-glisser" aria-hidden="true">Faites glisser <svg class="icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></p>
+  </div>
+</section><section class="salle ecran epingle" id="pro" data-salle="pro" data-entete-cache style="--teinte:#73716d">
+  <div class="salle-tete conteneur">
+    <p class="salle-num chiffres" aria-hidden="true">03</p>
+    <h2 class="salle-titre">Portrait professionnel</h2>
+    <p class="salle-texte">Portraits pour votre activité et séances pour les petits créateurs : vous, vos mains, vos créations. <span class="salle-n">11 photos</span></p>
+  </div>
+  <div class="piste salle-piste" data-galerie tabindex="0" role="region" aria-label="Photos de l&#39;univers Portrait pro, défilement horizontal">
+    <a class="cadre" id="photo-pro-01" href="#photo-pro-01" data-photo="pro-01" data-couleur="#73716d" style="--r:0.756" data-sans-transition aria-label="Ouvrir la photo : Créatrice qui présente un cadre de fleurs pressées en forme de cœur">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/creatrice-cadre-coeur-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/creatrice-cadre-coeur-1280.webp" srcset="/assets/images/photos/creatrice-cadre-coeur-640.webp 640w, /assets/images/photos/creatrice-cadre-coeur-1280.webp 1280w, /assets/images/photos/creatrice-cadre-coeur-1920.webp 1920w" sizes="(max-width: 760px) 70vw, 40vh" alt="Créatrice qui présente un cadre de fleurs pressées en forme de cœur" width="1280" height="1693" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-pro-02" href="#photo-pro-02" data-photo="pro-02" data-couleur="#cdae94" style="--r:0.7704" data-sans-transition aria-label="Ouvrir la photo : Créatrice souriante à sa table de travail, entourée de pétales">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/creatrice-atelier-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/creatrice-atelier-1280.webp" srcset="/assets/images/photos/creatrice-atelier-640.webp 640w, /assets/images/photos/creatrice-atelier-1280.webp 1280w, /assets/images/photos/creatrice-atelier-1920.webp 1920w" sizes="(max-width: 760px) 70vw, 40vh" alt="Créatrice souriante à sa table de travail, entourée de pétales" width="1280" height="1661" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-pro-03" href="#photo-pro-03" data-photo="pro-03" data-couleur="#a28e75" style="--r:1.5" data-sans-transition aria-label="Ouvrir la photo : Mains qui posent des pétales séchés au pinceau">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/creatrice-pinceau-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/creatrice-pinceau-1280.webp" srcset="/assets/images/photos/creatrice-pinceau-640.webp 640w, /assets/images/photos/creatrice-pinceau-1280.webp 1280w, /assets/images/photos/creatrice-pinceau-1920.webp 1920w" sizes="(max-width: 760px) 70vw, 40vh" alt="Mains qui posent des pétales séchés au pinceau" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-pro-04" href="#photo-pro-04" data-photo="pro-04" data-couleur="#9b998d" style="--r:0.7481" data-sans-transition aria-label="Ouvrir la photo : Créatrice assise dans un jardin avec trois cadres de fleurs pressées">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/creatrice-trois-cadres-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/creatrice-trois-cadres-1280.webp" srcset="/assets/images/photos/creatrice-trois-cadres-640.webp 640w, /assets/images/photos/creatrice-trois-cadres-1280.webp 1280w, /assets/images/photos/creatrice-trois-cadres-1920.webp 1920w" sizes="(max-width: 760px) 70vw, 40vh" alt="Créatrice assise dans un jardin avec trois cadres de fleurs pressées" width="1280" height="1711" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-pro-05" href="#photo-pro-05" data-photo="pro-05" data-couleur="#b1b3b5" style="--r:0.8636" data-sans-transition aria-label="Ouvrir la photo : Créatrice assise qui présente un cadre de fleurs pressées bleues">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/creatrice-cadre-fleurs-bleues-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/creatrice-cadre-fleurs-bleues-1280.webp" srcset="/assets/images/photos/creatrice-cadre-fleurs-bleues-640.webp 640w, /assets/images/photos/creatrice-cadre-fleurs-bleues-1280.webp 1280w, /assets/images/photos/creatrice-cadre-fleurs-bleues-1920.webp 1920w" sizes="(max-width: 760px) 70vw, 40vh" alt="Créatrice assise qui présente un cadre de fleurs pressées bleues" width="1280" height="1482" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-pro-06" href="#photo-pro-06" data-photo="pro-06" data-couleur="#b18a6e" style="--r:1.5" data-sans-transition aria-label="Ouvrir la photo : Table d&#39;atelier vue de dessus : compositions de fleurs pressées et coupelles de pétales">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/creatrice-table-dessus-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/creatrice-table-dessus-1280.webp" srcset="/assets/images/photos/creatrice-table-dessus-640.webp 640w, /assets/images/photos/creatrice-table-dessus-1280.webp 1280w, /assets/images/photos/creatrice-table-dessus-1920.webp 1920w" sizes="(max-width: 760px) 70vw, 40vh" alt="Table d&#39;atelier vue de dessus : compositions de fleurs pressées et coupelles de pétales" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-pro-07" href="#photo-pro-07" data-photo="pro-07" data-couleur="#726b65" style="--r:0.7981" data-sans-transition aria-label="Ouvrir la photo : Mains qui tiennent un cadre de fleurs pressées multicolores">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/creatrice-cadre-mains-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/creatrice-cadre-mains-1280.webp" srcset="/assets/images/photos/creatrice-cadre-mains-640.webp 640w, /assets/images/photos/creatrice-cadre-mains-1280.webp 1280w, /assets/images/photos/creatrice-cadre-mains-1920.webp 1920w" sizes="(max-width: 760px) 70vw, 40vh" alt="Mains qui tiennent un cadre de fleurs pressées multicolores" width="1280" height="1604" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-pro-08" href="#photo-pro-08" data-photo="pro-08" data-couleur="#666a5b" style="--r:0.6667" data-sans-transition aria-label="Ouvrir la photo : Cadre de fleurs pressées bleues posé sur un plaid, dans un jardin">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/creatrice-cadre-exterieur-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/creatrice-cadre-exterieur-1280.webp" srcset="/assets/images/photos/creatrice-cadre-exterieur-640.webp 640w, /assets/images/photos/creatrice-cadre-exterieur-1280.webp 1280w, /assets/images/photos/creatrice-cadre-exterieur-1920.webp 1920w" sizes="(max-width: 760px) 70vw, 40vh" alt="Cadre de fleurs pressées bleues posé sur un plaid, dans un jardin" width="1280" height="1920" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-pro-09" href="#photo-pro-09" data-photo="pro-09" data-couleur="#958374" style="--r:0.6976" data-sans-transition aria-label="Ouvrir la photo : Portrait professionnel d&#39;une femme souriante en blazer noir, de profil">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/blazer-sourire-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/blazer-sourire-1280.webp" srcset="/assets/images/photos/blazer-sourire-640.webp 640w, /assets/images/photos/blazer-sourire-1280.webp 1280w, /assets/images/photos/blazer-sourire-1920.webp 1920w" sizes="(max-width: 760px) 70vw, 40vh" alt="Portrait professionnel d&#39;une femme souriante en blazer noir, de profil" width="1280" height="1835" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-pro-10" href="#photo-pro-10" data-photo="pro-10" data-couleur="#a68e7c" style="--r:0.8365" data-sans-transition aria-label="Ouvrir la photo : Portrait professionnel d&#39;une femme en blazer noir, le regard baissé">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/blazer-profil-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/blazer-profil-1280.webp" srcset="/assets/images/photos/blazer-profil-640.webp 640w, /assets/images/photos/blazer-profil-1280.webp 1280w, /assets/images/photos/blazer-profil-1920.webp 1920w" sizes="(max-width: 760px) 70vw, 40vh" alt="Portrait professionnel d&#39;une femme en blazer noir, le regard baissé" width="1280" height="1530" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a><a class="cadre" id="photo-pro-11" href="#photo-pro-11" data-photo="pro-11" data-couleur="#a89889" style="--r:1.1514" data-sans-transition aria-label="Ouvrir la photo : Détail : une main qui lace une basket blanche">
+      <figure data-mise-au-point class="media cadre-media" style="--flou:url(/assets/images/photos/detail-baskets-flou.webp);--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/photos/detail-baskets-1280.webp" srcset="/assets/images/photos/detail-baskets-640.webp 640w, /assets/images/photos/detail-baskets-1280.webp 1280w, /assets/images/photos/detail-baskets-1920.webp 1920w" sizes="(max-width: 760px) 70vw, 40vh" alt="Détail : une main qui lace une basket blanche" width="1280" height="1112" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </a>
+  </div>
+  <div class="salle-pied conteneur">
+    <div class="galerie-progres" aria-hidden="true"><span></span></div>
+    <p class="indice-glisser" aria-hidden="true">Faites glisser <svg class="icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></p>
+  </div>
+</section>
+<section class="section fin" id="fin">
+  <div class="conteneur fin-grille">
+    <div>
+      <h2 class="titre-fin" data-anime>Une de ces images vous ressemble ?</h2>
+      <p class="texte-large" data-anime>Chaque séance commence par un échange : vos envies, le lieu, la lumière.</p>
+      <p class="actions" data-anime>
+        <a class="bouton" href="/seances#reservation" data-libelle="Séances &amp; tarifs">Réserver une séance</a>
+        <a href="/a-propos#contact" class="lien-fleche" data-libelle="À propos &amp; contact">Écrire <svg class="icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </p>
+    </div>
+    <figure data-mise-au-point class="media fin-media" style="--flou:url(/assets/images/photos/studio-blouson-cuir-assise-flou.webp);--cadrage:50% 40%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/photos/studio-blouson-cuir-assise-1280.webp" srcset="/assets/images/photos/studio-blouson-cuir-assise-640.webp 640w, /assets/images/photos/studio-blouson-cuir-assise-1280.webp 1280w, /assets/images/photos/studio-blouson-cuir-assise-1920.webp 1920w" sizes="(max-width: 760px) 92vw, 40vw" alt="Jeune femme assise en tailleur sur fond beige, blouson de cuir, regard levé" width="1280" height="1703" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  </div>
+</section>
+<div class="visionneuse" id="visionneuse" data-visionneuse data-recouvrement role="dialog" aria-modal="true" aria-label="Visionneuse" hidden inert>
+  <div class="visionneuse-scene" data-visionneuse-scene>
+    <img class="visionneuse-image" data-visionneuse-image alt="">
+  </div>
+  <p class="visionneuse-legende"><span class="visionneuse-alt" data-visionneuse-alt></span> <span class="visionneuse-pos chiffres" data-visionneuse-pos></span></p>
+  <button type="button" class="visionneuse-bouton visionneuse-fermer" data-visionneuse-fermer aria-label="Fermer la visionneuse"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+  <button type="button" class="visionneuse-bouton visionneuse-prec" data-visionneuse-prec aria-label="Photo précédente"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  <button type="button" class="visionneuse-bouton visionneuse-suiv" data-visionneuse-suiv aria-label="Photo suivante"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+</div>
+<script type="application/json" id="galerie-donnees">[{"id":"portraits-01","u":"portraits","src":"/assets/images/photos/regard-epaule-1280.webp","srcset":"/assets/images/photos/regard-epaule-640.webp 640w, /assets/images/photos/regard-epaule-1280.webp 1280w, /assets/images/photos/regard-epaule-1920.webp 1920w","alt":"Portrait rapproché d'une femme qui regarde par-dessus son épaule, boucles d'oreilles fleuries","r":0.6667},{"id":"portraits-02","u":"portraits","src":"/assets/images/photos/studio-blouson-cuir-main-1280.webp","srcset":"/assets/images/photos/studio-blouson-cuir-main-640.webp 640w, /assets/images/photos/studio-blouson-cuir-main-1280.webp 1280w, /assets/images/photos/studio-blouson-cuir-main-1920.webp 1920w","alt":"Jeune femme en blouson de cuir noir, main dans les cheveux, sur fond beige","r":0.6833},{"id":"portraits-03","u":"portraits","src":"/assets/images/photos/studio-dos-noir-1280.webp","srcset":"/assets/images/photos/studio-dos-noir-640.webp 640w, /assets/images/photos/studio-dos-noir-1280.webp 1280w, /assets/images/photos/studio-dos-noir-1920.webp 1920w","alt":"Jeune femme de dos qui se retourne vers l'objectif, haut noir, fond beige","r":0.6873},{"id":"portraits-04","u":"portraits","src":"/assets/images/photos/coquelicots-chapeau-dos-1280.webp","srcset":"/assets/images/photos/coquelicots-chapeau-dos-640.webp 640w, /assets/images/photos/coquelicots-chapeau-dos-1280.webp 1280w, /assets/images/photos/coquelicots-chapeau-dos-1920.webp 1920w","alt":"Femme au chapeau de paille, de dos, dans un champ de coquelicots","r":0.8097},{"id":"portraits-05","u":"portraits","src":"/assets/images/photos/coquelicots-chapeau-sourire-1280.webp","srcset":"/assets/images/photos/coquelicots-chapeau-sourire-640.webp 640w, /assets/images/photos/coquelicots-chapeau-sourire-1280.webp 1280w, /assets/images/photos/coquelicots-chapeau-sourire-1920.webp 1920w","alt":"Femme souriante au chapeau de paille, les yeux fermés, parmi les coquelicots","r":0.7719},{"id":"portraits-06","u":"portraits","src":"/assets/images/photos/sourire-fleurs-accoudee-1280.webp","srcset":"/assets/images/photos/sourire-fleurs-accoudee-640.webp 640w, /assets/images/photos/sourire-fleurs-accoudee-1280.webp 1280w, /assets/images/photos/sourire-fleurs-accoudee-1920.webp 1920w","alt":"Jeune femme souriante, accoudée, des fleurs dans les cheveux","r":1.5},{"id":"portraits-07","u":"portraits","src":"/assets/images/photos/studio-lumiere-fenetre-1280.webp","srcset":"/assets/images/photos/studio-lumiere-fenetre-640.webp 640w, /assets/images/photos/studio-lumiere-fenetre-1280.webp 1280w, /assets/images/photos/studio-lumiere-fenetre-1920.webp 1920w","alt":"Jeune femme assise près d'une chaise, la lumière d'une fenêtre dessinée sur le fond sombre","r":0.7262},{"id":"portraits-08","u":"portraits","src":"/assets/images/photos/studio-chaise-pull-blanc-1280.webp","srcset":"/assets/images/photos/studio-chaise-pull-blanc-640.webp 640w, /assets/images/photos/studio-chaise-pull-blanc-1280.webp 1280w, /assets/images/photos/studio-chaise-pull-blanc-1920.webp 1920w","alt":"Jeune femme assise sur une chaise, pull blanc, la main contre la joue","r":0.7573},{"id":"portraits-09","u":"portraits","src":"/assets/images/photos/studio-pouf-pull-gris-1280.webp","srcset":"/assets/images/photos/studio-pouf-pull-gris-640.webp 640w, /assets/images/photos/studio-pouf-pull-gris-1280.webp 1280w, /assets/images/photos/studio-pouf-pull-gris-1920.webp 1920w","alt":"Jeune femme assise sur un pouf blanc, pull gris, regard pensif","r":0.7199},{"id":"portraits-10","u":"portraits","src":"/assets/images/photos/studio-robe-satin-dos-1280.webp","srcset":"/assets/images/photos/studio-robe-satin-dos-640.webp 640w, /assets/images/photos/studio-robe-satin-dos-1280.webp 1280w, /assets/images/photos/studio-robe-satin-dos-1920.webp 1920w","alt":"Femme en robe de satin noir, de dos, les bras levés, fond beige","r":0.8278},{"id":"portraits-11","u":"portraits","src":"/assets/images/photos/studio-robe-noire-sourire-1280.webp","srcset":"/assets/images/photos/studio-robe-noire-sourire-640.webp 640w, /assets/images/photos/studio-robe-noire-sourire-1280.webp 1280w, /assets/images/photos/studio-robe-noire-sourire-1920.webp 1920w","alt":"Femme souriante en robe noire, une main dans les cheveux, fond beige","r":1.0605},{"id":"portraits-12","u":"portraits","src":"/assets/images/photos/studio-assise-fond-blanc-1280.webp","srcset":"/assets/images/photos/studio-assise-fond-blanc-640.webp 640w, /assets/images/photos/studio-assise-fond-blanc-1280.webp 1280w, /assets/images/photos/studio-assise-fond-blanc-1920.webp 1920w","alt":"Jeune femme assise au sol sur fond clair, chemisier ajouré et jean","r":0.755},{"id":"portraits-13","u":"portraits","src":"/assets/images/photos/grossesse-profil-1280.webp","srcset":"/assets/images/photos/grossesse-profil-640.webp 640w, /assets/images/photos/grossesse-profil-1280.webp 1280w, /assets/images/photos/grossesse-profil-1920.webp 1920w","alt":"Femme enceinte de profil en robe noire, une main sur le ventre","r":0.7125},{"id":"portraits-14","u":"portraits","src":"/assets/images/photos/grossesse-mains-coeur-1280.webp","srcset":"/assets/images/photos/grossesse-mains-coeur-640.webp 640w, /assets/images/photos/grossesse-mains-coeur-1280.webp 1280w, /assets/images/photos/grossesse-mains-coeur-1920.webp 1920w","alt":"Femme enceinte assise, les mains en cœur sur le ventre","r":0.7418},{"id":"portraits-15","u":"portraits","src":"/assets/images/photos/famille-maman-bebe-canape-1280.webp","srcset":"/assets/images/photos/famille-maman-bebe-canape-640.webp 640w, /assets/images/photos/famille-maman-bebe-canape-1280.webp 1280w, /assets/images/photos/famille-maman-bebe-canape-1920.webp 1920w","alt":"Maman qui serre son bébé contre elle sur un canapé","r":0.823},{"id":"portraits-16","u":"portraits","src":"/assets/images/photos/famille-nouveau-ne-couleur-1280.webp","srcset":"/assets/images/photos/famille-nouveau-ne-couleur-640.webp 640w, /assets/images/photos/famille-nouveau-ne-couleur-1280.webp 1280w, /assets/images/photos/famille-nouveau-ne-couleur-1920.webp 1920w","alt":"Parents qui embrassent leur nouveau-né","r":0.7557},{"id":"portraits-17","u":"portraits","src":"/assets/images/photos/automne-famille-bebe-1280.webp","srcset":"/assets/images/photos/automne-famille-bebe-640.webp 640w, /assets/images/photos/automne-famille-bebe-1280.webp 1280w, /assets/images/photos/automne-famille-bebe-1920.webp 1920w","alt":"Un couple et son bébé en forêt, à l'automne","r":0.6958},{"id":"portraits-18","u":"portraits","src":"/assets/images/photos/hiver-noel-maman-fille-1280.webp","srcset":"/assets/images/photos/hiver-noel-maman-fille-640.webp 640w, /assets/images/photos/hiver-noel-maman-fille-1280.webp 1280w, /assets/images/photos/hiver-noel-maman-fille-1920.webp 1920w","alt":"Maman et sa petite fille dans un décor de Noël, plaid et sapin","r":0.7859},{"id":"portraits-19","u":"portraits","src":"/assets/images/photos/automne-foret-debout-1280.webp","srcset":"/assets/images/photos/automne-foret-debout-640.webp 640w, /assets/images/photos/automne-foret-debout-1280.webp 1280w, /assets/images/photos/automne-foret-debout-1920.webp 1920w","alt":"Jeune femme debout dans un sous-bois d'automne, manteau clair et jean bleu","r":0.7032},{"id":"portraits-20","u":"portraits","src":"/assets/images/photos/studio-nb-assise-sol-1280.webp","srcset":"/assets/images/photos/studio-nb-assise-sol-640.webp 640w, /assets/images/photos/studio-nb-assise-sol-1280.webp 1280w, /assets/images/photos/studio-nb-assise-sol-1920.webp 1920w","alt":"Portrait en noir et blanc d'une jeune femme assise au sol, jambes repliées","r":1.5},{"id":"regard-01","u":"regard","src":"/assets/images/photos/lisbonne-rue-1280.webp","srcset":"/assets/images/photos/lisbonne-rue-640.webp 640w, /assets/images/photos/lisbonne-rue-1280.webp 1280w, /assets/images/photos/lisbonne-rue-1920.webp 1920w","alt":"Rue de Lisbonne avec ses rails de tramway et ses passants","r":0.7225},{"id":"regard-02","u":"regard","src":"/assets/images/photos/lisbonne-pont-colonnes-1280.webp","srcset":"/assets/images/photos/lisbonne-pont-colonnes-640.webp 640w, /assets/images/photos/lisbonne-pont-colonnes-1280.webp 1280w, /assets/images/photos/lisbonne-pont-colonnes-1920.webp 1920w","alt":"Deux colonnes de pierre dans l'eau, face à un grand pont suspendu, à Lisbonne","r":0.7689},{"id":"regard-03","u":"regard","src":"/assets/images/photos/lisbonne-rocher-1280.webp","srcset":"/assets/images/photos/lisbonne-rocher-640.webp 640w, /assets/images/photos/lisbonne-rocher-1280.webp 1280w, /assets/images/photos/lisbonne-rocher-1920.webp 1920w","alt":"Promeneuse au pied d'une paroi rocheuse sculptée par l'érosion","r":0.6667},{"id":"regard-04","u":"regard","src":"/assets/images/photos/lisbonne-pont-portrait-1280.webp","srcset":"/assets/images/photos/lisbonne-pont-portrait-640.webp 640w, /assets/images/photos/lisbonne-pont-portrait-1280.webp 1280w, /assets/images/photos/lisbonne-pont-portrait-1920.webp 1920w","alt":"Jeune femme accoudée à une rambarde, un pont suspendu en arrière-plan","r":1.5298},{"id":"regard-05","u":"regard","src":"/assets/images/photos/coucher-soleil-collines-1280.webp","srcset":"/assets/images/photos/coucher-soleil-collines-640.webp 640w, /assets/images/photos/coucher-soleil-collines-1280.webp 1280w, /assets/images/photos/coucher-soleil-collines-1920.webp 1920w","alt":"Coucher de soleil orangé sur des collines boisées","r":2},{"id":"regard-06","u":"regard","src":"/assets/images/photos/crepuscule-mer-683.webp","srcset":"/assets/images/photos/crepuscule-mer-640.webp 640w, /assets/images/photos/crepuscule-mer-683.webp 683w","alt":"Ciel violet au crépuscule au-dessus de la mer","r":0.667},{"id":"regard-07","u":"regard","src":"/assets/images/photos/cote-brume-683.webp","srcset":"/assets/images/photos/cote-brume-640.webp 640w, /assets/images/photos/cote-brume-683.webp 683w","alt":"Côte rocheuse dans la brume","r":0.667},{"id":"regard-08","u":"regard","src":"/assets/images/photos/oiseaux-rocher-1024.webp","srcset":"/assets/images/photos/oiseaux-rocher-640.webp 640w, /assets/images/photos/oiseaux-rocher-1024.webp 1024w","alt":"Deux petits oiseaux de rivage sur un rocher","r":1.4993},{"id":"regard-09","u":"regard","src":"/assets/images/photos/oeil-chat-1024.webp","srcset":"/assets/images/photos/oeil-chat-640.webp 640w, /assets/images/photos/oeil-chat-1024.webp 1024w","alt":"Gros plan sur l'œil d'un chat","r":1.7809},{"id":"pro-01","u":"pro","src":"/assets/images/photos/creatrice-cadre-coeur-1280.webp","srcset":"/assets/images/photos/creatrice-cadre-coeur-640.webp 640w, /assets/images/photos/creatrice-cadre-coeur-1280.webp 1280w, /assets/images/photos/creatrice-cadre-coeur-1920.webp 1920w","alt":"Créatrice qui présente un cadre de fleurs pressées en forme de cœur","r":0.756},{"id":"pro-02","u":"pro","src":"/assets/images/photos/creatrice-atelier-1280.webp","srcset":"/assets/images/photos/creatrice-atelier-640.webp 640w, /assets/images/photos/creatrice-atelier-1280.webp 1280w, /assets/images/photos/creatrice-atelier-1920.webp 1920w","alt":"Créatrice souriante à sa table de travail, entourée de pétales","r":0.7704},{"id":"pro-03","u":"pro","src":"/assets/images/photos/creatrice-pinceau-1280.webp","srcset":"/assets/images/photos/creatrice-pinceau-640.webp 640w, /assets/images/photos/creatrice-pinceau-1280.webp 1280w, /assets/images/photos/creatrice-pinceau-1920.webp 1920w","alt":"Mains qui posent des pétales séchés au pinceau","r":1.5},{"id":"pro-04","u":"pro","src":"/assets/images/photos/creatrice-trois-cadres-1280.webp","srcset":"/assets/images/photos/creatrice-trois-cadres-640.webp 640w, /assets/images/photos/creatrice-trois-cadres-1280.webp 1280w, /assets/images/photos/creatrice-trois-cadres-1920.webp 1920w","alt":"Créatrice assise dans un jardin avec trois cadres de fleurs pressées","r":0.7481},{"id":"pro-05","u":"pro","src":"/assets/images/photos/creatrice-cadre-fleurs-bleues-1280.webp","srcset":"/assets/images/photos/creatrice-cadre-fleurs-bleues-640.webp 640w, /assets/images/photos/creatrice-cadre-fleurs-bleues-1280.webp 1280w, /assets/images/photos/creatrice-cadre-fleurs-bleues-1920.webp 1920w","alt":"Créatrice assise qui présente un cadre de fleurs pressées bleues","r":0.8636},{"id":"pro-06","u":"pro","src":"/assets/images/photos/creatrice-table-dessus-1280.webp","srcset":"/assets/images/photos/creatrice-table-dessus-640.webp 640w, /assets/images/photos/creatrice-table-dessus-1280.webp 1280w, /assets/images/photos/creatrice-table-dessus-1920.webp 1920w","alt":"Table d'atelier vue de dessus : compositions de fleurs pressées et coupelles de pétales","r":1.5},{"id":"pro-07","u":"pro","src":"/assets/images/photos/creatrice-cadre-mains-1280.webp","srcset":"/assets/images/photos/creatrice-cadre-mains-640.webp 640w, /assets/images/photos/creatrice-cadre-mains-1280.webp 1280w, /assets/images/photos/creatrice-cadre-mains-1920.webp 1920w","alt":"Mains qui tiennent un cadre de fleurs pressées multicolores","r":0.7981},{"id":"pro-08","u":"pro","src":"/assets/images/photos/creatrice-cadre-exterieur-1280.webp","srcset":"/assets/images/photos/creatrice-cadre-exterieur-640.webp 640w, /assets/images/photos/creatrice-cadre-exterieur-1280.webp 1280w, /assets/images/photos/creatrice-cadre-exterieur-1920.webp 1920w","alt":"Cadre de fleurs pressées bleues posé sur un plaid, dans un jardin","r":0.6667},{"id":"pro-09","u":"pro","src":"/assets/images/photos/blazer-sourire-1280.webp","srcset":"/assets/images/photos/blazer-sourire-640.webp 640w, /assets/images/photos/blazer-sourire-1280.webp 1280w, /assets/images/photos/blazer-sourire-1920.webp 1920w","alt":"Portrait professionnel d'une femme souriante en blazer noir, de profil","r":0.6976},{"id":"pro-10","u":"pro","src":"/assets/images/photos/blazer-profil-1280.webp","srcset":"/assets/images/photos/blazer-profil-640.webp 640w, /assets/images/photos/blazer-profil-1280.webp 1280w, /assets/images/photos/blazer-profil-1920.webp 1920w","alt":"Portrait professionnel d'une femme en blazer noir, le regard baissé","r":0.8365},{"id":"pro-11","u":"pro","src":"/assets/images/photos/detail-baskets-1280.webp","srcset":"/assets/images/photos/detail-baskets-640.webp 640w, /assets/images/photos/detail-baskets-1280.webp 1280w, /assets/images/photos/detail-baskets-1920.webp 1920w","alt":"Détail : une main qui lace une basket blanche","r":1.1514}]</script>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-haut">
+    <p class="pied-mot" aria-hidden="true">Pause, <em>pose</em>.</p>
+  </div>
+  <div class="conteneur pied-grille">
+    <div>
+      <img class="pied-logo" src="/assets/images/logo/logo-144.webp" alt="Logo de PausePhoto65" width="72" height="72" loading="lazy">
+      <p class="pied-titre">PausePhoto65</p>
+      <p>62 rue André Fourcade<br>65000 Tarbes<br><a href="mailto:Pausephoto65@gmail.com">Pausephoto65@gmail.com</a></p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p class="pied-titre">Sommaire</p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/galerie" data-libelle="Galerie" aria-current="page">Galerie</a></li><li><a href="/seances" data-libelle="Séances &amp; tarifs">Séances &amp; tarifs</a></li><li><a href="/evenements" data-libelle="Événements">Événements</a></li><li><a href="/a-propos" data-libelle="À propos &amp; contact">À propos &amp; contact</a></li><li><a href="/mentions-legales" data-libelle="Mentions légales">Mentions légales</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Réseaux</p>
+      <ul><li><a href="https://www.instagram.com/pausephoto65/" target="_blank" rel="noopener">Instagram<span class="visuellement-cache"> (nouvel onglet)</span></a></li><li><a href="https://www.facebook.com/pausephoto65/" target="_blank" rel="noopener">Facebook<span class="visuellement-cache"> (nouvel onglet)</span></a></li></ul>
+    </div>
+    <div>
+      <p class="pied-titre">Confort</p>
+      <ul>
+        <li><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></li>
+        <li><a href="#haut" data-sans-transition>Retour en haut</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas"><p>Maquette : les informations marquées « à compléter » seront fournies par PausePhoto65.</p><p>© PausePhoto65</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="mailto:Pausephoto65@gmail.com">Écrire</a>
+  <a class="bouton" href="/seances#reservation" data-libelle="Séances &amp; tarifs">Réserver</a>
+</div>
+</body>
+</html>

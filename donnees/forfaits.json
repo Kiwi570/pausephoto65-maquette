@@ -1,0 +1,50 @@
+[
+ {
+  "id": "mariage-demi",
+  "type": "mariage",
+  "nom": "Mariage — demi-journée",
+  "duree": "4 h",
+  "heures": 4,
+  "prix": 600,
+  "inclus": [
+   "Détail du forfait à compléter"
+  ]
+ },
+ {
+  "id": "mariage-journee",
+  "type": "mariage",
+  "nom": "Mariage — journée complète",
+  "duree": "8 h",
+  "heures": 8,
+  "prix": 1100,
+  "inclus": [
+   "Couverture de la journée (8 h)",
+   "Présence du début à la fin des moments clés",
+   "Coordination avec les autres prestataires",
+   "Traitement des images",
+   "Délai de livraison : à compléter"
+  ]
+ },
+ {
+  "id": "fete-demi",
+  "type": "bapteme",
+  "nom": "Baptême, anniversaire — demi-journée",
+  "duree": "Demi-journée",
+  "heures": 4,
+  "prix": 500,
+  "inclus": [
+   "Détail du forfait à compléter"
+  ]
+ },
+ {
+  "id": "fete-journee",
+  "type": "bapteme",
+  "nom": "Baptême, anniversaire — journée complète",
+  "duree": "Journée",
+  "heures": 8,
+  "prix": 900,
+  "inclus": [
+   "Détail du forfait à compléter"
+  ]
+ }
+]

@@ -1,0 +1,45 @@
+[
+ {
+  "id": "paques",
+  "nom": "Pâques, la séance des petits",
+  "photo": "photos/paques-decor-studio",
+  "cadrage": "50% 60%",
+  "prix": null,
+  "detail": ""
+ },
+ {
+  "id": "printemps",
+  "nom": "Shoot printemps",
+  "photo": "photos/printemps-colza-champ",
+  "cadrage": "50% 60%",
+  "prix": 75,
+  "detail": "1 h · 7 photos retouchées en HD",
+  "debut": "03-15",
+  "fin": "05-31",
+  "periode": "De mi-mars à fin mai"
+ },
+ {
+  "id": "ete",
+  "nom": "Shoot été",
+  "photo": "photos/coquelicots-chapeau-dos",
+  "cadrage": "50% 40%",
+  "prix": null,
+  "detail": ""
+ },
+ {
+  "id": "automne",
+  "nom": "Shoot automne",
+  "photo": "photos/automne-foret-assise",
+  "cadrage": "55% 50%",
+  "prix": null,
+  "detail": ""
+ },
+ {
+  "id": "hiver",
+  "nom": "Shoot hiver",
+  "photo": "photos/hiver-noel-enfants",
+  "cadrage": "50% 45%",
+  "prix": null,
+  "detail": ""
+ }
+]

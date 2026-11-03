@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="fr" data-v="1" data-gabarit="accueil" data-page="accueil" data-curseur>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PausePhoto65 : photographe à Tarbes, portraits et événements</title>
+<meta name="description" content="PausePhoto65, photographe à Tarbes dans les Hautes-Pyrénées : portraits individuels et de famille, portraits professionnels, mariages et événements, au studio ou en extérieur.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://pausephoto65-maquette.vercel.app/">
+<style>:root{--fond:#f2ece3;--texte:#1e1a17;--voile-fond:#1e1a17;--ouverture-fond:#f2ece3;--menu-fond:#f2ece3}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) [data-voile] { transform: none; visibility: visible; } html.calme [data-voile], html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var calme = false;
+try { calme = !!ls && ls.getItem('socle:calme') === 'oui'; } catch (e) {}
+if (!calme && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) calme = true;
+if (calme) d.classList.add('calme');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var retourSection = false;
+try { retourSection = !!ss.getItem('socle:calme-retour'); } catch (e) {}
+var mode = type === 'back_forward' || retourSection ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+if (!retourSection) history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/manrope.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#f2ece3">
+<link rel="icon" href="/assets/images/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/assets/images/favicon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PausePhoto65">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="PausePhoto65 : photographe à Tarbes, portraits et événements">
+<meta property="og:description" content="PausePhoto65, photographe à Tarbes dans les Hautes-Pyrénées : portraits individuels et de famille, portraits professionnels, mariages et événements, au studio ou en extérieur.">
+<meta property="og:url" content="https://pausephoto65-maquette.vercel.app/">
+<meta property="og:image" content="https://pausephoto65-maquette.vercel.app/assets/partage/accueil-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="PausePhoto65, photographe à Tarbes : portrait d&#39;une femme qui regarde par-dessus son épaule">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"PausePhoto65","description":"Photographe à Tarbes, dans les Hautes-Pyrénées : portraits individuels et de famille, portraits professionnels, mariages et événements, au studio ou en extérieur.","url":"https://pausephoto65-maquette.vercel.app/","email":"Pausephoto65@gmail.com","address":{"@type":"PostalAddress","streetAddress":"62 rue André Fourcade","postalCode":"65000","addressLocality":"Tarbes","addressCountry":"FR"},"areaServed":["Tarbes","Lourdes","Bagnères-de-Bigorre","Lannemezan","Pau"],"priceRange":"75 € – 1 100 €","sameAs":["https://www.facebook.com/pausephoto65/","https://www.instagram.com/pausephoto65/"]}</script>
+</head>
+<body id="haut">
+<div data-voile aria-hidden="true"><div class="voile-contenu"><svg class="voile-iris" viewBox="-100 -100 200 200" aria-hidden="true" focusable="false">
+<path class="iris-lames" fill-rule="evenodd" d="M-100 0a100 100 0 1 0 200 0a100 100 0 1 0 -200 0ZM0 -30.00L23.45 -18.70L29.25 6.68L13.02 27.03L-13.02 27.03L-29.25 6.68L-23.45 -18.70Z"/>
+<path class="iris-aretes" d="M23.45 -18.70L98.47 17.42M29.25 6.68L47.78 87.85M13.02 27.03L-38.90 92.13M-13.02 27.03L-96.28 27.03M-29.25 6.68L-81.16 -58.42M-23.45 -18.70L-4.93 -99.88M0 -30.00L75.02 -66.13"/>
+<circle class="iris-bague" r="98.5"/>
+</svg><span data-voile-libelle>Accueil</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true" data-gouttiere="#f2ece3">
+  <div class="iris" style="--flou:url(/assets/images/photos/regard-epaule-flou.webp)">
+    <div class="iris-photo"><img src="/assets/images/photos/regard-epaule-640.webp" alt="" width="640" height="960" decoding="async"></div>
+    <svg class="iris-svg" viewBox="-100 -100 200 200" aria-hidden="true" focusable="false">
+<path class="iris-lames" fill-rule="evenodd" d="M-100 0a100 100 0 1 0 200 0a100 100 0 1 0 -200 0ZM0 -58.00L45.35 -36.16L56.55 12.91L25.17 52.26L-25.17 52.26L-56.55 12.91L-45.35 -36.16Z"/>
+<path class="iris-aretes" d="M45.35 -36.16L99.49 -10.09M56.55 12.91L69.92 71.49M25.17 52.26L-12.30 99.24M-25.17 52.26L-85.26 52.26M-56.55 12.91L-94.01 -34.08M-45.35 -36.16L-31.97 -94.75M0 -58.00L54.14 -84.07"/>
+<circle class="iris-bague" r="98.5"/>
+</svg>
+  </div>
+  <p class="ouverture-nom">PausePhoto65</p>
+  <p class="ouverture-ligne">Photographe à Tarbes</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil" aria-current="page">
+      <img src="/assets/images/logo/logo-72.webp" alt="" width="36" height="36"><span>PausePhoto65</span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/galerie" data-libelle="Galerie">Galerie</a></li><li><a href="/seances" data-libelle="Séances &amp; tarifs">Séances &amp; tarifs</a></li><li><a href="/evenements" data-libelle="Événements">Événements</a></li><li><a href="/a-propos" data-libelle="À propos &amp; contact">À propos &amp; contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton bouton--petit" href="/seances#reservation" data-libelle="Séances &amp; tarifs" data-magnetique>Réserver</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span class="menu-icone" aria-hidden="true"><span></span><span></span></span><span data-libelle-bouton>Menu</span></button>
+    </div>
+  </div>
+</header>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="menu-grille">
+    <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil" aria-current="page"><span class="menu-num" aria-hidden="true">01</span><span>Accueil</span></a></li><li style="--i:1"><a href="/galerie" class="menu-lien" data-libelle="Galerie"><span class="menu-num" aria-hidden="true">02</span><span>Galerie</span></a></li><li style="--i:2"><a href="/seances" class="menu-lien" data-libelle="Séances &amp; tarifs"><span class="menu-num" aria-hidden="true">03</span><span>Séances &amp; tarifs</span></a></li><li style="--i:3"><a href="/evenements" class="menu-lien" data-libelle="Événements"><span class="menu-num" aria-hidden="true">04</span><span>Événements</span></a></li><li style="--i:4"><a href="/a-propos" class="menu-lien" data-libelle="À propos &amp; contact"><span class="menu-num" aria-hidden="true">05</span><span>À propos &amp; contact</span></a></li></ul>
+    <div class="menu-cote">
+      <p><a class="bouton" href="/seances#reservation" data-libelle="Séances &amp; tarifs">Réserver une séance</a></p>
+      <p><a class="lien-fort" href="mailto:Pausephoto65@gmail.com">Pausephoto65@gmail.com</a></p>
+      <p class="menu-adresse">62 rue André Fourcade, 65000 Tarbes</p>
+      <p class="menu-reseaux"><a href="https://www.instagram.com/pausephoto65/" target="_blank" rel="noopener">Instagram<span class="visuellement-cache"> (nouvel onglet)</span></a> · <a href="https://www.facebook.com/pausephoto65/" target="_blank" rel="noopener">Facebook<span class="visuellement-cache"> (nouvel onglet)</span></a></p>
+      <p><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></p>
+    </div>
+  </div>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="hero ecran" id="ouverture">
+  <div class="hero-titre-bloc">
+    <p class="sur hero-sur" data-anime="gsap" data-entree><span class="sur-trait" aria-hidden="true"></span>Photographe à Tarbes</p>
+    <h1 class="hero-titre" data-superpose><span class="ligne-masque"><span class="hero-ligne" data-anime="gsap">Faites une</span></span><span class="ligne-masque"><span class="hero-ligne hero-ligne--accent" data-anime="gsap">pause.</span></span></h1>
+  </div>
+  <figure data-hero data-mise-au-point class="media hero-media" style="--flou:url(/assets/images/photos/regard-epaule-flou.webp);--cadrage:50% 40%">
+  <picture>
+    <img src="/assets/images/photos/regard-epaule-1280.webp" srcset="/assets/images/photos/regard-epaule-640.webp 640w, /assets/images/photos/regard-epaule-1280.webp 1280w, /assets/images/photos/regard-epaule-1920.webp 1920w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 40vw, 32vw" alt="Portrait rapproché d&#39;une femme qui regarde par-dessus son épaule, boucles d&#39;oreilles fleuries" width="1280" height="1920" fetchpriority="high" loading="eager" decoding="async">
+  </picture>
+</figure>
+  <div class="hero-cote" data-anime="gsap">
+    <p class="hero-texte">Portraits et événements : photographe à Tarbes, dans les Hautes-Pyrénées, au studio ou en extérieur.</p>
+    <p class="hero-actions">
+      <a class="bouton" href="/seances#reservation" data-libelle="Séances &amp; tarifs" data-action-principale data-magnetique>Réserver une séance</a>
+      <a href="/galerie" class="lien-fleche" data-libelle="Galerie">Voir la galerie <svg class="icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </p>
+    <p class="hero-info" data-info-cle>Séances d&#39;une heure dès 80 €</p>
+  </div>
+</section>
+<section class="section manifeste" id="pause-pose">
+  <div class="conteneur manifeste-grille">
+    <div class="manifeste-texte">
+      <p class="sur"><span class="sur-trait" aria-hidden="true"></span>Son regard</p>
+      <h2 class="titre-section" data-anime>Des portraits qui vous ressemblent.</h2>
+      <p class="texte-large" data-anime>Au studio, des accessoires et des conseils pour poser à votre manière. Dehors, la lumière de fin de journée. Puis une retouche légère, sans transformer la réalité.</p>
+      <blockquote class="citation " data-anime><p>« Mon objectif : capter l&#39;authenticité, raconter des histoires. »</p></blockquote>
+      <p data-anime><a href="/a-propos#facon" class="lien-fleche" data-libelle="À propos &amp; contact">Sa façon de travailler <svg class="icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+    </div>
+    <div class="manifeste-visuel">
+      <canvas class="mot-pause" data-mot-pause aria-hidden="true" data-audit-ignorer width="600" height="240"></canvas>
+      <div class="manifeste-photos">
+        <figure data-parallaxe="-8" data-mise-au-point class="media manifeste-photo manifeste-photo--1" style="--flou:url(/assets/images/photos/studio-pouf-pull-gris-flou.webp);--cadrage:50% 35%;aspect-ratio:3 / 4">
+  <picture>
+    <img src="/assets/images/photos/studio-pouf-pull-gris-1280.webp" srcset="/assets/images/photos/studio-pouf-pull-gris-640.webp 640w, /assets/images/photos/studio-pouf-pull-gris-1280.webp 1280w, /assets/images/photos/studio-pouf-pull-gris-1920.webp 1920w" sizes="(max-width: 760px) 56vw, 22vw" alt="Jeune femme assise sur un pouf blanc, pull gris, regard pensif" width="1280" height="1778" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <figure data-parallaxe="10" data-mise-au-point class="media manifeste-photo manifeste-photo--2" style="--flou:url(/assets/images/photos/coquelicots-chapeau-sourire-flou.webp);--cadrage:50% 30%;aspect-ratio:3 / 4">
+  <picture>
+    <img src="/assets/images/photos/coquelicots-chapeau-sourire-1280.webp" srcset="/assets/images/photos/coquelicots-chapeau-sourire-640.webp 640w, /assets/images/photos/coquelicots-chapeau-sourire-1280.webp 1280w, /assets/images/photos/coquelicots-chapeau-sourire-1920.webp 1920w" sizes="(max-width: 760px) 46vw, 18vw" alt="Femme souriante au chapeau de paille, les yeux fermés, parmi les coquelicots" width="1280" height="1658" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <figure data-parallaxe="-14" data-mise-au-point class="media manifeste-photo manifeste-photo--3" style="--flou:url(/assets/images/photos/studio-robe-satin-dos-flou.webp);--cadrage:50% 30%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/photos/studio-robe-satin-dos-1280.webp" srcset="/assets/images/photos/studio-robe-satin-dos-640.webp 640w, /assets/images/photos/studio-robe-satin-dos-1280.webp 1280w, /assets/images/photos/studio-robe-satin-dos-1920.webp 1920w" sizes="(max-width: 760px) 42vw, 16vw" alt="Femme en robe de satin noir, de dos, les bras levés, fond beige" width="1280" height="1546" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section regards" id="trois-regards">
+  <div class="conteneur regards-tete">
+    <p class="sur"><span class="sur-trait" aria-hidden="true"></span>Trois regards</p>
+    <h2 class="titre-section" data-anime>Une planche contact, trois univers</h2>
+    <p data-anime>Les vues entourées au crayon mènent chacune à un univers de la galerie.</p>
+  </div>
+  <div class="conteneur">
+    <ol class="planche" data-planche>
+      <li class="vue vue--choisie"><span class="vue-num" aria-hidden="true">12</span><a class="vue-lien" href="/galerie#portraits" data-libelle="Galerie"><span class="vue-cadre"><figure class="media vue-media" style="--flou:url(/assets/images/photos/studio-blouson-cuir-main-flou.webp);--cadrage:50% 35%;aspect-ratio:2 / 3">
+  <picture>
+    <img src="/assets/images/photos/studio-blouson-cuir-main-1280.webp" srcset="/assets/images/photos/studio-blouson-cuir-main-640.webp 640w, /assets/images/photos/studio-blouson-cuir-main-1280.webp 1280w, /assets/images/photos/studio-blouson-cuir-main-1920.webp 1920w" sizes="(max-width: 760px) 30vw, 15vw" alt="" width="1280" height="1873" loading="lazy" decoding="async">
+  </picture>
+</figure><svg class="vue-cercle" viewBox="0 0 100 150" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M50 4C80 3 97 30 96 74c-1 44-18 72-48 72C19 146 3 118 4 75 5 33 20 6 52 5c9 0 17 3 22 7" pathLength="1"/></svg></span><span class="vue-legende">Portraits — individuel &amp; famille <span class="vue-voir">Voir l&#39;univers <svg class="icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span></a></li><li class="vue"><span class="vue-num" aria-hidden="true">13</span><figure class="media vue-media" style="--flou:url(/assets/images/photos/studio-dos-noir-flou.webp);--cadrage:50% 35%;aspect-ratio:2 / 3">
+  <picture>
+    <img src="/assets/images/photos/studio-dos-noir-1280.webp" srcset="/assets/images/photos/studio-dos-noir-640.webp 640w, /assets/images/photos/studio-dos-noir-1280.webp 1280w, /assets/images/photos/studio-dos-noir-1920.webp 1920w" sizes="(max-width: 760px) 30vw, 15vw" alt="Jeune femme de dos qui se retourne vers l&#39;objectif, haut noir, fond beige" width="1280" height="1862" loading="lazy" decoding="async">
+  </picture>
+</figure></li><li class="vue"><span class="vue-num" aria-hidden="true">14</span><figure class="media vue-media" style="--flou:url(/assets/images/photos/bapteme-maman-bebe-eglise-flou.webp);--cadrage:50% 35%;aspect-ratio:2 / 3">
+  <picture>
+    <img src="/assets/images/photos/bapteme-maman-bebe-eglise-1280.webp" srcset="/assets/images/photos/bapteme-maman-bebe-eglise-640.webp 640w, /assets/images/photos/bapteme-maman-bebe-eglise-1280.webp 1280w, /assets/images/photos/bapteme-maman-bebe-eglise-1920.webp 1920w" sizes="(max-width: 760px) 30vw, 15vw" alt="Maman qui tient son bébé dans les bras, dans une église" width="1280" height="1920" loading="lazy" decoding="async">
+  </picture>
+</figure></li><li class="vue vue--choisie"><span class="vue-num" aria-hidden="true">15</span><a class="vue-lien" href="/galerie#regard" data-libelle="Galerie"><span class="vue-cadre"><figure class="media vue-media" style="--flou:url(/assets/images/photos/lisbonne-rocher-flou.webp);--cadrage:50% 35%;aspect-ratio:2 / 3">
+  <picture>
+    <img src="/assets/images/photos/lisbonne-rocher-1280.webp" srcset="/assets/images/photos/lisbonne-rocher-640.webp 640w, /assets/images/photos/lisbonne-rocher-1280.webp 1280w, /assets/images/photos/lisbonne-rocher-1920.webp 1920w" sizes="(max-width: 760px) 30vw, 15vw" alt="" width="1280" height="1920" loading="lazy" decoding="async">
+  </picture>
+</figure><svg class="vue-cercle" viewBox="0 0 100 150" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M50 4C80 3 97 30 96 74c-1 44-18 72-48 72C19 146 3 118 4 75 5 33 20 6 52 5c9 0 17 3 22 7" pathLength="1"/></svg></span><span class="vue-legende">Regard personnel <span class="vue-voir">Voir l&#39;univers <svg class="icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span></a></li><li class="vue"><span class="vue-num" aria-hidden="true">16</span><figure class="media vue-media" style="--flou:url(/assets/images/photos/cote-brume-flou.webp);--cadrage:50% 35%;aspect-ratio:2 / 3">
+  <picture>
+    <img src="/assets/images/photos/cote-brume-683.webp" srcset="/assets/images/photos/cote-brume-640.webp 640w, /assets/images/photos/cote-brume-683.webp 683w" sizes="(max-width: 760px) 30vw, 15vw" alt="Côte rocheuse dans la brume" width="683" height="1024" loading="lazy" decoding="async">
+  </picture>
+</figure></li><li class="vue"><span class="vue-num" aria-hidden="true">17</span><figure class="media vue-media" style="--flou:url(/assets/images/photos/crepuscule-mer-flou.webp);--cadrage:50% 35%;aspect-ratio:2 / 3">
+  <picture>
+    <img src="/assets/images/photos/crepuscule-mer-683.webp" srcset="/assets/images/photos/crepuscule-mer-640.webp 640w, /assets/images/photos/crepuscule-mer-683.webp 683w" sizes="(max-width: 760px) 30vw, 15vw" alt="Ciel violet au crépuscule au-dessus de la mer" width="683" height="1024" loading="lazy" decoding="async">
+  </picture>
+</figure></li><li class="vue vue--choisie"><span class="vue-num" aria-hidden="true">18</span><a class="vue-lien" href="/galerie#pro" data-libelle="Galerie"><span class="vue-cadre"><figure class="media vue-media" style="--flou:url(/assets/images/photos/blazer-sourire-flou.webp);--cadrage:50% 35%;aspect-ratio:2 / 3">
+  <picture>
+    <img src="/assets/images/photos/blazer-sourire-1280.webp" srcset="/assets/images/photos/blazer-sourire-640.webp 640w, /assets/images/photos/blazer-sourire-1280.webp 1280w, /assets/images/photos/blazer-sourire-1920.webp 1920w" sizes="(max-width: 760px) 30vw, 15vw" alt="" width="1280" height="1835" loading="lazy" decoding="async">
+  </picture>
+</figure><svg class="vue-cercle" viewBox="0 0 100 150" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M50 4C80 3 97 30 96 74c-1 44-18 72-48 72C19 146 3 118 4 75 5 33 20 6 52 5c9 0 17 3 22 7" pathLength="1"/></svg></span><span class="vue-legende">Portrait professionnel <span class="vue-voir">Voir l&#39;univers <svg class="icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span></a></li><li class="vue"><span class="vue-num" aria-hidden="true">19</span><figure class="media vue-media" style="--flou:url(/assets/images/photos/creatrice-atelier-flou.webp);--cadrage:50% 35%;aspect-ratio:2 / 3">
+  <picture>
+    <img src="/assets/images/photos/creatrice-atelier-1280.webp" srcset="/assets/images/photos/creatrice-atelier-640.webp 640w, /assets/images/photos/creatrice-atelier-1280.webp 1280w, /assets/images/photos/creatrice-atelier-1920.webp 1920w" sizes="(max-width: 760px) 30vw, 15vw" alt="Créatrice souriante à sa table de travail, entourée de pétales" width="1280" height="1661" loading="lazy" decoding="async">
+  </picture>
+</figure></li><li class="vue"><span class="vue-num" aria-hidden="true">20</span><figure class="media vue-media" style="--flou:url(/assets/images/photos/studio-carte-soleil-flou.webp);--cadrage:50% 35%;aspect-ratio:2 / 3">
+  <picture>
+    <img src="/assets/images/photos/studio-carte-soleil-1280.webp" srcset="/assets/images/photos/studio-carte-soleil-640.webp 640w, /assets/images/photos/studio-carte-soleil-1280.webp 1280w, /assets/images/photos/studio-carte-soleil-1920.webp 1920w" sizes="(max-width: 760px) 30vw, 15vw" alt="Jeune femme assise dans un fauteuil du studio, une carte entre les mains" width="1280" height="1920" loading="lazy" decoding="async">
+  </picture>
+</figure></li><li class="vue"><span class="vue-num" aria-hidden="true">21</span><figure class="media vue-media" style="--flou:url(/assets/images/photos/eglise-bouquet-blanc-flou.webp);--cadrage:50% 35%;aspect-ratio:2 / 3">
+  <picture>
+    <img src="/assets/images/photos/eglise-bouquet-blanc-1280.webp" srcset="/assets/images/photos/eglise-bouquet-blanc-640.webp 640w, /assets/images/photos/eglise-bouquet-blanc-1280.webp 1280w, /assets/images/photos/eglise-bouquet-blanc-1920.webp 1920w" sizes="(max-width: 760px) 30vw, 15vw" alt="Bouquet de fleurs blanches dans une église" width="1280" height="1920" loading="lazy" decoding="async">
+  </picture>
+</figure></li><li class="vue"><span class="vue-num" aria-hidden="true">22</span><figure class="media vue-media" style="--flou:url(/assets/images/photos/printemps-colza-fleur-flou.webp);--cadrage:50% 35%;aspect-ratio:2 / 3">
+  <picture>
+    <img src="/assets/images/photos/printemps-colza-fleur-1280.webp" srcset="/assets/images/photos/printemps-colza-fleur-640.webp 640w, /assets/images/photos/printemps-colza-fleur-1280.webp 1280w, /assets/images/photos/printemps-colza-fleur-1920.webp 1920w" sizes="(max-width: 760px) 30vw, 15vw" alt="Fleurs de colza sous un ciel bleu" width="1280" height="1920" loading="lazy" decoding="async">
+  </picture>
+</figure></li><li class="vue"><span class="vue-num" aria-hidden="true">23</span><figure class="media vue-media" style="--flou:url(/assets/images/photos/automne-foret-debout-flou.webp);--cadrage:50% 35%;aspect-ratio:2 / 3">
+  <picture>
+    <img src="/assets/images/photos/automne-foret-debout-1280.webp" srcset="/assets/images/photos/automne-foret-debout-640.webp 640w, /assets/images/photos/automne-foret-debout-1280.webp 1280w, /assets/images/photos/automne-foret-debout-1920.webp 1920w" sizes="(max-width: 760px) 30vw, 15vw" alt="Jeune femme debout dans un sous-bois d&#39;automne, manteau clair et jean bleu" width="1280" height="1820" loading="lazy" decoding="async">
+  </picture>
+</figure></li>
+    </ol>
+  </div>
+</section>
+<section class="section seances-accueil" id="seances">
+  <div class="conteneur">
+    <div class="tete-section">
+      <p class="sur"><span class="sur-trait" aria-hidden="true"></span>Les séances</p>
+      <h2 class="titre-section" data-anime>Une heure pour vous, ou une demi-journée</h2>
+      <p data-anime>Au studio ou en extérieur : en solo, à deux, en famille ou pour votre activité.</p>
+    </div>
+    <ul class="cartes-seances">
+      <li class="carte-seance" data-anime data-inclinaison>
+        <figure data-mise-au-point class="media carte-seance-media" style="--flou:url(/assets/images/photos/studio-chaise-pull-blanc-flou.webp);--cadrage:50% 30%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/photos/studio-chaise-pull-blanc-1280.webp" srcset="/assets/images/photos/studio-chaise-pull-blanc-640.webp 640w, /assets/images/photos/studio-chaise-pull-blanc-1280.webp 1280w, /assets/images/photos/studio-chaise-pull-blanc-1920.webp 1920w" sizes="(max-width: 760px) 80vw, 22vw" alt="Jeune femme assise sur une chaise, pull blanc, la main contre la joue" width="1280" height="1690" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <h3>Séance solo</h3>
+        <p class="carte-seance-pour">Une séance rien que pour vous</p>
+        <p class="carte-seance-ligne"><span>1 h</span><span class="prix " data-prix>80 €</span></p>
+        <a href="/seances?seance=solo#reservation" class="lien-fleche" data-libelle="Séances &amp; tarifs">Réserver cette séance <svg class="icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </li><li class="carte-seance" data-anime data-inclinaison>
+        <figure data-mise-au-point class="media carte-seance-media" style="--flou:url(/assets/images/photos/famille-maman-bebe-canape-flou.webp);--cadrage:50% 35%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/photos/famille-maman-bebe-canape-1280.webp" srcset="/assets/images/photos/famille-maman-bebe-canape-640.webp 640w, /assets/images/photos/famille-maman-bebe-canape-1280.webp 1280w, /assets/images/photos/famille-maman-bebe-canape-1920.webp 1920w" sizes="(max-width: 760px) 80vw, 22vw" alt="Maman qui serre son bébé contre elle sur un canapé" width="1280" height="1555" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <h3>Séance duo</h3>
+        <p class="carte-seance-pour">En couple, entre sœurs, parent et enfant</p>
+        <p class="carte-seance-ligne"><span>1 h</span><span class="prix " data-prix>90 €</span></p>
+        <a href="/seances?seance=duo#reservation" class="lien-fleche" data-libelle="Séances &amp; tarifs">Réserver cette séance <svg class="icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </li><li class="carte-seance" data-anime data-inclinaison>
+        <figure data-mise-au-point class="media carte-seance-media" style="--flou:url(/assets/images/photos/automne-famille-bebe-flou.webp);--cadrage:50% 35%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/photos/automne-famille-bebe-1280.webp" srcset="/assets/images/photos/automne-famille-bebe-640.webp 640w, /assets/images/photos/automne-famille-bebe-1280.webp 1280w, /assets/images/photos/automne-famille-bebe-1920.webp 1920w" sizes="(max-width: 760px) 80vw, 22vw" alt="Un couple et son bébé en forêt, à l&#39;automne" width="1280" height="1840" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <h3>Séance famille &amp; aînés</h3>
+        <p class="carte-seance-pour">Parents, enfants, grands-parents</p>
+        <p class="carte-seance-ligne"><span>1 h</span><span class="prix " data-prix>100 €</span></p>
+        <a href="/seances?seance=famille#reservation" class="lien-fleche" data-libelle="Séances &amp; tarifs">Réserver cette séance <svg class="icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </li><li class="carte-seance" data-anime data-inclinaison>
+        <figure data-mise-au-point class="media carte-seance-media" style="--flou:url(/assets/images/photos/creatrice-cadre-coeur-flou.webp);--cadrage:50% 40%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/photos/creatrice-cadre-coeur-1280.webp" srcset="/assets/images/photos/creatrice-cadre-coeur-640.webp 640w, /assets/images/photos/creatrice-cadre-coeur-1280.webp 1280w, /assets/images/photos/creatrice-cadre-coeur-1920.webp 1920w" sizes="(max-width: 760px) 80vw, 22vw" alt="Créatrice qui présente un cadre de fleurs pressées en forme de cœur" width="1280" height="1693" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <h3>Portrait pro ou petits créateurs</h3>
+        <p class="carte-seance-pour">Pour votre activité : CV, LinkedIn, communication, créations</p>
+        <p class="carte-seance-ligne"><span>1 h</span><span class="prix " data-prix>80 €</span></p>
+        <a href="/seances?seance=pro#reservation" class="lien-fleche" data-libelle="Séances &amp; tarifs">Réserver cette séance <svg class="icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </li>
+      <li class="carte-seance carte-seance--large" data-anime data-inclinaison>
+        <figure data-mise-au-point class="media carte-seance-media" style="--flou:url(/assets/images/photos/chaise-lumiere-fenetre-flou.webp);--cadrage:50% 30%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/photos/chaise-lumiere-fenetre-1280.webp" srcset="/assets/images/photos/chaise-lumiere-fenetre-640.webp 640w, /assets/images/photos/chaise-lumiere-fenetre-1280.webp 1280w, /assets/images/photos/chaise-lumiere-fenetre-1920.webp 1920w" sizes="(max-width: 760px) 80vw, 22vw" alt="Jeune femme assise à califourchon sur une chaise, lumière de fenêtre sur le fond" width="1280" height="1828" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <h3>Séance Renaissance</h3>
+        <p class="carte-seance-pour">Une demi-journée accompagnée, maquillage compris</p>
+        <p class="carte-seance-ligne"><span>environ 4 h</span><span>dès <span class="prix " data-prix>260 €</span></span></p>
+        <a href="/seances#renaissance" class="lien-fleche" data-libelle="Séances &amp; tarifs">Découvrir la séance <svg class="icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </li>
+    </ul>
+    <p class="centre" data-anime><a href="/seances" class="bouton bouton--contour" data-libelle="Séances &amp; tarifs">Toutes les séances et le guide</a></p>
+  </div>
+</section>
+<section class="section evenements-accueil" id="evenements">
+  <div class="conteneur deux-colonnes">
+    <figure data-parallaxe-interne data-mise-au-point class="media evenements-media" style="--flou:url(/assets/images/photos/papa-bebe-exterieur-flou.webp);--cadrage:50% 40%;aspect-ratio:2 / 3">
+  <picture>
+    <img src="/assets/images/photos/papa-bebe-exterieur-1280.webp" srcset="/assets/images/photos/papa-bebe-exterieur-640.webp 640w, /assets/images/photos/papa-bebe-exterieur-1280.webp 1280w, /assets/images/photos/papa-bebe-exterieur-1920.webp 1920w" sizes="(max-width: 760px) 92vw, 40vw" alt="Papa qui serre son bébé contre lui, en extérieur" width="1280" height="1358" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    <div>
+      <p class="sur"><span class="sur-trait" aria-hidden="true"></span>Vos événements</p>
+      <h2 class="titre-section" data-anime>Mariage, baptême, anniversaire</h2>
+      <p class="texte-large" data-anime>Une présence discrète, des émotions spontanées, sans poses forcées.</p>
+      <ul class="liste-prix" data-anime>
+        <li><span>Mariage — demi-journée</span><span class="liste-prix-points" aria-hidden="true"></span><span class="prix " data-prix>600 €</span></li><li><span>Mariage — journée complète</span><span class="liste-prix-points" aria-hidden="true"></span><span class="prix " data-prix>1 100 €</span></li><li><span>Baptême, anniversaire — demi-journée</span><span class="liste-prix-points" aria-hidden="true"></span><span class="prix " data-prix>500 €</span></li><li><span>Baptême, anniversaire — journée complète</span><span class="liste-prix-points" aria-hidden="true"></span><span class="prix " data-prix>900 €</span></li>
+      </ul>
+      <p data-anime><a href="/evenements" class="bouton" data-libelle="Événements">Découvrir les forfaits</a></p>
+    </div>
+  </div>
+</section>
+<section class="section saisons-accueil" id="saisons">
+  <div class="conteneur tete-section">
+    <p class="sur"><span class="sur-trait" aria-hidden="true"></span>Au fil des saisons</p>
+    <h2 class="titre-section" data-anime>Les séances de saison</h2>
+    <p data-anime>Des décors et des lumières qui changent avec l&#39;année : Pâques, printemps, été, automne, hiver.</p>
+  </div>
+  <div class="fil" data-fil>
+    <svg class="fil-corde" viewBox="0 0 1000 60" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M-10 8 Q500 70 1010 8" /></svg>
+    <div class="fil-defile" data-galerie tabindex="0" role="region" aria-label="Les séances de saison">
+    <ul class="fil-tirages" data-statuts data-ouvert="Ouvert à la réservation" data-avenir="Ouverture à venir" data-clos="Revient mi-mars" data-inconnu="Dates et tarif à compléter">
+      <li class="tirage" style="--i:0" data-tirage data-saison="paques">
+        <span class="tirage-pince" aria-hidden="true"></span>
+        <figure class="media tirage-media" style="--flou:url(/assets/images/photos/paques-decor-studio-flou.webp);--cadrage:50% 60%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/photos/paques-decor-studio-1280.webp" srcset="/assets/images/photos/paques-decor-studio-640.webp 640w, /assets/images/photos/paques-decor-studio-1280.webp 1280w, /assets/images/photos/paques-decor-studio-1920.webp 1920w" sizes="(max-width: 760px) 62vw, 18vw" alt="Décor de Pâques au studio : fauteuil, lapins et panier d&#39;œufs" width="1280" height="1736" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <p class="tirage-nom">Pâques, la séance des petits</p>
+        <p class="tirage-detail"></p>
+        <p class="tirage-statut" data-statut aria-live="polite"></p>
+      </li><li class="tirage" style="--i:1" data-tirage data-saison="printemps" data-debut="03-15" data-fin="05-31">
+        <span class="tirage-pince" aria-hidden="true"></span>
+        <figure class="media tirage-media" style="--flou:url(/assets/images/photos/printemps-colza-champ-flou.webp);--cadrage:50% 60%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/photos/printemps-colza-champ-1280.webp" srcset="/assets/images/photos/printemps-colza-champ-640.webp 640w, /assets/images/photos/printemps-colza-champ-1280.webp 1280w, /assets/images/photos/printemps-colza-champ-1920.webp 1920w" sizes="(max-width: 760px) 62vw, 18vw" alt="Champ de colza en fleurs sous un ciel bleu" width="1280" height="1920" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <p class="tirage-nom">Shoot printemps</p>
+        <p class="tirage-detail"><span class="prix " data-prix>75 €</span> · 1 h · 7 photos retouchées en HD</p>
+        <p class="tirage-statut" data-statut aria-live="polite"></p>
+      </li><li class="tirage" style="--i:2" data-tirage data-saison="ete">
+        <span class="tirage-pince" aria-hidden="true"></span>
+        <figure class="media tirage-media" style="--flou:url(/assets/images/photos/coquelicots-chapeau-dos-flou.webp);--cadrage:50% 40%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/photos/coquelicots-chapeau-dos-1280.webp" srcset="/assets/images/photos/coquelicots-chapeau-dos-640.webp 640w, /assets/images/photos/coquelicots-chapeau-dos-1280.webp 1280w, /assets/images/photos/coquelicots-chapeau-dos-1920.webp 1920w" sizes="(max-width: 760px) 62vw, 18vw" alt="Femme au chapeau de paille, de dos, dans un champ de coquelicots" width="1280" height="1581" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <p class="tirage-nom">Shoot été</p>
+        <p class="tirage-detail"></p>
+        <p class="tirage-statut" data-statut aria-live="polite"></p>
+      </li><li class="tirage" style="--i:3" data-tirage data-saison="automne">
+        <span class="tirage-pince" aria-hidden="true"></span>
+        <figure class="media tirage-media" style="--flou:url(/assets/images/photos/automne-foret-assise-flou.webp);--cadrage:55% 50%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/photos/automne-foret-assise-1280.webp" srcset="/assets/images/photos/automne-foret-assise-640.webp 640w, /assets/images/photos/automne-foret-assise-1280.webp 1280w, /assets/images/photos/automne-foret-assise-1920.webp 1920w" sizes="(max-width: 760px) 62vw, 18vw" alt="Jeune femme assise sur les feuilles mortes, dans la lumière d&#39;automne" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <p class="tirage-nom">Shoot automne</p>
+        <p class="tirage-detail"></p>
+        <p class="tirage-statut" data-statut aria-live="polite"></p>
+      </li><li class="tirage" style="--i:4" data-tirage data-saison="hiver">
+        <span class="tirage-pince" aria-hidden="true"></span>
+        <figure class="media tirage-media" style="--flou:url(/assets/images/photos/hiver-noel-enfants-flou.webp);--cadrage:50% 45%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/photos/hiver-noel-enfants-1280.webp" srcset="/assets/images/photos/hiver-noel-enfants-640.webp 640w, /assets/images/photos/hiver-noel-enfants-1280.webp 1280w, /assets/images/photos/hiver-noel-enfants-1920.webp 1920w" sizes="(max-width: 760px) 62vw, 18vw" alt="Deux jeunes enfants dans un décor de Noël" width="1280" height="1920" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <p class="tirage-nom">Shoot hiver</p>
+        <p class="tirage-detail"></p>
+        <p class="tirage-statut" data-statut aria-live="polite"></p>
+      </li>
+    </ul>
+    </div>
+    <p class="indice-glisser" aria-hidden="true">Faites glisser <svg class="icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></p>
+  </div>
+  <p class="conteneur centre" data-anime><a href="/seances#saisons" class="lien-fleche" data-libelle="Séances &amp; tarifs">Détail des séances de saison <svg class="icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+</section>
+<section class="section photographe-accueil" id="photographe">
+  <div class="conteneur deux-colonnes deux-colonnes--inverse">
+    <div>
+      <p class="sur"><span class="sur-trait" aria-hidden="true"></span>La photographe</p>
+      <h2 class="titre-section" data-anime>Une passion née dans les albums de famille</h2>
+      <p class="texte-large" data-anime>Sa passion lui vient de son père, qui avait toujours un appareil photo à la main. Aujourd&#39;hui, son approche est artistique, principalement en portrait.</p>
+      <blockquote class="citation " data-anime><p>« Je retouche peu mes photos, juste assez pour révéler la lumière. »</p></blockquote>
+      <p data-anime><a href="/a-propos" class="bouton bouton--contour" data-libelle="À propos &amp; contact">Faire connaissance</a></p>
+    </div>
+    <figure data-parallaxe-interne data-mise-au-point class="media photographe-media" style="--flou:url(/assets/images/photos/portrait-photographe-studio-flou.webp);--cadrage:50% 30%;aspect-ratio:2 / 3">
+  <picture>
+    <img src="/assets/images/photos/portrait-photographe-studio-1280.webp" srcset="/assets/images/photos/portrait-photographe-studio-640.webp 640w, /assets/images/photos/portrait-photographe-studio-1280.webp 1280w, /assets/images/photos/portrait-photographe-studio-1920.webp 1920w" sizes="(max-width: 760px) 92vw, 36vw" alt="La photographe de PausePhoto65 en studio, son appareil sur les genoux" width="1280" height="1920" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  </div>
+</section>
+<section class="section lumiere" id="lumiere">
+  <div class="conteneur lumiere-grille">
+    <div class="lumiere-texte">
+      <p class="sur"><span class="sur-trait" aria-hidden="true"></span>Studio ou extérieur</p>
+      <h2 class="titre-section" data-anime>Suivre la lumière</h2>
+      <p data-anime>Au studio du 62 rue André Fourcade, à Tarbes, ou dehors : à Lourdes, Bagnères-de-Bigorre, Lannemezan, Pau et dans les communes alentour.</p>
+      <p data-anime><a href="/a-propos#zone" class="lien-fleche" data-libelle="À propos &amp; contact">Voir la zone de déplacement <svg class="icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+    </div>
+    <figure data-mise-au-point class="media lumiere-media" style="--flou:url(/assets/images/photos/lisbonne-pont-portrait-flou.webp);--cadrage:50% 40%">
+  <picture>
+    <img src="/assets/images/photos/lisbonne-pont-portrait-1280.webp" srcset="/assets/images/photos/lisbonne-pont-portrait-640.webp 640w, /assets/images/photos/lisbonne-pont-portrait-1280.webp 1280w, /assets/images/photos/lisbonne-pont-portrait-1920.webp 1920w" sizes="(max-width: 760px) 92vw, 60vw" alt="Jeune femme accoudée à une rambarde, un pont suspendu en arrière-plan" width="1280" height="837" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    <div class="soleil" data-soleil data-lat="43.2328" data-lon="0.0781" data-fuseau="Europe/Paris">
+      <p class="soleil-titre">Aujourd&#39;hui à Tarbes <span class="soleil-date" data-soleil-date></span></p>
+      <svg class="soleil-arc" viewBox="0 0 320 130" role="img" aria-label="Course du soleil sur la journée à Tarbes"><path class="soleil-sol" d="M8 118H312"/><path class="soleil-course" d="M20 118C70 10 250 10 300 118" pathLength="1"/><path class="soleil-doree" data-soleil-doree d="M20 118C70 10 250 10 300 118" pathLength="1"/><circle class="soleil-point" data-soleil-point cx="160" cy="37" r="9"/></svg>
+      <dl class="soleil-heures">
+        <div><dt>Lever du soleil</dt><dd class="chiffres" data-soleil-lever>—</dd></div>
+        <div><dt>Heure dorée du soir</dt><dd class="chiffres" data-soleil-plage>—</dd></div>
+        <div><dt>Coucher du soleil</dt><dd class="chiffres" data-soleil-coucher>—</dd></div>
+      </dl>
+      <p class="soleil-note">Calculé en direct pour Tarbes, à titre indicatif.</p>
+      <noscript><p class="soleil-note">L&#39;heure dorée, c&#39;est environ la dernière heure avant le coucher du soleil : la lumière la plus douce pour une séance en extérieur.</p></noscript>
+    </div>
+  </div>
+</section>
+<section class="section fin" id="fin">
+  <div class="conteneur fin-grille">
+    <div>
+      <h2 class="titre-fin" data-anime>Parlons de votre séance.</h2>
+      <p class="texte-large" data-anime>Une séance d&#39;une heure, une demi-journée Renaissance ou toute une journée de fête : écrivez à PausePhoto65 ce que vous imaginez.</p>
+      <p class="actions" data-anime>
+        <a class="bouton" href="/seances#reservation" data-libelle="Séances &amp; tarifs" data-magnetique>Réserver une séance</a>
+        <a href="/evenements#demande" class="bouton bouton--contour" data-libelle="Événements">Demander une date</a>
+        <a href="/a-propos#contact" class="lien-fleche" data-libelle="À propos &amp; contact">Écrire <svg class="icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </p>
+    </div>
+    <figure data-mise-au-point class="media fin-media" style="--flou:url(/assets/images/photos/studio-nb-assise-sol-flou.webp);--cadrage:50% 50%;aspect-ratio:3 / 2">
+  <picture>
+    <img src="/assets/images/photos/studio-nb-assise-sol-1280.webp" srcset="/assets/images/photos/studio-nb-assise-sol-640.webp 640w, /assets/images/photos/studio-nb-assise-sol-1280.webp 1280w, /assets/images/photos/studio-nb-assise-sol-1920.webp 1920w" sizes="(max-width: 760px) 92vw, 48vw" alt="Portrait en noir et blanc d&#39;une jeune femme assise au sol, jambes repliées" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-haut">
+    <p class="pied-mot" aria-hidden="true">Pause, <em>pose</em>.</p>
+  </div>
+  <div class="conteneur pied-grille">
+    <div>
+      <img class="pied-logo" src="/assets/images/logo/logo-144.webp" alt="Logo de PausePhoto65" width="72" height="72" loading="lazy">
+      <p class="pied-titre">PausePhoto65</p>
+      <p>62 rue André Fourcade<br>65000 Tarbes<br><a href="mailto:Pausephoto65@gmail.com">Pausephoto65@gmail.com</a></p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p class="pied-titre">Sommaire</p>
+      <ul><li><a href="/" data-libelle="Accueil" aria-current="page">Accueil</a></li><li><a href="/galerie" data-libelle="Galerie">Galerie</a></li><li><a href="/seances" data-libelle="Séances &amp; tarifs">Séances &amp; tarifs</a></li><li><a href="/evenements" data-libelle="Événements">Événements</a></li><li><a href="/a-propos" data-libelle="À propos &amp; contact">À propos &amp; contact</a></li><li><a href="/mentions-legales" data-libelle="Mentions légales">Mentions légales</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Réseaux</p>
+      <ul><li><a href="https://www.instagram.com/pausephoto65/" target="_blank" rel="noopener">Instagram<span class="visuellement-cache"> (nouvel onglet)</span></a></li><li><a href="https://www.facebook.com/pausephoto65/" target="_blank" rel="noopener">Facebook<span class="visuellement-cache"> (nouvel onglet)</span></a></li></ul>
+    </div>
+    <div>
+      <p class="pied-titre">Confort</p>
+      <ul>
+        <li><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></li>
+        <li><a href="#haut" data-sans-transition>Retour en haut</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas"><p>Maquette : les informations marquées « à compléter » seront fournies par PausePhoto65.</p><p>© PausePhoto65</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="mailto:Pausephoto65@gmail.com">Écrire</a>
+  <a class="bouton" href="/seances#reservation" data-libelle="Séances &amp; tarifs">Réserver</a>
+</div>
+</body>
+</html>

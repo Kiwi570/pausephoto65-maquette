@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="fr" data-v="1" data-gabarit="a-propos" data-page="a-propos" data-curseur>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>La photographe et le contact, PausePhoto65 à Tarbes</title>
+<meta name="description" content="Qui est derrière PausePhoto65 : une approche artistique du portrait, une retouche légère, un studio à Tarbes. Écrire, venir au studio, zone de déplacement.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://pausephoto65-maquette.vercel.app/a-propos">
+<style>:root{--fond:#f2ece3;--texte:#1e1a17;--voile-fond:#1e1a17;--ouverture-fond:#f2ece3;--menu-fond:#f2ece3}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) [data-voile] { transform: none; visibility: visible; } html.calme [data-voile], html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var calme = false;
+try { calme = !!ls && ls.getItem('socle:calme') === 'oui'; } catch (e) {}
+if (!calme && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) calme = true;
+if (calme) d.classList.add('calme');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var retourSection = false;
+try { retourSection = !!ss.getItem('socle:calme-retour'); } catch (e) {}
+var mode = type === 'back_forward' || retourSection ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+if (!retourSection) history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/manrope.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#f2ece3">
+<link rel="icon" href="/assets/images/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/assets/images/favicon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PausePhoto65">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="La photographe et le contact, PausePhoto65 à Tarbes">
+<meta property="og:description" content="Qui est derrière PausePhoto65 : une approche artistique du portrait, une retouche légère, un studio à Tarbes. Écrire, venir au studio, zone de déplacement.">
+<meta property="og:url" content="https://pausephoto65-maquette.vercel.app/a-propos">
+<meta property="og:image" content="https://pausephoto65-maquette.vercel.app/assets/partage/a-propos-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="La photographe de PausePhoto65 en studio">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"PausePhoto65","description":"Photographe à Tarbes, dans les Hautes-Pyrénées : portraits individuels et de famille, portraits professionnels, mariages et événements, au studio ou en extérieur.","url":"https://pausephoto65-maquette.vercel.app/","email":"Pausephoto65@gmail.com","address":{"@type":"PostalAddress","streetAddress":"62 rue André Fourcade","postalCode":"65000","addressLocality":"Tarbes","addressCountry":"FR"},"areaServed":["Tarbes","Lourdes","Bagnères-de-Bigorre","Lannemezan","Pau"],"priceRange":"75 € – 1 100 €","sameAs":["https://www.facebook.com/pausephoto65/","https://www.instagram.com/pausephoto65/"]}</script>
+</head>
+<body id="haut">
+<div data-voile aria-hidden="true"><div class="voile-contenu"><svg class="voile-iris" viewBox="-100 -100 200 200" aria-hidden="true" focusable="false">
+<path class="iris-lames" fill-rule="evenodd" d="M-100 0a100 100 0 1 0 200 0a100 100 0 1 0 -200 0ZM0 -30.00L23.45 -18.70L29.25 6.68L13.02 27.03L-13.02 27.03L-29.25 6.68L-23.45 -18.70Z"/>
+<path class="iris-aretes" d="M23.45 -18.70L98.47 17.42M29.25 6.68L47.78 87.85M13.02 27.03L-38.90 92.13M-13.02 27.03L-96.28 27.03M-29.25 6.68L-81.16 -58.42M-23.45 -18.70L-4.93 -99.88M0 -30.00L75.02 -66.13"/>
+<circle class="iris-bague" r="98.5"/>
+</svg><span data-voile-libelle>À propos &amp; contact</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true" data-gouttiere="#f2ece3">
+  <div class="iris" style="--flou:url(/assets/images/photos/portrait-photographe-studio-flou.webp)">
+    <div class="iris-photo"><img src="/assets/images/photos/portrait-photographe-studio-640.webp" alt="" width="640" height="960" decoding="async"></div>
+    <svg class="iris-svg" viewBox="-100 -100 200 200" aria-hidden="true" focusable="false">
+<path class="iris-lames" fill-rule="evenodd" d="M-100 0a100 100 0 1 0 200 0a100 100 0 1 0 -200 0ZM0 -58.00L45.35 -36.16L56.55 12.91L25.17 52.26L-25.17 52.26L-56.55 12.91L-45.35 -36.16Z"/>
+<path class="iris-aretes" d="M45.35 -36.16L99.49 -10.09M56.55 12.91L69.92 71.49M25.17 52.26L-12.30 99.24M-25.17 52.26L-85.26 52.26M-56.55 12.91L-94.01 -34.08M-45.35 -36.16L-31.97 -94.75M0 -58.00L54.14 -84.07"/>
+<circle class="iris-bague" r="98.5"/>
+</svg>
+  </div>
+  <p class="ouverture-nom">PausePhoto65</p>
+  <p class="ouverture-ligne">Photographe à Tarbes</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil">
+      <img src="/assets/images/logo/logo-72.webp" alt="" width="36" height="36"><span>PausePhoto65</span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/galerie" data-libelle="Galerie">Galerie</a></li><li><a href="/seances" data-libelle="Séances &amp; tarifs">Séances &amp; tarifs</a></li><li><a href="/evenements" data-libelle="Événements">Événements</a></li><li><a href="/a-propos" data-libelle="À propos &amp; contact" aria-current="page">À propos &amp; contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton bouton--petit" href="/seances#reservation" data-libelle="Séances &amp; tarifs" data-magnetique>Réserver</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span class="menu-icone" aria-hidden="true"><span></span><span></span></span><span data-libelle-bouton>Menu</span></button>
+    </div>
+  </div>
+</header>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="menu-grille">
+    <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil"><span class="menu-num" aria-hidden="true">01</span><span>Accueil</span></a></li><li style="--i:1"><a href="/galerie" class="menu-lien" data-libelle="Galerie"><span class="menu-num" aria-hidden="true">02</span><span>Galerie</span></a></li><li style="--i:2"><a href="/seances" class="menu-lien" data-libelle="Séances &amp; tarifs"><span class="menu-num" aria-hidden="true">03</span><span>Séances &amp; tarifs</span></a></li><li style="--i:3"><a href="/evenements" class="menu-lien" data-libelle="Événements"><span class="menu-num" aria-hidden="true">04</span><span>Événements</span></a></li><li style="--i:4"><a href="/a-propos" class="menu-lien" data-libelle="À propos &amp; contact" aria-current="page"><span class="menu-num" aria-hidden="true">05</span><span>À propos &amp; contact</span></a></li></ul>
+    <div class="menu-cote">
+      <p><a class="bouton" href="/seances#reservation" data-libelle="Séances &amp; tarifs">Réserver une séance</a></p>
+      <p><a class="lien-fort" href="mailto:Pausephoto65@gmail.com">Pausephoto65@gmail.com</a></p>
+      <p class="menu-adresse">62 rue André Fourcade, 65000 Tarbes</p>
+      <p class="menu-reseaux"><a href="https://www.instagram.com/pausephoto65/" target="_blank" rel="noopener">Instagram<span class="visuellement-cache"> (nouvel onglet)</span></a> · <a href="https://www.facebook.com/pausephoto65/" target="_blank" rel="noopener">Facebook<span class="visuellement-cache"> (nouvel onglet)</span></a></p>
+      <p><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></p>
+    </div>
+  </div>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="page-tete ecran" id="ouverture">
+  <div class="page-tete-texte">
+    <h1 class="titre-page" data-anime="gsap" data-entree>Derrière l&#39;objectif</h1>
+    <blockquote class="citation citation--grande" data-anime="gsap" data-entree><p>« Choisir votre photographe, c&#39;est choisir une histoire qui vous parle. »</p></blockquote>
+    <p class="suite-mobile" data-anime="gsap" data-entree>PausePhoto65, c&#39;est une photographe installée à Tarbes : portraits au studio ou en extérieur, événements de famille, et une retouche légère. <span class="a-completer">Prénom de la photographe : à compléter.</span></p>
+    <p class="actions" data-anime="gsap" data-entree><a class="bouton" href="#contact" data-action-principale data-magnetique>Écrire</a> <span class="info-cle" data-info-cle>Studio : 62 rue André Fourcade, Tarbes</span></p>
+  </div>
+  <figure data-hero data-mise-au-point class="media page-tete-media" style="--flou:url(/assets/images/photos/portrait-photographe-studio-flou.webp);--cadrage:50% 30%;--cadrage-mobile:50% 25%">
+  <picture>
+    <img src="/assets/images/photos/portrait-photographe-studio-1280.webp" srcset="/assets/images/photos/portrait-photographe-studio-640.webp 640w, /assets/images/photos/portrait-photographe-studio-1280.webp 1280w, /assets/images/photos/portrait-photographe-studio-1920.webp 1920w" sizes="(max-width: 760px) 92vw, 40vw" alt="La photographe de PausePhoto65 en studio, son appareil sur les genoux" width="1280" height="1920" fetchpriority="high" loading="eager" decoding="async">
+  </picture>
+</figure>
+</section>
+<section class="section album-section" id="album">
+  <div class="conteneur album-grille">
+    <div class="album-texte">
+      <p class="sur"><span class="sur-trait" aria-hidden="true"></span>L&#39;album de famille</p>
+      <h2 class="titre-section" data-anime>Tout a commencé à la maison</h2>
+      <p class="texte-large" data-anime>Sa passion est née auprès de son père, qui avait toujours un appareil photo à la main. Les albums de famille occupaient une place importante à la maison. Depuis l&#39;enfance, elle s&#39;intéresse aussi à l&#39;art sous toutes ses formes.</p>
+      <p class="note" data-anime>Les deux photos posées dans l&#39;album sont de PausePhoto65 ; l&#39;album lui-même est une illustration générée.</p>
+    </div>
+    <div class="album" data-album>
+      <figure class="media album-fond" data-grok style="--flou:url(/assets/images/grok/album-ancien-flou.webp);--cadrage:50% 50%;aspect-ratio:1168 / 784">
+  <picture>
+    <img src="/assets/images/grok/album-ancien-1168.webp" srcset="/assets/images/grok/album-ancien-640.webp 640w, /assets/images/grok/album-ancien-1168.webp 1168w" sizes="(max-width: 760px) 92vw, 56vw" alt="" width="1168" height="784" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+      <div class="album-photo" data-coins="21.6,44.6 34.6,40.1 39.0,59.9 25.2,64.6" data-anime="gsap"><figure class="media album-image" style="--flou:url(/assets/images/photos/photographe-automne-flou.webp);--cadrage:45% 40%">
+  <picture>
+    <img src="/assets/images/photos/photographe-automne-1280.webp" srcset="/assets/images/photos/photographe-automne-640.webp 640w, /assets/images/photos/photographe-automne-1280.webp 1280w, /assets/images/photos/photographe-automne-1920.webp 1920w" sizes="(max-width: 760px) 30vw, 14vw" alt="La photographe en extérieur à l&#39;automne, son appareil à la main" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+      <div class="album-photo" data-coins="55.8,35.3 68.0,30.9 73.9,49.9 61.2,54.4" data-anime="gsap"><figure class="media album-image" style="--flou:url(/assets/images/photos/photographe-dos-automne-flou.webp);--cadrage:50% 35%">
+  <picture>
+    <img src="/assets/images/photos/photographe-dos-automne-1280.webp" srcset="/assets/images/photos/photographe-dos-automne-640.webp 640w, /assets/images/photos/photographe-dos-automne-1280.webp 1280w, /assets/images/photos/photographe-dos-automne-1920.webp 1920w" sizes="(max-width: 760px) 30vw, 14vw" alt="La photographe de dos, qui photographie un sous-bois d&#39;automne" width="1280" height="1777" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+    </div>
+  </div>
+</section>
+<section class="section facon" id="facon">
+  <div class="conteneur deux-colonnes">
+    <figure data-parallaxe-interne data-mise-au-point class="media facon-media" style="--flou:url(/assets/images/photos/coquelicots-chapeau-dos-flou.webp);--cadrage:50% 40%;aspect-ratio:2 / 3">
+  <picture>
+    <img src="/assets/images/photos/coquelicots-chapeau-dos-1280.webp" srcset="/assets/images/photos/coquelicots-chapeau-dos-640.webp 640w, /assets/images/photos/coquelicots-chapeau-dos-1280.webp 1280w, /assets/images/photos/coquelicots-chapeau-dos-1920.webp 1920w" sizes="(max-width: 760px) 92vw, 36vw" alt="Femme au chapeau de paille, de dos, dans un champ de coquelicots" width="1280" height="1581" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    <div>
+      <p class="sur"><span class="sur-trait" aria-hidden="true"></span>Sa façon de faire</p>
+      <h2 class="titre-section" data-anime>Révéler, sans travestir</h2>
+      <blockquote class="citation " data-anime><p>« Je retouche peu mes photos, juste assez pour révéler la lumière. »</p></blockquote>
+      <ul class="points"><li data-anime><span class="points-num chiffres" aria-hidden="true">01</span>Aux événements, une présence discrète, sans poses forcées.</li><li data-anime><span class="points-num chiffres" aria-hidden="true">02</span>Au studio, des accessoires à votre disposition et des conseils pour poser à votre manière.</li><li data-anime><span class="points-num chiffres" aria-hidden="true">03</span>Le travail commence dès le premier contact : vos envies, votre histoire, le lieu.</li><li data-anime><span class="points-num chiffres" aria-hidden="true">04</span>Pour un mariage, une coordination avec les autres prestataires de la journée.</li></ul>
+    </div>
+  </div>
+</section>
+<section class="section collab" id="collaboratrices">
+  <div class="conteneur">
+    <div class="tete-section">
+      <p class="sur"><span class="sur-trait" aria-hidden="true"></span>Collaboratrices</p>
+      <h2 class="titre-section" data-anime>Ses collaboratrices</h2>
+    </div>
+    <ul class="collab-liste">
+      <li class="collab-carte" data-anime>
+        <figure class="collab-logo"><img src="/assets/images/photos/logo-la-roseraie-640.webp" alt="Logo de La Roseraie Création" width="640" height="639" loading="lazy" decoding="async"></figure>
+        <div><h3>La Roseraie Création</h3><p>Des créations artisanales en fleurs pressées et séchées.</p></div>
+      </li><li class="collab-carte" data-anime>
+        <figure class="collab-logo"><img src="/assets/images/photos/logo-pinkbaroque-640.webp" alt="Logo de PinkBaroque" width="640" height="528" loading="lazy" decoding="async"></figure>
+        <div><h3>PinkBaroque</h3><p>Maquilleuse professionnelle.</p></div>
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="section zone" id="zone">
+  <div class="conteneur zone-grille">
+    <div>
+      <p class="sur"><span class="sur-trait" aria-hidden="true"></span>Zone de déplacement</p>
+      <h2 class="titre-section" data-anime>Tarbes et alentour</h2>
+      <p data-anime>Le studio est à Tarbes. Pour une séance en extérieur ou un événement, la photographe se déplace dans les communes alentour.</p>
+      <ul class="zone-liste" data-anime>
+        <li data-ville-liste="tarbes"><span><span class="zone-num" aria-hidden="true">1</span>Tarbes</span><span class="chiffres">le studio</span></li><li data-ville-liste="lourdes"><span><span class="zone-num" aria-hidden="true">2</span>Lourdes</span><span class="chiffres">18 km à vol d&#39;oiseau</span></li><li data-ville-liste="bagneres"><span><span class="zone-num" aria-hidden="true">3</span>Bagnères-de-Bigorre</span><span class="chiffres">20 km à vol d&#39;oiseau</span></li><li data-ville-liste="lannemezan"><span><span class="zone-num" aria-hidden="true">4</span>Lannemezan</span><span class="chiffres">28 km à vol d&#39;oiseau</span></li><li data-ville-liste="pau"><span><span class="zone-num" aria-hidden="true">5</span>Pau</span><span class="chiffres">37 km à vol d&#39;oiseau</span></li>
+      </ul>
+      <p class="note indice-survol">Survolez une commune pour la mettre en avant.</p>
+      <p class="note indice-toucher">Touchez une commune pour la mettre en avant.</p>
+    </div>
+    <div class="carte" data-carte data-visuel><svg class="carte-svg" viewBox="0 0 600 400" aria-hidden="true" focusable="false">
+    <path class="carte-crete" d="M0 372 L40 350 L70 362 L110 328 L150 348 L190 318 L230 340 L262 300 L300 330 L338 306 L372 336 L410 312 L450 342 L492 316 L530 346 L570 326 L600 340 L600 400 L0 400Z"/>
+    <path class="carte-trajet" data-trajet="lourdes" d="M346.7 164.9L272.6 278.1" pathLength="1"/><path class="carte-trajet" data-trajet="bagneres" d="M346.7 164.9L389.7 302.5" pathLength="1"/><path class="carte-trajet" data-trajet="lannemezan" d="M346.7 164.9L529.7 253.3" pathLength="1"/><path class="carte-trajet" data-trajet="pau" d="M346.7 164.9L78.3 113.8" pathLength="1"/>
+    <g class="carte-point" data-point="tarbes" transform="translate(346.7 164.9)"><path class="carte-visee" d="M-24 -13V-24H-13M13 -24H24V-13M24 13V24H13M-13 24H-24V13"/></g><g class="carte-point" data-point="lourdes" transform="translate(272.6 278.1)"><path class="carte-visee" d="M-24 -13V-24H-13M13 -24H24V-13M24 13V24H13M-13 24H-24V13"/></g><g class="carte-point" data-point="bagneres" transform="translate(389.7 302.5)"><path class="carte-visee" d="M-24 -13V-24H-13M13 -24H24V-13M24 13V24H13M-13 24H-24V13"/></g><g class="carte-point" data-point="lannemezan" transform="translate(529.7 253.3)"><path class="carte-visee" d="M-24 -13V-24H-13M13 -24H24V-13M24 13V24H13M-13 24H-24V13"/></g><g class="carte-point" data-point="pau" transform="translate(78.3 113.8)"><path class="carte-visee" d="M-24 -13V-24H-13M13 -24H24V-13M24 13V24H13M-13 24H-24V13"/></g>
+  </svg>
+  <p class="carte-crete-nom" aria-hidden="true">Pyrénées</p>
+  <button type="button" class="carte-repere carte-repere--studio" data-ville="tarbes" data-repere style="left:57.78%;top:41.23%" aria-pressed="false" aria-label="Tarbes : le studio"><span aria-hidden="true">1</span></button><button type="button" class="carte-repere" data-ville="lourdes" data-repere style="left:45.44%;top:69.54%" aria-pressed="false" aria-label="Lourdes : 18 km à vol d&#39;oiseau"><span aria-hidden="true">2</span></button><button type="button" class="carte-repere" data-ville="bagneres" data-repere style="left:64.95%;top:75.63%" aria-pressed="false" aria-label="Bagnères-de-Bigorre : 20 km à vol d&#39;oiseau"><span aria-hidden="true">3</span></button><button type="button" class="carte-repere" data-ville="lannemezan" data-repere style="left:88.28%;top:63.32%" aria-pressed="false" aria-label="Lannemezan : 28 km à vol d&#39;oiseau"><span aria-hidden="true">4</span></button><button type="button" class="carte-repere" data-ville="pau" data-repere style="left:13.05%;top:28.45%" aria-pressed="false" aria-label="Pau : 37 km à vol d&#39;oiseau"><span aria-hidden="true">5</span></button></div>
+  </div>
+</section>
+<section class="section contact" id="contact">
+  <div class="conteneur contact-grille">
+    <div class="contact-infos">
+      <p class="sur"><span class="sur-trait" aria-hidden="true"></span>Contact</p>
+      <h2 class="titre-section">Écrire à PausePhoto65</h2>
+      <p>Une question, une date, une envie : un message suffit. Formulaire simulé : rien n&#39;est envoyé.</p>
+      <dl class="coordonnees">
+        <div><dt>E-mail</dt><dd><a href="mailto:Pausephoto65@gmail.com">Pausephoto65@gmail.com</a></dd></div>
+        <div><dt>Le studio</dt><dd>62 rue André Fourcade<br>65000 Tarbes</dd></div>
+        <div><dt>Sur les réseaux</dt><dd><ul class="liens-simples"><li><a href="https://www.instagram.com/pausephoto65/" target="_blank" rel="noopener">Instagram<span class="visuellement-cache"> (nouvel onglet)</span></a></li><li><a href="https://www.facebook.com/pausephoto65/" target="_blank" rel="noopener">Facebook<span class="visuellement-cache"> (nouvel onglet)</span></a></li></ul></dd></div>
+      </dl>
+      <figure data-mise-au-point class="media contact-media" style="--flou:url(/assets/images/photos/studio-carte-soleil-flou.webp);--cadrage:50% 45%;aspect-ratio:4 / 3">
+  <picture>
+    <img src="/assets/images/photos/studio-carte-soleil-1280.webp" srcset="/assets/images/photos/studio-carte-soleil-640.webp 640w, /assets/images/photos/studio-carte-soleil-1280.webp 1280w, /assets/images/photos/studio-carte-soleil-1920.webp 1920w" sizes="(max-width: 760px) 92vw, 36vw" alt="Jeune femme assise dans un fauteuil du studio, une carte entre les mains" width="1280" height="1920" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </div>
+    <form class="formulaire" data-formulaire action="#" novalidate>
+      <div class="champs-2">
+        <div class="champ"><label for="c-nom">Nom</label><input id="c-nom" name="nom" autocomplete="family-name" required></div>
+        <div class="champ"><label for="c-prenom">Prénom (facultatif)</label><input id="c-prenom" name="prenom" autocomplete="given-name"></div>
+      </div>
+      <div class="champ"><label for="c-email">E-mail</label><input id="c-email" name="email" type="email" autocomplete="email" required></div>
+      <div class="champ"><label for="c-tel">Téléphone (facultatif)</label><input id="c-tel" name="tel" type="tel" autocomplete="tel"></div>
+      <div class="champ"><label for="c-sujet">Sujet</label>
+        <select id="c-sujet" name="sujet">
+          <option value="seance">Une séance</option>
+          <option value="renaissance">La séance Renaissance</option>
+          <option value="evenement">Un événement</option>
+          <option value="autre">Autre chose</option>
+        </select></div>
+      <div class="champ"><label for="c-message">Votre message</label><textarea id="c-message" name="message" rows="6" required></textarea></div>
+      <p class="mention-donnees">Vos données servent seulement à répondre à votre message. <a href="/mentions-legales#confidentialite">Politique de confidentialité</a> (à compléter).</p>
+      <button type="submit" class="bouton">Envoyer le message <svg class="icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <p data-message-envoi role="status" tabindex="-1" hidden data-texte="Message simulé : rien n&#39;a été envoyé. Sur le site final, il partira vers PausePhoto65."></p>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-haut">
+    <p class="pied-mot" aria-hidden="true">Pause, <em>pose</em>.</p>
+  </div>
+  <div class="conteneur pied-grille">
+    <div>
+      <img class="pied-logo" src="/assets/images/logo/logo-144.webp" alt="Logo de PausePhoto65" width="72" height="72" loading="lazy">
+      <p class="pied-titre">PausePhoto65</p>
+      <p>62 rue André Fourcade<br>65000 Tarbes<br><a href="mailto:Pausephoto65@gmail.com">Pausephoto65@gmail.com</a></p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p class="pied-titre">Sommaire</p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/galerie" data-libelle="Galerie">Galerie</a></li><li><a href="/seances" data-libelle="Séances &amp; tarifs">Séances &amp; tarifs</a></li><li><a href="/evenements" data-libelle="Événements">Événements</a></li><li><a href="/a-propos" data-libelle="À propos &amp; contact" aria-current="page">À propos &amp; contact</a></li><li><a href="/mentions-legales" data-libelle="Mentions légales">Mentions légales</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Réseaux</p>
+      <ul><li><a href="https://www.instagram.com/pausephoto65/" target="_blank" rel="noopener">Instagram<span class="visuellement-cache"> (nouvel onglet)</span></a></li><li><a href="https://www.facebook.com/pausephoto65/" target="_blank" rel="noopener">Facebook<span class="visuellement-cache"> (nouvel onglet)</span></a></li></ul>
+    </div>
+    <div>
+      <p class="pied-titre">Confort</p>
+      <ul>
+        <li><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></li>
+        <li><a href="#haut" data-sans-transition>Retour en haut</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas"><p>Maquette : les informations marquées « à compléter » seront fournies par PausePhoto65.</p><p>© PausePhoto65</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="mailto:Pausephoto65@gmail.com">Écrire</a>
+  <a class="bouton" href="/seances#reservation" data-libelle="Séances &amp; tarifs">Réserver</a>
+</div>
+</body>
+</html>

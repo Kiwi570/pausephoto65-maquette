@@ -1,0 +1,42 @@
+[
+ {
+  "id": "solo",
+  "nom": "Séance solo",
+  "duree": "1 h",
+  "prix": 80,
+  "pour": "Une séance rien que pour vous",
+  "photo": "photos/studio-chaise-pull-blanc",
+  "cadrage": "50% 30%",
+  "inclus": "Nombre de photos et délai de livraison : à compléter."
+ },
+ {
+  "id": "duo",
+  "nom": "Séance duo",
+  "duree": "1 h",
+  "prix": 90,
+  "pour": "En couple, entre sœurs, parent et enfant",
+  "photo": "photos/famille-maman-bebe-canape",
+  "cadrage": "50% 35%",
+  "inclus": "Nombre de photos et délai de livraison : à compléter."
+ },
+ {
+  "id": "famille",
+  "nom": "Séance famille & aînés",
+  "duree": "1 h",
+  "prix": 100,
+  "pour": "Parents, enfants, grands-parents",
+  "photo": "photos/automne-famille-bebe",
+  "cadrage": "50% 35%",
+  "inclus": "Nombre de photos et délai de livraison : à compléter."
+ },
+ {
+  "id": "pro",
+  "nom": "Portrait pro ou petits créateurs",
+  "duree": "1 h",
+  "prix": 80,
+  "pour": "Pour votre activité : CV, LinkedIn, communication, créations",
+  "photo": "photos/creatrice-cadre-coeur",
+  "cadrage": "50% 40%",
+  "inclus": "Nombre de photos et délai de livraison : à compléter."
+ }
+]

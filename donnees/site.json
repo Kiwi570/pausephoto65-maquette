@@ -1,0 +1,22 @@
+{
+  "nom": "PausePhoto65",
+  "adresse": "https://pausephoto65-maquette.vercel.app",
+  "siteActuel": "pausephoto65.fr",
+  "version": 1,
+  "langues": ["fr"],
+  "navigation": ["accueil", "galerie", "seances", "evenements", "a-propos"],
+  "actionEntete": { "page": "seances", "ancre": "reservation" },
+  "couleurs": { "fond": "#f2ece3", "texte": "#1e1a17", "voile": "#1e1a17", "ouverture": "#f2ece3", "menu": "#f2ece3", "theme": "#f2ece3" },
+  "contact": {
+    "email": "Pausephoto65@gmail.com",
+    "adresse": "62 rue André Fourcade",
+    "codePostal": "65000",
+    "ville": "Tarbes",
+    "facebook": "https://www.facebook.com/pausephoto65/",
+    "instagram": "https://www.instagram.com/pausephoto65/"
+  },
+  "lieu": { "latitude": 43.2328, "longitude": 0.0781, "fuseau": "Europe/Paris" },
+  "polices": ["/assets/fonts/fraunces.woff2", "/assets/fonts/manrope.woff2"],
+  "imagePartage": "photos/regard-epaule-1280.webp",
+  "curseur": true
+}

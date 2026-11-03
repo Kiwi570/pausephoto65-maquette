@@ -1,0 +1,26 @@
+[
+ {
+  "id": "renaissance",
+  "nom": "Formule Renaissance",
+  "prix": 260,
+  "duree": "environ 4 h",
+  "inclus": [
+   "Un temps d'échange sur votre histoire et des exercices personnalisés",
+   "Un maquillage professionnel naturel",
+   "2 h de prise de vue",
+   "4 à 5 tenues que vous apportez, de la plus simple à la plus élégante",
+   "Un accompagnement tout au long de la séance",
+   "Un diaporama à la fin de la séance"
+  ]
+ },
+ {
+  "id": "transformation",
+  "nom": "Formule Transformation",
+  "prix": 340,
+  "duree": "environ 4 h",
+  "inclus": [
+   "Tout ce que comprend la formule Renaissance",
+   "**En plus : une coiffure professionnelle**"
+  ]
+ }
+]

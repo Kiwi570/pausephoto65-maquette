@@ -1,0 +1,20 @@
+[
+ {
+  "id": "portraits",
+  "titre": "Portraits — individuel & famille",
+  "court": "Portraits",
+  "texte": "Au studio ou dehors, en solo, à deux ou en famille : des portraits sincères, en lumière naturelle ou travaillée."
+ },
+ {
+  "id": "regard",
+  "titre": "Regard personnel",
+  "court": "Regard personnel",
+  "texte": "Ses images personnelles : voyages, paysages, rencontres."
+ },
+ {
+  "id": "pro",
+  "titre": "Portrait professionnel",
+  "court": "Portrait pro",
+  "texte": "Portraits pour votre activité et séances pour les petits créateurs : vous, vos mains, vos créations."
+ }
+]

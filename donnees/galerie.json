@@ -1,0 +1,322 @@
+[
+ {
+  "id": "portraits-01",
+  "univers": "portraits",
+  "photo": "photos/regard-epaule",
+  "alt": "Portrait rapproché d'une femme qui regarde par-dessus son épaule, boucles d'oreilles fleuries",
+  "ratio": 0.6667,
+  "couleur": "#6c5142"
+ },
+ {
+  "id": "portraits-02",
+  "univers": "portraits",
+  "photo": "photos/studio-blouson-cuir-main",
+  "alt": "Jeune femme en blouson de cuir noir, main dans les cheveux, sur fond beige",
+  "ratio": 0.6833,
+  "couleur": "#766457"
+ },
+ {
+  "id": "portraits-03",
+  "univers": "portraits",
+  "photo": "photos/studio-dos-noir",
+  "alt": "Jeune femme de dos qui se retourne vers l'objectif, haut noir, fond beige",
+  "ratio": 0.6873,
+  "couleur": "#a48877"
+ },
+ {
+  "id": "portraits-04",
+  "univers": "portraits",
+  "photo": "photos/coquelicots-chapeau-dos",
+  "alt": "Femme au chapeau de paille, de dos, dans un champ de coquelicots",
+  "ratio": 0.8097,
+  "couleur": "#c0a672"
+ },
+ {
+  "id": "portraits-05",
+  "univers": "portraits",
+  "photo": "photos/coquelicots-chapeau-sourire",
+  "alt": "Femme souriante au chapeau de paille, les yeux fermés, parmi les coquelicots",
+  "ratio": 0.7719,
+  "couleur": "#d39d7a"
+ },
+ {
+  "id": "portraits-06",
+  "univers": "portraits",
+  "photo": "photos/sourire-fleurs-accoudee",
+  "alt": "Jeune femme souriante, accoudée, des fleurs dans les cheveux",
+  "ratio": 1.5,
+  "couleur": "#966d5d"
+ },
+ {
+  "id": "portraits-07",
+  "univers": "portraits",
+  "photo": "photos/studio-lumiere-fenetre",
+  "alt": "Jeune femme assise près d'une chaise, la lumière d'une fenêtre dessinée sur le fond sombre",
+  "ratio": 0.7262,
+  "couleur": "#3e383b"
+ },
+ {
+  "id": "portraits-08",
+  "univers": "portraits",
+  "photo": "photos/studio-chaise-pull-blanc",
+  "alt": "Jeune femme assise sur une chaise, pull blanc, la main contre la joue",
+  "ratio": 0.7573,
+  "couleur": "#a9a2a9"
+ },
+ {
+  "id": "portraits-09",
+  "univers": "portraits",
+  "photo": "photos/studio-pouf-pull-gris",
+  "alt": "Jeune femme assise sur un pouf blanc, pull gris, regard pensif",
+  "ratio": 0.7199,
+  "couleur": "#d6c3af"
+ },
+ {
+  "id": "portraits-10",
+  "univers": "portraits",
+  "photo": "photos/studio-robe-satin-dos",
+  "alt": "Femme en robe de satin noir, de dos, les bras levés, fond beige",
+  "ratio": 0.8278,
+  "couleur": "#d5b396"
+ },
+ {
+  "id": "portraits-11",
+  "univers": "portraits",
+  "photo": "photos/studio-robe-noire-sourire",
+  "alt": "Femme souriante en robe noire, une main dans les cheveux, fond beige",
+  "ratio": 1.0605,
+  "couleur": "#a2846c"
+ },
+ {
+  "id": "portraits-12",
+  "univers": "portraits",
+  "photo": "photos/studio-assise-fond-blanc",
+  "alt": "Jeune femme assise au sol sur fond clair, chemisier ajouré et jean",
+  "ratio": 0.755,
+  "couleur": "#a69fa7"
+ },
+ {
+  "id": "portraits-13",
+  "univers": "portraits",
+  "photo": "photos/grossesse-profil",
+  "alt": "Femme enceinte de profil en robe noire, une main sur le ventre",
+  "ratio": 0.7125,
+  "couleur": "#977a62"
+ },
+ {
+  "id": "portraits-14",
+  "univers": "portraits",
+  "photo": "photos/grossesse-mains-coeur",
+  "alt": "Femme enceinte assise, les mains en cœur sur le ventre",
+  "ratio": 0.7418,
+  "couleur": "#a78564"
+ },
+ {
+  "id": "portraits-15",
+  "univers": "portraits",
+  "photo": "photos/famille-maman-bebe-canape",
+  "alt": "Maman qui serre son bébé contre elle sur un canapé",
+  "ratio": 0.823,
+  "couleur": "#968175"
+ },
+ {
+  "id": "portraits-16",
+  "univers": "portraits",
+  "photo": "photos/famille-nouveau-ne-couleur",
+  "alt": "Parents qui embrassent leur nouveau-né",
+  "ratio": 0.7557,
+  "couleur": "#7c5a4a"
+ },
+ {
+  "id": "portraits-17",
+  "univers": "portraits",
+  "photo": "photos/automne-famille-bebe",
+  "alt": "Un couple et son bébé en forêt, à l'automne",
+  "ratio": 0.6958,
+  "couleur": "#8b7865"
+ },
+ {
+  "id": "portraits-18",
+  "univers": "portraits",
+  "photo": "photos/hiver-noel-maman-fille",
+  "alt": "Maman et sa petite fille dans un décor de Noël, plaid et sapin",
+  "ratio": 0.7859,
+  "couleur": "#816a59"
+ },
+ {
+  "id": "portraits-19",
+  "univers": "portraits",
+  "photo": "photos/automne-foret-debout",
+  "alt": "Jeune femme debout dans un sous-bois d'automne, manteau clair et jean bleu",
+  "ratio": 0.7032,
+  "couleur": "#575557"
+ },
+ {
+  "id": "portraits-20",
+  "univers": "portraits",
+  "photo": "photos/studio-nb-assise-sol",
+  "alt": "Portrait en noir et blanc d'une jeune femme assise au sol, jambes repliées",
+  "ratio": 1.5,
+  "couleur": "#bebebe"
+ },
+ {
+  "id": "regard-01",
+  "univers": "regard",
+  "photo": "photos/lisbonne-rue",
+  "alt": "Rue de Lisbonne avec ses rails de tramway et ses passants",
+  "ratio": 0.7225,
+  "couleur": "#635c58"
+ },
+ {
+  "id": "regard-02",
+  "univers": "regard",
+  "photo": "photos/lisbonne-pont-colonnes",
+  "alt": "Deux colonnes de pierre dans l'eau, face à un grand pont suspendu, à Lisbonne",
+  "ratio": 0.7689,
+  "couleur": "#7b858e"
+ },
+ {
+  "id": "regard-03",
+  "univers": "regard",
+  "photo": "photos/lisbonne-rocher",
+  "alt": "Promeneuse au pied d'une paroi rocheuse sculptée par l'érosion",
+  "ratio": 0.6667,
+  "couleur": "#76674e"
+ },
+ {
+  "id": "regard-04",
+  "univers": "regard",
+  "photo": "photos/lisbonne-pont-portrait",
+  "alt": "Jeune femme accoudée à une rambarde, un pont suspendu en arrière-plan",
+  "ratio": 1.5298,
+  "couleur": "#c1b4a7"
+ },
+ {
+  "id": "regard-05",
+  "univers": "regard",
+  "photo": "photos/coucher-soleil-collines",
+  "alt": "Coucher de soleil orangé sur des collines boisées",
+  "ratio": 2.0,
+  "couleur": "#7c573e"
+ },
+ {
+  "id": "regard-06",
+  "univers": "regard",
+  "photo": "photos/crepuscule-mer",
+  "alt": "Ciel violet au crépuscule au-dessus de la mer",
+  "ratio": 0.667,
+  "couleur": "#4c4164"
+ },
+ {
+  "id": "regard-07",
+  "univers": "regard",
+  "photo": "photos/cote-brume",
+  "alt": "Côte rocheuse dans la brume",
+  "ratio": 0.667,
+  "couleur": "#96989d"
+ },
+ {
+  "id": "regard-08",
+  "univers": "regard",
+  "photo": "photos/oiseaux-rocher",
+  "alt": "Deux petits oiseaux de rivage sur un rocher",
+  "ratio": 1.4993,
+  "couleur": "#bfbdbb"
+ },
+ {
+  "id": "regard-09",
+  "univers": "regard",
+  "photo": "photos/oeil-chat",
+  "alt": "Gros plan sur l'œil d'un chat",
+  "ratio": 1.7809,
+  "couleur": "#79746c"
+ },
+ {
+  "id": "pro-01",
+  "univers": "pro",
+  "photo": "photos/creatrice-cadre-coeur",
+  "alt": "Créatrice qui présente un cadre de fleurs pressées en forme de cœur",
+  "ratio": 0.756,
+  "couleur": "#73716d"
+ },
+ {
+  "id": "pro-02",
+  "univers": "pro",
+  "photo": "photos/creatrice-atelier",
+  "alt": "Créatrice souriante à sa table de travail, entourée de pétales",
+  "ratio": 0.7704,
+  "couleur": "#cdae94"
+ },
+ {
+  "id": "pro-03",
+  "univers": "pro",
+  "photo": "photos/creatrice-pinceau",
+  "alt": "Mains qui posent des pétales séchés au pinceau",
+  "ratio": 1.5,
+  "couleur": "#a28e75"
+ },
+ {
+  "id": "pro-04",
+  "univers": "pro",
+  "photo": "photos/creatrice-trois-cadres",
+  "alt": "Créatrice assise dans un jardin avec trois cadres de fleurs pressées",
+  "ratio": 0.7481,
+  "couleur": "#9b998d"
+ },
+ {
+  "id": "pro-05",
+  "univers": "pro",
+  "photo": "photos/creatrice-cadre-fleurs-bleues",
+  "alt": "Créatrice assise qui présente un cadre de fleurs pressées bleues",
+  "ratio": 0.8636,
+  "couleur": "#b1b3b5"
+ },
+ {
+  "id": "pro-06",
+  "univers": "pro",
+  "photo": "photos/creatrice-table-dessus",
+  "alt": "Table d'atelier vue de dessus : compositions de fleurs pressées et coupelles de pétales",
+  "ratio": 1.5,
+  "couleur": "#b18a6e"
+ },
+ {
+  "id": "pro-07",
+  "univers": "pro",
+  "photo": "photos/creatrice-cadre-mains",
+  "alt": "Mains qui tiennent un cadre de fleurs pressées multicolores",
+  "ratio": 0.7981,
+  "couleur": "#726b65"
+ },
+ {
+  "id": "pro-08",
+  "univers": "pro",
+  "photo": "photos/creatrice-cadre-exterieur",
+  "alt": "Cadre de fleurs pressées bleues posé sur un plaid, dans un jardin",
+  "ratio": 0.6667,
+  "couleur": "#666a5b"
+ },
+ {
+  "id": "pro-09",
+  "univers": "pro",
+  "photo": "photos/blazer-sourire",
+  "alt": "Portrait professionnel d'une femme souriante en blazer noir, de profil",
+  "ratio": 0.6976,
+  "couleur": "#958374"
+ },
+ {
+  "id": "pro-10",
+  "univers": "pro",
+  "photo": "photos/blazer-profil",
+  "alt": "Portrait professionnel d'une femme en blazer noir, le regard baissé",
+  "ratio": 0.8365,
+  "couleur": "#a68e7c"
+ },
+ {
+  "id": "pro-11",
+  "univers": "pro",
+  "photo": "photos/detail-baskets",
+  "alt": "Détail : une main qui lace une basket blanche",
+  "ratio": 1.1514,
+  "couleur": "#a89889"
+ }
+]

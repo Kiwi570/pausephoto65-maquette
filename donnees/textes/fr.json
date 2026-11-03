@@ -1,0 +1,448 @@
+{
+ "commun": {
+  "navigation": "Navigation principale",
+  "menu": "Menu",
+  "fermer": "Fermer",
+  "actionEntete": "Réserver",
+  "ecrire": "Écrire",
+  "ecrireLong": "Écrire à PausePhoto65",
+  "calmeReduire": "Réduire les animations",
+  "calmeRetablir": "Rétablir les animations",
+  "calmeSysteme": "Animations réduites par le réglage de votre appareil",
+  "sommaire": "Sommaire",
+  "confort": "Confort",
+  "retourHaut": "Retour en haut",
+  "reseaux": "Réseaux",
+  "facebook": "Facebook",
+  "instagram": "Instagram",
+  "nouvelOnglet": "(nouvel onglet)",
+  "studio": "Le studio",
+  "maquette": "Maquette : les informations marquées « à compléter » seront fournies par PausePhoto65.",
+  "evitement": "Aller au contenu",
+  "mentionIa": "Illustration générée",
+  "pause": "Pause",
+  "lecture": "Lecture",
+  "introLigne": "Photographe à Tarbes",
+  "glisser": "Faites glisser",
+  "aCompleter": "à compléter",
+  "des": "dès",
+  "euros": "€",
+  "heure": "1 h",
+  "fiche": "Réserver cette séance",
+  "piedMot": "Pause, <em>pose</em>.",
+  "aRemplir": "à remplir.",
+  "aChoisir": "à choisir.",
+  "etapeSur": "Étape {i} sur {n}"
+ },
+ "pages": {
+  "accueil": {
+   "titre": "PausePhoto65 : photographe à Tarbes, portraits et événements",
+   "description": "PausePhoto65, photographe à Tarbes dans les Hautes-Pyrénées : portraits individuels et de famille, portraits professionnels, mariages et événements, au studio ou en extérieur.",
+   "nav": "Accueil",
+   "partageAlt": "PausePhoto65, photographe à Tarbes : portrait d'une femme qui regarde par-dessus son épaule",
+   "accroche": "Faites une pause."
+  },
+  "galerie": {
+   "titre": "Galerie : portraits, regard personnel et portraits pro, PausePhoto65",
+   "description": "La galerie de PausePhoto65, photographe à Tarbes : portraits individuels et de famille, regard personnel, portraits professionnels et petits créateurs.",
+   "nav": "Galerie",
+   "partageAlt": "Galerie de PausePhoto65 : portraits en studio et en extérieur",
+   "accroche": "Trois regards, une galerie"
+  },
+  "seances": {
+   "titre": "Séances et tarifs : solo, duo, famille, pro, PausePhoto65 à Tarbes",
+   "description": "Séances photo d'une heure à Tarbes dès 80 €, séance Renaissance d'une demi-journée, séances de saison : choisissez votre séance et réservez votre créneau.",
+   "nav": "Séances & tarifs",
+   "partageAlt": "Séances photo PausePhoto65 à Tarbes, dès 80 €",
+   "accroche": "Choisissez votre séance"
+  },
+  "evenements": {
+   "titre": "Mariage, baptême, anniversaire : photographe à Tarbes, PausePhoto65",
+   "description": "Photographe d'événements à Tarbes : mariage, baptême, anniversaire. Une présence discrète, des émotions spontanées. Forfaits à la demi-journée dès 500 €.",
+   "nav": "Événements",
+   "partageAlt": "Maman qui tient son bébé dans les bras, dans une église, le jour du baptême",
+   "accroche": "Votre journée, sans poses forcées"
+  },
+  "a-propos": {
+   "titre": "La photographe et le contact, PausePhoto65 à Tarbes",
+   "description": "Qui est derrière PausePhoto65 : une approche artistique du portrait, une retouche légère, un studio à Tarbes. Écrire, venir au studio, zone de déplacement.",
+   "nav": "À propos & contact",
+   "partageAlt": "La photographe de PausePhoto65 en studio",
+   "accroche": "Derrière l'objectif"
+  },
+  "mentions-legales": {
+   "titre": "Mentions légales et confidentialité, PausePhoto65",
+   "description": "Éditeur, hébergeur, crédits des photographies et des illustrations, politique de confidentialité du site PausePhoto65.",
+   "nav": "Mentions légales",
+   "partageAlt": "Mentions légales de PausePhoto65",
+   "accroche": "Mentions légales"
+  },
+  "404": {
+   "titre": "Page hors champ, PausePhoto65",
+   "description": "Cette page n'existe pas ou plus.",
+   "nav": "Page introuvable",
+   "partageAlt": "Page introuvable",
+   "accroche": "Hors champ"
+  }
+ },
+ "accueil": {
+  "hero": {
+   "titre1": "Faites une",
+   "titre2": "pause.",
+   "texte": "Portraits et événements : photographe à Tarbes, dans les Hautes-Pyrénées, au studio ou en extérieur.",
+   "action": "Réserver une séance",
+   "info": "Séances d'une heure dès 80 €",
+   "galerie": "Voir la galerie"
+  },
+  "manifeste": {
+   "sur": "Son regard",
+   "titre": "Des portraits qui vous ressemblent.",
+   "texte": "Au studio, des accessoires et des conseils pour poser à votre manière. Dehors, la lumière de fin de journée. Puis une retouche légère, sans transformer la réalité.",
+   "citation": "Mon objectif : capter l'authenticité, raconter des histoires.",
+   "lien": "Sa façon de travailler"
+  },
+  "regards": {
+   "sur": "Trois regards",
+   "titre": "Une planche contact, trois univers",
+   "texte": "Les vues entourées au crayon mènent chacune à un univers de la galerie.",
+   "voir": "Voir l'univers"
+  },
+  "seances": {
+   "sur": "Les séances",
+   "titre": "Une heure pour vous, ou une demi-journée",
+   "texte": "Au studio ou en extérieur : en solo, à deux, en famille ou pour votre activité.",
+   "renaissance": "Séance Renaissance",
+   "renaissancePour": "Une demi-journée accompagnée, maquillage compris",
+   "renaissanceDuree": "environ 4 h",
+   "tout": "Toutes les séances et le guide",
+   "renaissanceLien": "Découvrir la séance"
+  },
+  "evenements": {
+   "sur": "Vos événements",
+   "titre": "Mariage, baptême, anniversaire",
+   "texte": "Une présence discrète, des émotions spontanées, sans poses forcées.",
+   "lien": "Découvrir les forfaits"
+  },
+  "saisons": {
+   "sur": "Au fil des saisons",
+   "titre": "Les séances de saison",
+   "texte": "Des décors et des lumières qui changent avec l'année : Pâques, printemps, été, automne, hiver.",
+   "lien": "Détail des séances de saison"
+  },
+  "photographe": {
+   "sur": "La photographe",
+   "titre": "Une passion née dans les albums de famille",
+   "texte": "Sa passion lui vient de son père, qui avait toujours un appareil photo à la main. Aujourd'hui, son approche est artistique, principalement en portrait.",
+   "citation": "Je retouche peu mes photos, juste assez pour révéler la lumière.",
+   "lien": "Faire connaissance"
+  },
+  "heure": {
+   "sur": "Studio ou extérieur",
+   "titre": "Suivre la lumière",
+   "texte": "Au studio du 62 rue André Fourcade, à Tarbes, ou dehors : à Lourdes, Bagnères-de-Bigorre, Lannemezan, Pau et dans les communes alentour.",
+   "lien": "Voir la zone de déplacement"
+  },
+  "fin": {
+   "titre": "Parlons de votre séance.",
+   "texte": "Une séance d'une heure, une demi-journée Renaissance ou toute une journée de fête : écrivez à PausePhoto65 ce que vous imaginez.",
+   "reserver": "Réserver une séance",
+   "date": "Demander une date",
+   "ecrire": "Écrire"
+  }
+ },
+ "heure": {
+  "titre": "Aujourd'hui à Tarbes",
+  "lever": "Lever du soleil",
+  "coucher": "Coucher du soleil",
+  "doree": "Heure dorée du soir",
+  "maintenant": "Maintenant",
+  "note": "Calculé en direct pour Tarbes, à titre indicatif.",
+  "sansJs": "L'heure dorée, c'est environ la dernière heure avant le coucher du soleil : la lumière la plus douce pour une séance en extérieur.",
+  "alt": "Course du soleil sur la journée à Tarbes"
+ },
+ "galerie": {
+  "titre": "Galerie",
+  "texte": "Trois univers, {n} photos. Choisissez un univers ou parcourez toute la galerie, puis ouvrez une photo pour la voir en grand.",
+  "info": "Séances d'une heure dès 80 €",
+  "action": "Réserver une séance",
+  "filtres": "Filtrer la galerie",
+  "tous": "Tout",
+  "photos": "photos",
+  "region": "Photos de l'univers {u}, défilement horizontal",
+  "ouvrir": "Ouvrir la photo",
+  "visionneuse": "Visionneuse",
+  "precedente": "Photo précédente",
+  "suivante": "Photo suivante",
+  "fermer": "Fermer la visionneuse",
+  "position": "Photo {i} sur {n}",
+  "finTitre": "Une de ces images vous ressemble ?",
+  "finTexte": "Chaque séance commence par un échange : vos envies, le lieu, la lumière.",
+  "finReserver": "Réserver une séance",
+  "finEcrire": "Écrire"
+ },
+ "seances": {
+  "titre": "Choisissez votre séance",
+  "texte": "Une heure au studio ou en extérieur, une demi-journée Renaissance ou une séance de saison, chacune avec son prix.",
+  "action": "Réserver une séance",
+  "info": "Séances d'une heure dès 80 €",
+  "guide": {
+   "sur": "Le guide",
+   "titre": "Quelle séance pour moi ?",
+   "texte": "Deux questions, une réponse, avec le prix. Tournez la bague, ou choisissez ci-dessous.",
+   "qui": "Pour qui, pour quoi ?",
+   "ou": "Où ?",
+   "studio": "Au studio",
+   "exterieur": "En extérieur",
+   "indifferent": "Je ne sais pas encore",
+   "resultat": "Le conseil de PausePhoto65",
+   "reserver": "Réserver cette séance",
+   "lieuStudio": "Au studio du 62 rue André Fourcade, à Tarbes.",
+   "lieuExterieur": "En extérieur, à Tarbes ou alentour : la fin de journée donne la lumière la plus douce.",
+   "lieuIndifferent": "Au studio ou en extérieur : on en parle au premier échange.",
+   "bague": "Bague de choix de la séance",
+   "choix": {
+    "solo": "Moi",
+    "duo": "À deux",
+    "famille": "En famille",
+    "pro": "Mon activité",
+    "renaissance": "Une demi-journée pour moi"
+   }
+  },
+  "heure": {
+   "sur": "Les séances d'une heure",
+   "titre": "Une heure, une histoire",
+   "texte": "Studio ou extérieur, selon vos envies."
+  },
+  "renaissance": {
+   "sur": "Une demi-journée pour vous",
+   "titre": "Séance Renaissance",
+   "texte": "Une demi-journée de séance accompagnée, avec maquillage professionnel, plusieurs tenues et deux heures de prise de vue.",
+   "deroule": "Le déroulé",
+   "etape1": "Un temps d'échange sur votre histoire",
+   "etape2": "Maquillage naturel, plus la coiffure avec la formule Transformation",
+   "etape3": "2 h de prise de vue, 4 à 5 tenues",
+   "etape4": "Le diaporama de fin de séance",
+   "reserver": "Réserver cette formule"
+  },
+  "saisons": {
+   "sur": "Au fil des saisons",
+   "titre": "Les séances de saison",
+   "texte": "Des décors et des lumières qui changent avec l'année : chaque séance de saison ouvre à sa période.",
+   "ouvert": "Ouvert à la réservation",
+   "avenir": "Ouverture à venir",
+   "clos": "Revient mi-mars",
+   "inconnu": "Dates et tarif à compléter",
+   "reserver": "Réserver"
+  },
+  "studio": {
+   "sur": "Studio ou extérieur",
+   "titre": "Le studio, ou dehors",
+   "texte": "Le studio se trouve 62 rue André Fourcade, à Tarbes. Des accessoires y sont à votre disposition, avec des conseils pour poser à votre manière. Pour les séances en extérieur, la photographe se déplace à Tarbes et alentour.",
+   "lien": "Voir la zone de déplacement"
+  },
+  "reservation": {
+   "sur": "Réservation",
+   "titre": "Réserver un créneau",
+   "texte": "Trois étapes : la séance, le jour et l'heure, vos coordonnées. Réservation simulée : rien n'est envoyé.",
+   "etape1": "1. La séance",
+   "etape2": "2. Le jour et l'heure",
+   "etape3": "3. Vos coordonnées",
+   "seance": "Séance",
+   "jour": "Jour",
+   "creneau": "Créneau",
+   "creneauxNote": "Créneaux d'exemple : les vraies disponibilités seront données par PausePhoto65.",
+   "moisPrecedent": "Mois précédent",
+   "moisSuivant": "Mois suivant",
+   "aujourdhui": "aujourd'hui",
+   "suivant": "Étape suivante",
+   "precedent": "Étape précédente",
+   "recap": "Récapitulatif",
+   "recapVide": "Choisissez une séance pour commencer.",
+   "total": "Total",
+   "aucunJour": "Jour à choisir",
+   "aucunCreneau": "Créneau à choisir",
+   "nom": "Nom",
+   "prenom": "Prénom",
+   "email": "E-mail",
+   "tel": "Téléphone (facultatif)",
+   "message": "Votre message (facultatif)",
+   "envoyer": "Envoyer la demande de réservation",
+   "envoye": "Réservation simulée : rien n'a été envoyé. Sur le site final, la demande partira vers PausePhoto65.",
+   "donnees": "Vos données servent seulement à répondre à votre demande. <a href=\"/mentions-legales#confidentialite\">Politique de confidentialité</a> (à compléter).",
+   "choisirJour": "Choisissez un jour.",
+   "choisirCreneau": "Choisissez un créneau."
+  },
+  "faq": {
+   "sur": "Questions pratiques",
+   "titre": "Avant de réserver"
+  },
+  "fin": {
+   "titre": "Une question avant de choisir ?",
+   "texte": "Écrivez à PausePhoto65 : un premier échange suffit souvent à trouver la bonne séance.",
+   "ecrire": "Écrire",
+   "galerie": "Revoir la galerie"
+  }
+ },
+ "evenements": {
+  "titre": "Votre journée, sans poses forcées.",
+  "texte": "Mariage, baptême, anniversaire : une présence discrète, des émotions spontanées et des photos de groupe organisées avec vous.",
+  "action": "Demander une date",
+  "info": "Dès 500 € la demi-journée",
+  "approche": {
+   "sur": "L'approche",
+   "titre": "Préparer ensemble, puis s'effacer",
+   "citation": "Toujours présente mais jamais intrusive…",
+   "texte": "Avant l'événement, un échange pour savoir ce que vous voulez mettre en valeur : l'émotion d'un moment, l'ambiance, les détails, les portraits de famille ou d'amis. Le jour venu, les photos de groupe se font à l'horaire prévu ; le reste du temps, aucune pose n'est imposée."
+  },
+  "journee": {
+   "sur": "Le fil de la journée",
+   "titre": "Une demi-journée ou toute la journée ?",
+   "texte": "Faites glisser la plage de présence sur une journée type pour voir les moments couverts.",
+   "exemple": "Exemple : les horaires de votre journée se définissent ensemble.",
+   "demi": "Demi-journée · 4 h",
+   "complete": "Journée · 8 h",
+   "debut": "Début de la présence",
+   "couverts": "Les moments de l'exemple",
+   "aucun": "Aucun moment de l'exemple dans cette plage",
+   "plage": "Plage de présence :",
+   "hors": "hors de la plage"
+  },
+  "forfaits": {
+   "sur": "Les forfaits",
+   "titre": "Quatre forfaits",
+   "texte": "Deux formats pour chaque événement. Le détail des forfaits à la demi-journée est à compléter.",
+   "mariage": "Mariage",
+   "bapteme": "Baptême, anniversaire",
+   "demander": "Choisir ce forfait"
+  },
+  "plus": {
+   "sur": "Les petits plus",
+   "titre": "Organiser les photos avec vous",
+   "groupe": "Des photos de groupe planifiées à un horaire précis",
+   "coin": "Un petit coin photo pour vos invités",
+   "arche": "Une arche décorative pour des portraits en duo ou en groupe"
+  },
+  "demande": {
+   "sur": "Demande de date",
+   "titre": "Demander une date",
+   "texte": "Quatre étapes et un récapitulatif de votre demande. Demande simulée : rien n'est envoyé.",
+   "etape1": "1. L'événement",
+   "etape2": "2. La date et le lieu",
+   "etape3": "3. Le forfait",
+   "etape4": "4. Vos coordonnées",
+   "type": "Type d'événement",
+   "mariage": "Mariage",
+   "bapteme": "Baptême",
+   "anniversaire": "Anniversaire",
+   "autre": "Autre événement",
+   "date": "Date de l'événement",
+   "commune": "Commune",
+   "forfait": "Forfait",
+   "nom": "Nom",
+   "prenom": "Prénom",
+   "email": "E-mail",
+   "tel": "Téléphone (facultatif)",
+   "message": "Votre message (facultatif)",
+   "suivant": "Étape suivante",
+   "precedent": "Étape précédente",
+   "recap": "Récapitulatif",
+   "aChoisir": "à choisir",
+   "envoyer": "Envoyer la demande",
+   "envoye": "Demande simulée : rien n'a été envoyé. Sur le site final, elle partira vers PausePhoto65.",
+   "donnees": "Vos données servent seulement à répondre à votre demande. <a href=\"/mentions-legales#confidentialite\">Politique de confidentialité</a> (à compléter).",
+   "datePassee": "Choisissez une date à venir."
+  }
+ },
+ "apropos": {
+  "titre": "Derrière l'objectif",
+  "citation": "Choisir votre photographe, c'est choisir une histoire qui vous parle.",
+  "texte": "PausePhoto65, c'est une photographe installée à Tarbes : portraits au studio ou en extérieur, événements de famille, et une retouche légère.",
+  "nom": "Prénom de la photographe : à compléter.",
+  "action": "Écrire",
+  "info": "Studio : 62 rue André Fourcade, Tarbes",
+  "album": {
+   "sur": "L'album de famille",
+   "titre": "Tout a commencé à la maison",
+   "texte": "Sa passion est née auprès de son père, qui avait toujours un appareil photo à la main. Les albums de famille occupaient une place importante à la maison. Depuis l'enfance, elle s'intéresse aussi à l'art sous toutes ses formes.",
+   "note": "Les deux photos posées dans l'album sont de PausePhoto65 ; l'album lui-même est une illustration générée."
+  },
+  "facon": {
+   "sur": "Sa façon de faire",
+   "titre": "Révéler, sans travestir",
+   "citation": "Je retouche peu mes photos, juste assez pour révéler la lumière.",
+   "point1": "Aux événements, une présence discrète, sans poses forcées.",
+   "point2": "Au studio, des accessoires à votre disposition et des conseils pour poser à votre manière.",
+   "point3": "Le travail commence dès le premier contact : vos envies, votre histoire, le lieu.",
+   "point4": "Pour un mariage, une coordination avec les autres prestataires de la journée."
+  },
+  "collab": {
+   "sur": "Collaboratrices",
+   "titre": "Ses collaboratrices",
+   "roseraie": "La Roseraie Création",
+   "roseraieTexte": "Des créations artisanales en fleurs pressées et séchées.",
+   "pink": "PinkBaroque",
+   "pinkTexte": "Maquilleuse professionnelle."
+  },
+  "zone": {
+   "sur": "Zone de déplacement",
+   "titre": "Tarbes et alentour",
+   "texte": "Le studio est à Tarbes. Pour une séance en extérieur ou un événement, la photographe se déplace dans les communes alentour.",
+   "km": "km à vol d'oiseau",
+   "studio": "le studio",
+   "carte": "Carte de la zone de déplacement autour de Tarbes",
+   "indice": "Survolez une commune pour la mettre en avant.",
+   "indiceTactile": "Touchez une commune pour la mettre en avant.",
+   "pyrenees": "Pyrénées"
+  },
+  "contact": {
+   "sur": "Contact",
+   "titre": "Écrire à PausePhoto65",
+   "texte": "Une question, une date, une envie : un message suffit. Formulaire simulé : rien n'est envoyé.",
+   "email": "E-mail",
+   "adresse": "Le studio",
+   "reseaux": "Sur les réseaux",
+   "fNom": "Nom",
+   "fPrenom": "Prénom (facultatif)",
+   "fEmail": "E-mail",
+   "fTel": "Téléphone (facultatif)",
+   "fSujet": "Sujet",
+   "sSeance": "Une séance",
+   "sRenaissance": "La séance Renaissance",
+   "sEvenement": "Un événement",
+   "sAutre": "Autre chose",
+   "fMessage": "Votre message",
+   "envoyer": "Envoyer le message",
+   "envoye": "Message simulé : rien n'a été envoyé. Sur le site final, il partira vers PausePhoto65.",
+   "donnees": "Vos données servent seulement à répondre à votre message. <a href=\"/mentions-legales#confidentialite\">Politique de confidentialité</a> (à compléter)."
+  }
+ },
+ "mentions": {
+  "titre": "Mentions légales",
+  "fiche": {
+   "titre": "À fournir par PausePhoto65",
+   "texte": "Nom de la photographe · statut et numéro SIRET · adresse du siège · directeur ou directrice de la publication · téléphone (facultatif) · contenu des séances (nombre de photos, délais) · détail des forfaits à la demi-journée · modalités de paiement et d'annulation · dates des séances de saison · rôle de « Le Cocon de Manon », présent sur le site actuel · logo en fichier source · avis clients réels · politique de confidentialité."
+  },
+  "editeur": {
+   "titre": "Éditeur",
+   "texte": "PausePhoto65, 62 rue André Fourcade, 65000 Tarbes. Pausephoto65@gmail.com. Statut, SIRET et directeur ou directrice de la publication : à compléter."
+  },
+  "hebergeur": {
+   "titre": "Hébergeur",
+   "texte": "Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis."
+  },
+  "credits": {
+   "titre": "Crédits",
+   "texte": "Photographies : PausePhoto65, sauf les logos de La Roseraie Création et de PinkBaroque. Les images marquées « Illustration générée » ont été créées par intelligence artificielle : elles servent d'ambiance et ne montrent pas le travail de la photographe. Polices Fraunces et Manrope, sous licence SIL Open Font License."
+  },
+  "confidentialite": {
+   "titre": "Confidentialité",
+   "texte": "Politique de confidentialité à compléter (RGPD) : données recueillies par les formulaires, finalité, durée de conservation, droits d'accès, de rectification et de suppression. Sur cette maquette, aucun formulaire n'envoie de données. Le site se souvient seulement de votre choix de réduire les animations, dans votre navigateur."
+  }
+ },
+ "introuvable": {
+  "titre": "Cette page est hors champ.",
+  "texte": "Elle n'existe pas ou plus : la mise au point n'a rien trouvé à cette adresse.",
+  "retour": "Revenir à l'accueil",
+  "galerie": "Voir la galerie"
+ }
+}

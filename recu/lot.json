@@ -1,0 +1,298 @@
+[
+ {
+  "source": "recu/site/apropos/logo-la-roseraie.jpg",
+  "nom": "photos/logo-la-roseraie"
+ },
+ {
+  "source": "recu/site/apropos/logo-pinkbaroque.jpg",
+  "nom": "photos/logo-pinkbaroque"
+ },
+ {
+  "source": "recu/site/apropos/photographe-automne.jpg",
+  "nom": "photos/photographe-automne"
+ },
+ {
+  "source": "recu/site/apropos/photographe-dos-automne.jpg",
+  "nom": "photos/photographe-dos-automne"
+ },
+ {
+  "source": "recu/site/apropos/portrait-photographe-studio.jpg",
+  "nom": "photos/portrait-photographe-studio"
+ },
+ {
+  "source": "recu/site/evenements/bapteme-maman-bebe-eglise.jpg",
+  "nom": "photos/bapteme-maman-bebe-eglise"
+ },
+ {
+  "source": "recu/site/evenements/eglise-bouquet-blanc.jpg",
+  "nom": "photos/eglise-bouquet-blanc"
+ },
+ {
+  "source": "recu/site/evenements/papa-bebe-exterieur.png",
+  "nom": "photos/papa-bebe-exterieur"
+ },
+ {
+  "source": "recu/site/evenements/salle-mariage-guirlandes.jpg",
+  "nom": "photos/salle-mariage-guirlandes"
+ },
+ {
+  "source": "recu/site/evenements/table-bapteme-dragees.jpg",
+  "nom": "photos/table-bapteme-dragees"
+ },
+ {
+  "source": "recu/site/evenements/table-bapteme-panda.jpg",
+  "nom": "photos/table-bapteme-panda"
+ },
+ {
+  "source": "recu/site/portraits/coquelicots-chapeau-dos.jpg",
+  "nom": "photos/coquelicots-chapeau-dos"
+ },
+ {
+  "source": "recu/site/portraits/coquelicots-chapeau-sourire.jpg",
+  "nom": "photos/coquelicots-chapeau-sourire"
+ },
+ {
+  "source": "recu/site/portraits/famille-maman-bebe-canape.jpg",
+  "nom": "photos/famille-maman-bebe-canape"
+ },
+ {
+  "source": "recu/site/portraits/famille-nouveau-ne-couleur.jpg",
+  "nom": "photos/famille-nouveau-ne-couleur"
+ },
+ {
+  "source": "recu/site/portraits/famille-nouveau-ne-nb.jpg",
+  "nom": "photos/famille-nouveau-ne-nb"
+ },
+ {
+  "source": "recu/site/portraits/grossesse-mains-coeur.jpg",
+  "nom": "photos/grossesse-mains-coeur"
+ },
+ {
+  "source": "recu/site/portraits/grossesse-profil.jpg",
+  "nom": "photos/grossesse-profil"
+ },
+ {
+  "source": "recu/site/portraits/regard-epaule.jpg",
+  "nom": "photos/regard-epaule"
+ },
+ {
+  "source": "recu/site/portraits/sourire-fleurs-accoudee.jpg",
+  "nom": "photos/sourire-fleurs-accoudee"
+ },
+ {
+  "source": "recu/site/portraits/studio-assise-fond-blanc.jpg",
+  "nom": "photos/studio-assise-fond-blanc"
+ },
+ {
+  "source": "recu/site/portraits/studio-blouson-cuir-assise.jpg",
+  "nom": "photos/studio-blouson-cuir-assise"
+ },
+ {
+  "source": "recu/site/portraits/studio-blouson-cuir-main.jpg",
+  "nom": "photos/studio-blouson-cuir-main"
+ },
+ {
+  "source": "recu/site/portraits/studio-chaise-pull-blanc.jpg",
+  "nom": "photos/studio-chaise-pull-blanc"
+ },
+ {
+  "source": "recu/site/portraits/studio-dos-noir.jpg",
+  "nom": "photos/studio-dos-noir"
+ },
+ {
+  "source": "recu/site/portraits/studio-lumiere-fenetre.jpg",
+  "nom": "photos/studio-lumiere-fenetre"
+ },
+ {
+  "source": "recu/site/portraits/studio-nb-assise-sol.jpg",
+  "nom": "photos/studio-nb-assise-sol"
+ },
+ {
+  "source": "recu/site/portraits/studio-pouf-pull-gris.jpg",
+  "nom": "photos/studio-pouf-pull-gris"
+ },
+ {
+  "source": "recu/site/portraits/studio-robe-noire-sourire.jpg",
+  "nom": "photos/studio-robe-noire-sourire"
+ },
+ {
+  "source": "recu/site/portraits/studio-robe-satin-dos.jpg",
+  "nom": "photos/studio-robe-satin-dos"
+ },
+ {
+  "source": "recu/site/pro/blazer-profil.png",
+  "nom": "photos/blazer-profil"
+ },
+ {
+  "source": "recu/site/pro/blazer-sourire.jpg",
+  "nom": "photos/blazer-sourire"
+ },
+ {
+  "source": "recu/site/pro/creatrice-atelier.jpg",
+  "nom": "photos/creatrice-atelier"
+ },
+ {
+  "source": "recu/site/pro/creatrice-cadre-coeur.jpg",
+  "nom": "photos/creatrice-cadre-coeur"
+ },
+ {
+  "source": "recu/site/pro/creatrice-cadre-exterieur.jpg",
+  "nom": "photos/creatrice-cadre-exterieur"
+ },
+ {
+  "source": "recu/site/pro/creatrice-cadre-fleurs-bleues.jpg",
+  "nom": "photos/creatrice-cadre-fleurs-bleues"
+ },
+ {
+  "source": "recu/site/pro/creatrice-cadre-mains.jpg",
+  "nom": "photos/creatrice-cadre-mains"
+ },
+ {
+  "source": "recu/site/pro/creatrice-pinceau.jpg",
+  "nom": "photos/creatrice-pinceau"
+ },
+ {
+  "source": "recu/site/pro/creatrice-table-dessus.jpg",
+  "nom": "photos/creatrice-table-dessus"
+ },
+ {
+  "source": "recu/site/pro/creatrice-trois-cadres.jpg",
+  "nom": "photos/creatrice-trois-cadres"
+ },
+ {
+  "source": "recu/site/pro/detail-baskets.png",
+  "nom": "photos/detail-baskets"
+ },
+ {
+  "source": "recu/site/regard/cote-brume.jpg",
+  "nom": "photos/cote-brume"
+ },
+ {
+  "source": "recu/site/regard/coucher-soleil-collines.jpg",
+  "nom": "photos/coucher-soleil-collines"
+ },
+ {
+  "source": "recu/site/regard/crepuscule-mer.jpg",
+  "nom": "photos/crepuscule-mer"
+ },
+ {
+  "source": "recu/site/regard/lisbonne-pont-colonnes.jpg",
+  "nom": "photos/lisbonne-pont-colonnes"
+ },
+ {
+  "source": "recu/site/regard/lisbonne-pont-portrait.jpg",
+  "nom": "photos/lisbonne-pont-portrait"
+ },
+ {
+  "source": "recu/site/regard/lisbonne-rocher.jpg",
+  "nom": "photos/lisbonne-rocher"
+ },
+ {
+  "source": "recu/site/regard/lisbonne-rue.jpg",
+  "nom": "photos/lisbonne-rue"
+ },
+ {
+  "source": "recu/site/regard/oeil-chat.jpg",
+  "nom": "photos/oeil-chat"
+ },
+ {
+  "source": "recu/site/regard/oiseaux-rocher.jpg",
+  "nom": "photos/oiseaux-rocher"
+ },
+ {
+  "source": "recu/site/renaissance/blouson-cuir-debout.png",
+  "nom": "photos/blouson-cuir-debout"
+ },
+ {
+  "source": "recu/site/renaissance/chaise-lumiere-fenetre.jpg",
+  "nom": "photos/chaise-lumiere-fenetre"
+ },
+ {
+  "source": "recu/site/saisons/automne-famille-bebe.jpg",
+  "nom": "photos/automne-famille-bebe"
+ },
+ {
+  "source": "recu/site/saisons/automne-foret-assise.jpg",
+  "nom": "photos/automne-foret-assise"
+ },
+ {
+  "source": "recu/site/saisons/automne-foret-debout.jpg",
+  "nom": "photos/automne-foret-debout"
+ },
+ {
+  "source": "recu/site/saisons/hiver-noel-enfants.jpg",
+  "nom": "photos/hiver-noel-enfants"
+ },
+ {
+  "source": "recu/site/saisons/hiver-noel-maman-fille.jpg",
+  "nom": "photos/hiver-noel-maman-fille"
+ },
+ {
+  "source": "recu/site/saisons/paques-decor-studio.jpg",
+  "nom": "photos/paques-decor-studio"
+ },
+ {
+  "source": "recu/site/saisons/printemps-colza-champ.jpg",
+  "nom": "photos/printemps-colza-champ"
+ },
+ {
+  "source": "recu/site/saisons/printemps-colza-fleur.jpg",
+  "nom": "photos/printemps-colza-fleur"
+ },
+ {
+  "source": "recu/site/saisons/studio-carte-soleil.jpg",
+  "nom": "photos/studio-carte-soleil"
+ },
+ {
+  "source": "recu/grok/grok-album-ancien-3x2.jpg",
+  "nom": "grok/album-ancien"
+ },
+ {
+  "source": "recu/grok/grok-appareil-argentique-3x4.jpg",
+  "nom": "grok/appareil-argentique"
+ },
+ {
+  "source": "recu/grok/grok-bague-objectif-3x2.jpg",
+  "nom": "grok/bague-objectif"
+ },
+ {
+  "source": "recu/grok/grok-bokeh-dore-16x9.jpg",
+  "nom": "grok/bokeh-dore"
+ },
+ {
+  "source": "recu/grok/grok-bokeh-dore-9x16.jpg",
+  "nom": "grok/bokeh-dore-mobile"
+ },
+ {
+  "source": "recu/grok/grok-carnet-16x9.jpg",
+  "nom": "grok/carnet"
+ },
+ {
+  "source": "recu/grok/grok-carnet-9x16.jpg",
+  "nom": "grok/carnet-mobile"
+ },
+ {
+  "source": "recu/grok/grok-loge-maquillage-3x4.jpg",
+  "nom": "grok/loge-maquillage"
+ },
+ {
+  "source": "recu/grok/grok-studio-vide-16x9.jpg",
+  "nom": "grok/studio-vide"
+ },
+ {
+  "source": "recu/grok/grok-studio-vide-9x16.jpg",
+  "nom": "grok/studio-vide-mobile"
+ },
+ {
+  "source": "recu/grok/grok-table-soir-16x9.jpg",
+  "nom": "grok/table-soir"
+ },
+ {
+  "source": "recu/grok/grok-table-soir-9x16.jpg",
+  "nom": "grok/table-soir-mobile"
+ },
+ {
+  "source": "recu/grok/grok-tirages-table-16x9.jpg",
+  "nom": "grok/tirages-table"
+ }
+]

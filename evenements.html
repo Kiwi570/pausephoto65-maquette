@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="fr" data-v="1" data-gabarit="evenements" data-page="evenements" data-curseur>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mariage, baptême, anniversaire : photographe à Tarbes, PausePhoto65</title>
+<meta name="description" content="Photographe d&#39;événements à Tarbes : mariage, baptême, anniversaire. Une présence discrète, des émotions spontanées. Forfaits à la demi-journée dès 500 €.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://pausephoto65-maquette.vercel.app/evenements">
+<style>:root{--fond:#f2ece3;--texte:#1e1a17;--voile-fond:#1e1a17;--ouverture-fond:#f2ece3;--menu-fond:#f2ece3}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) [data-voile] { transform: none; visibility: visible; } html.calme [data-voile], html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var calme = false;
+try { calme = !!ls && ls.getItem('socle:calme') === 'oui'; } catch (e) {}
+if (!calme && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) calme = true;
+if (calme) d.classList.add('calme');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var retourSection = false;
+try { retourSection = !!ss.getItem('socle:calme-retour'); } catch (e) {}
+var mode = type === 'back_forward' || retourSection ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+if (!retourSection) history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/manrope.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#f2ece3">
+<link rel="icon" href="/assets/images/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/assets/images/favicon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PausePhoto65">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Mariage, baptême, anniversaire : photographe à Tarbes, PausePhoto65">
+<meta property="og:description" content="Photographe d&#39;événements à Tarbes : mariage, baptême, anniversaire. Une présence discrète, des émotions spontanées. Forfaits à la demi-journée dès 500 €.">
+<meta property="og:url" content="https://pausephoto65-maquette.vercel.app/evenements">
+<meta property="og:image" content="https://pausephoto65-maquette.vercel.app/assets/partage/evenements-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Maman qui tient son bébé dans les bras, dans une église, le jour du baptême">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"PausePhoto65","description":"Photographe à Tarbes, dans les Hautes-Pyrénées : portraits individuels et de famille, portraits professionnels, mariages et événements, au studio ou en extérieur.","url":"https://pausephoto65-maquette.vercel.app/","email":"Pausephoto65@gmail.com","address":{"@type":"PostalAddress","streetAddress":"62 rue André Fourcade","postalCode":"65000","addressLocality":"Tarbes","addressCountry":"FR"},"areaServed":["Tarbes","Lourdes","Bagnères-de-Bigorre","Lannemezan","Pau"],"priceRange":"75 € – 1 100 €","sameAs":["https://www.facebook.com/pausephoto65/","https://www.instagram.com/pausephoto65/"]}</script>
+</head>
+<body id="haut">
+<div data-voile aria-hidden="true"><div class="voile-contenu"><svg class="voile-iris" viewBox="-100 -100 200 200" aria-hidden="true" focusable="false">
+<path class="iris-lames" fill-rule="evenodd" d="M-100 0a100 100 0 1 0 200 0a100 100 0 1 0 -200 0ZM0 -30.00L23.45 -18.70L29.25 6.68L13.02 27.03L-13.02 27.03L-29.25 6.68L-23.45 -18.70Z"/>
+<path class="iris-aretes" d="M23.45 -18.70L98.47 17.42M29.25 6.68L47.78 87.85M13.02 27.03L-38.90 92.13M-13.02 27.03L-96.28 27.03M-29.25 6.68L-81.16 -58.42M-23.45 -18.70L-4.93 -99.88M0 -30.00L75.02 -66.13"/>
+<circle class="iris-bague" r="98.5"/>
+</svg><span data-voile-libelle>Événements</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true" data-gouttiere="#f2ece3">
+  <div class="iris" style="--flou:url(/assets/images/photos/bapteme-maman-bebe-eglise-flou.webp)">
+    <div class="iris-photo"><img src="/assets/images/photos/bapteme-maman-bebe-eglise-640.webp" alt="" width="640" height="960" decoding="async"></div>
+    <svg class="iris-svg" viewBox="-100 -100 200 200" aria-hidden="true" focusable="false">
+<path class="iris-lames" fill-rule="evenodd" d="M-100 0a100 100 0 1 0 200 0a100 100 0 1 0 -200 0ZM0 -58.00L45.35 -36.16L56.55 12.91L25.17 52.26L-25.17 52.26L-56.55 12.91L-45.35 -36.16Z"/>
+<path class="iris-aretes" d="M45.35 -36.16L99.49 -10.09M56.55 12.91L69.92 71.49M25.17 52.26L-12.30 99.24M-25.17 52.26L-85.26 52.26M-56.55 12.91L-94.01 -34.08M-45.35 -36.16L-31.97 -94.75M0 -58.00L54.14 -84.07"/>
+<circle class="iris-bague" r="98.5"/>
+</svg>
+  </div>
+  <p class="ouverture-nom">PausePhoto65</p>
+  <p class="ouverture-ligne">Photographe à Tarbes</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil">
+      <img src="/assets/images/logo/logo-72.webp" alt="" width="36" height="36"><span>PausePhoto65</span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/galerie" data-libelle="Galerie">Galerie</a></li><li><a href="/seances" data-libelle="Séances &amp; tarifs">Séances &amp; tarifs</a></li><li><a href="/evenements" data-libelle="Événements" aria-current="page">Événements</a></li><li><a href="/a-propos" data-libelle="À propos &amp; contact">À propos &amp; contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton bouton--petit" href="/seances#reservation" data-libelle="Séances &amp; tarifs" data-magnetique>Réserver</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span class="menu-icone" aria-hidden="true"><span></span><span></span></span><span data-libelle-bouton>Menu</span></button>
+    </div>
+  </div>
+</header>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="menu-grille">
+    <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil"><span class="menu-num" aria-hidden="true">01</span><span>Accueil</span></a></li><li style="--i:1"><a href="/galerie" class="menu-lien" data-libelle="Galerie"><span class="menu-num" aria-hidden="true">02</span><span>Galerie</span></a></li><li style="--i:2"><a href="/seances" class="menu-lien" data-libelle="Séances &amp; tarifs"><span class="menu-num" aria-hidden="true">03</span><span>Séances &amp; tarifs</span></a></li><li style="--i:3"><a href="/evenements" class="menu-lien" data-libelle="Événements" aria-current="page"><span class="menu-num" aria-hidden="true">04</span><span>Événements</span></a></li><li style="--i:4"><a href="/a-propos" class="menu-lien" data-libelle="À propos &amp; contact"><span class="menu-num" aria-hidden="true">05</span><span>À propos &amp; contact</span></a></li></ul>
+    <div class="menu-cote">
+      <p><a class="bouton" href="/seances#reservation" data-libelle="Séances &amp; tarifs">Réserver une séance</a></p>
+      <p><a class="lien-fort" href="mailto:Pausephoto65@gmail.com">Pausephoto65@gmail.com</a></p>
+      <p class="menu-adresse">62 rue André Fourcade, 65000 Tarbes</p>
+      <p class="menu-reseaux"><a href="https://www.instagram.com/pausephoto65/" target="_blank" rel="noopener">Instagram<span class="visuellement-cache"> (nouvel onglet)</span></a> · <a href="https://www.facebook.com/pausephoto65/" target="_blank" rel="noopener">Facebook<span class="visuellement-cache"> (nouvel onglet)</span></a></p>
+      <p><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></p>
+    </div>
+  </div>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="page-tete ecran" id="ouverture">
+  <div class="page-tete-texte">
+    <h1 class="titre-page" data-anime="gsap" data-entree>Votre journée, sans poses forcées.</h1>
+    <p class="texte-large" data-anime="gsap" data-entree>Mariage, baptême, anniversaire : une présence discrète, des émotions spontanées et des photos de groupe organisées avec vous.</p>
+    <p class="actions" data-anime="gsap" data-entree><a class="bouton" href="#demande" data-action-principale data-magnetique>Demander une date</a> <span class="info-cle" data-info-cle>Dès 500 € la demi-journée</span></p>
+  </div>
+  <figure data-hero data-mise-au-point class="media page-tete-media" style="--flou:url(/assets/images/photos/bapteme-maman-bebe-eglise-flou.webp);--cadrage:50% 35%;--cadrage-mobile:50% 35%">
+  <picture>
+    <img src="/assets/images/photos/bapteme-maman-bebe-eglise-1280.webp" srcset="/assets/images/photos/bapteme-maman-bebe-eglise-640.webp 640w, /assets/images/photos/bapteme-maman-bebe-eglise-1280.webp 1280w, /assets/images/photos/bapteme-maman-bebe-eglise-1920.webp 1920w" sizes="(max-width: 760px) 92vw, 42vw" alt="Maman qui tient son bébé dans les bras, dans une église" width="1280" height="1920" fetchpriority="high" loading="eager" decoding="async">
+  </picture>
+</figure>
+</section>
+<section class="section approche" id="approche">
+  <div class="conteneur approche-grille">
+    <div class="approche-texte">
+      <p class="sur"><span class="sur-trait" aria-hidden="true"></span>L&#39;approche</p>
+      <h2 class="titre-section" data-anime>Préparer ensemble, puis s&#39;effacer</h2>
+      <blockquote class="citation citation--grande" data-anime><p>« Toujours présente mais jamais intrusive… »</p></blockquote>
+      <p data-anime>Avant l&#39;événement, un échange pour savoir ce que vous voulez mettre en valeur : l&#39;émotion d&#39;un moment, l&#39;ambiance, les détails, les portraits de famille ou d&#39;amis. Le jour venu, les photos de groupe se font à l&#39;horaire prévu ; le reste du temps, aucune pose n&#39;est imposée.</p>
+    </div>
+    <div class="approche-photos">
+      <figure data-parallaxe="-10" data-mise-au-point class="media approche-photo approche-photo--1" style="--flou:url(/assets/images/photos/salle-mariage-guirlandes-flou.webp);--cadrage:50% 40%;aspect-ratio:2 / 3">
+  <picture>
+    <img src="/assets/images/photos/salle-mariage-guirlandes-1200.webp" srcset="/assets/images/photos/salle-mariage-guirlandes-640.webp 640w, /assets/images/photos/salle-mariage-guirlandes-1200.webp 1200w" sizes="(max-width: 760px) 56vw, 24vw" alt="Salle de réception décorée pour un mariage, tables dressées sous des guirlandes lumineuses" width="1200" height="1800" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <figure data-parallaxe="12" data-mise-au-point class="media approche-photo approche-photo--2" style="--flou:url(/assets/images/photos/eglise-bouquet-blanc-flou.webp);--cadrage:50% 70%;aspect-ratio:2 / 3">
+  <picture>
+    <img src="/assets/images/photos/eglise-bouquet-blanc-1280.webp" srcset="/assets/images/photos/eglise-bouquet-blanc-640.webp 640w, /assets/images/photos/eglise-bouquet-blanc-1280.webp 1280w, /assets/images/photos/eglise-bouquet-blanc-1920.webp 1920w" sizes="(max-width: 760px) 42vw, 17vw" alt="Bouquet de fleurs blanches dans une église" width="1280" height="1920" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </div>
+  </div>
+</section>
+<section class="section journee" id="journee" data-journee data-debut="8" data-fin="24">
+  <figure class="media journee-fond" data-grok style="--flou:url(/assets/images/grok/table-soir-flou.webp);--cadrage:50% 50%;--cadrage-mobile:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/table-soir-mobile-640.webp 640w, /assets/images/grok/table-soir-mobile-784.webp 784w" sizes="100vw">
+    <img src="/assets/images/grok/table-soir-1168.webp" srcset="/assets/images/grok/table-soir-640.webp 640w, /assets/images/grok/table-soir-1168.webp 1168w" sizes="100vw" alt="" width="1168" height="784" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  <div class="conteneur journee-panneau">
+    <p class="sur"><span class="sur-trait" aria-hidden="true"></span>Le fil de la journée</p>
+    <h2 class="titre-section" data-anime>Une demi-journée ou toute la journée ?</h2>
+    <p data-anime>Faites glisser la plage de présence sur une journée type pour voir les moments couverts.</p>
+    <div class="journee-choix" role="group" aria-label="Quatre forfaits">
+      <button type="button" class="puce-bouton" data-duree="4" aria-pressed="false">Demi-journée · 4 h</button>
+      <button type="button" class="puce-bouton" data-duree="8" aria-pressed="true">Journée · 8 h</button>
+    </div>
+    <div class="frise" data-frise>
+      <div class="frise-axe" aria-hidden="true">
+        <span class="frise-heure chiffres" style="left:0%">8 h</span><span class="frise-heure chiffres" style="left:25%">12 h</span><span class="frise-heure chiffres" style="left:50%">16 h</span><span class="frise-heure chiffres" style="left:75%">20 h</span><span class="frise-heure chiffres" style="left:100%">24 h</span>
+      </div>
+      <div class="frise-piste">
+        <div class="frise-plage" data-frise-plage style="left:12.5%;width:50%" aria-hidden="true"></div>
+        <span class="frise-moment couvert" data-heure="10" data-repere style="left:12.5%" aria-hidden="true"></span><span class="frise-moment couvert" data-heure="14" data-repere style="left:37.5%" aria-hidden="true"></span><span class="frise-moment couvert" data-heure="15.5" data-repere style="left:46.875%" aria-hidden="true"></span><span class="frise-moment couvert" data-heure="16.5" data-repere style="left:53.125%" aria-hidden="true"></span><span class="frise-moment couvert" data-heure="18" data-repere style="left:62.5%" aria-hidden="true"></span><span class="frise-moment" data-heure="20" data-repere style="left:75%" aria-hidden="true"></span><span class="frise-moment" data-heure="22.5" data-repere style="left:90.625%" aria-hidden="true"></span>
+      <label class="frise-curseur"><span class="visuellement-cache">Début de la présence</span><input type="range" min="8" max="20" step="0.5" value="10" data-frise-debut aria-valuetext="10 h"></label>
+      </div>
+    </div>
+    <div class="journee-bas">
+      <p class="journee-plage"><span>Plage de présence :</span> <strong class="chiffres" data-plage-texte>10 h – 18 h</strong></p>
+      <div>
+        <p class="petit-titre">Les moments de l&#39;exemple</p>
+        <ul class="journee-moments" data-moments data-aucun="Aucun moment de l&#39;exemple dans cette plage">
+          <li data-heure="10"><span class="chiffres">10 h</span> <span>Préparatifs<span class="moment-hors"> · hors de la plage</span></span></li><li data-heure="14"><span class="chiffres">14 h</span> <span>Cérémonie<span class="moment-hors"> · hors de la plage</span></span></li><li data-heure="15.5"><span class="chiffres">15 h 30</span> <span>Photos de groupe<span class="moment-hors"> · hors de la plage</span></span></li><li data-heure="16.5"><span class="chiffres">16 h 30</span> <span>Portraits du couple<span class="moment-hors"> · hors de la plage</span></span></li><li data-heure="18"><span class="chiffres">18 h</span> <span>Vin d’honneur<span class="moment-hors"> · hors de la plage</span></span></li><li data-heure="20" class="hors"><span class="chiffres">20 h</span> <span>Repas<span class="moment-hors"> · hors de la plage</span></span></li><li data-heure="22.5" class="hors"><span class="chiffres">22 h 30</span> <span>Soirée<span class="moment-hors"> · hors de la plage</span></span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="note">Exemple : les horaires de votre journée se définissent ensemble.</p>
+  </div>
+</section>
+<section class="section forfaits" id="forfaits">
+  <div class="conteneur">
+    <div class="tete-section tete-section--photo">
+      <div>
+        <p class="sur"><span class="sur-trait" aria-hidden="true"></span>Les forfaits</p>
+        <h2 class="titre-section" data-anime>Quatre forfaits</h2>
+        <p data-anime>Deux formats pour chaque événement. Le détail des forfaits à la demi-journée est à compléter.</p>
+      </div>
+      <figure data-mise-au-point class="media tete-photo" style="--flou:url(/assets/images/photos/table-bapteme-dragees-flou.webp);--cadrage:50% 40%">
+  <picture>
+    <img src="/assets/images/photos/table-bapteme-dragees-1280.webp" srcset="/assets/images/photos/table-bapteme-dragees-640.webp 640w, /assets/images/photos/table-bapteme-dragees-1280.webp 1280w, /assets/images/photos/table-bapteme-dragees-1920.webp 1920w" sizes="(max-width: 760px) 92vw, 22vw" alt="Table de baptême : bouquet de lys et dragées" width="1280" height="1738" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </div>
+    <div class="forfaits-grille">
+      <div class="forfaits-groupe">
+        <h3 class="petit-titre">Mariage</h3>
+        <ul class="formules"><li class="formule" id="forfait-mariage-demi" data-anime>
+          <h4>Mariage — demi-journée</h4>
+          <p class="formule-ligne"><span>4 h</span><span class="prix prix--grand" data-prix>600 €</span></p>
+          <ul class="coches"><li>Détail du forfait à compléter</li></ul>
+          <a class="bouton bouton--contour" href="?forfait=mariage-demi#demande" data-vers-demande data-forfait="mariage-demi">Choisir ce forfait</a>
+        </li><li class="formule" id="forfait-mariage-journee" data-anime>
+          <h4>Mariage — journée complète</h4>
+          <p class="formule-ligne"><span>8 h</span><span class="prix prix--grand" data-prix>1 100 €</span></p>
+          <ul class="coches"><li>Couverture de la journée (8 h)</li><li>Présence du début à la fin des moments clés</li><li>Coordination avec les autres prestataires</li><li>Traitement des images</li><li>Délai de livraison : à compléter</li></ul>
+          <a class="bouton bouton--contour" href="?forfait=mariage-journee#demande" data-vers-demande data-forfait="mariage-journee">Choisir ce forfait</a>
+        </li></ul>
+      </div><div class="forfaits-groupe">
+        <h3 class="petit-titre">Baptême, anniversaire</h3>
+        <ul class="formules"><li class="formule" id="forfait-fete-demi" data-anime>
+          <h4>Baptême, anniversaire — demi-journée</h4>
+          <p class="formule-ligne"><span>Demi-journée</span><span class="prix prix--grand" data-prix>500 €</span></p>
+          <ul class="coches"><li>Détail du forfait à compléter</li></ul>
+          <a class="bouton bouton--contour" href="?forfait=fete-demi#demande" data-vers-demande data-forfait="fete-demi">Choisir ce forfait</a>
+        </li><li class="formule" id="forfait-fete-journee" data-anime>
+          <h4>Baptême, anniversaire — journée complète</h4>
+          <p class="formule-ligne"><span>Journée</span><span class="prix prix--grand" data-prix>900 €</span></p>
+          <ul class="coches"><li>Détail du forfait à compléter</li></ul>
+          <a class="bouton bouton--contour" href="?forfait=fete-journee#demande" data-vers-demande data-forfait="fete-journee">Choisir ce forfait</a>
+        </li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section plus" id="plus">
+  <div class="conteneur">
+    <div class="plus-grille">
+      <div>
+        <p class="sur"><span class="sur-trait" aria-hidden="true"></span>Les petits plus</p>
+        <h2 class="titre-section" data-anime>Organiser les photos avec vous</h2>
+        <ol class="plus-liste">
+          <li class="plus-item" data-anime><span class="plus-num chiffres" aria-hidden="true">01</span><span>Des photos de groupe planifiées à un horaire précis</span></li><li class="plus-item" data-anime><span class="plus-num chiffres" aria-hidden="true">02</span><span>Un petit coin photo pour vos invités</span></li><li class="plus-item" data-anime><span class="plus-num chiffres" aria-hidden="true">03</span><span>Une arche décorative pour des portraits en duo ou en groupe</span></li>
+        </ol>
+      </div>
+      <figure data-mise-au-point class="media plus-media" style="--flou:url(/assets/images/photos/table-bapteme-panda-flou.webp);--cadrage:50% 50%;aspect-ratio:1 / 1">
+  <picture>
+    <img src="/assets/images/photos/table-bapteme-panda-1280.webp" srcset="/assets/images/photos/table-bapteme-panda-640.webp 640w, /assets/images/photos/table-bapteme-panda-1280.webp 1280w, /assets/images/photos/table-bapteme-panda-1920.webp 1920w" sizes="(max-width: 760px) 92vw, 34vw" alt="Table de fête décorée sur le thème du panda, pain et serviettes vertes" width="1280" height="1314" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </div>
+  </div>
+</section>
+<section class="section demande" id="demande">
+  <div class="conteneur">
+    <div class="tete-section tete-section--photo">
+      <div>
+        <p class="sur"><span class="sur-trait" aria-hidden="true"></span>Demande de date</p>
+        <h2 class="titre-section">Demander une date</h2>
+        <p>Quatre étapes et un récapitulatif de votre demande. Demande simulée : rien n&#39;est envoyé.</p>
+      </div>
+      <figure data-mise-au-point class="media tete-photo" style="--flou:url(/assets/images/photos/famille-nouveau-ne-nb-flou.webp);--cadrage:50% 18%;--cadrage-mobile:50% 14%">
+  <picture>
+    <img src="/assets/images/photos/famille-nouveau-ne-nb-1280.webp" srcset="/assets/images/photos/famille-nouveau-ne-nb-640.webp 640w, /assets/images/photos/famille-nouveau-ne-nb-1280.webp 1280w, /assets/images/photos/famille-nouveau-ne-nb-1920.webp 1920w" sizes="(max-width: 760px) 92vw, 22vw" alt="Parents qui embrassent leur nouveau-né, en noir et blanc" width="1280" height="1741" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </div>
+    <div class="parcours" data-parcours="demande">
+      <form class="parcours-form" data-formulaire data-etapes action="#" novalidate data-remplir="à remplir." data-choisir="à choisir.">
+        <ol class="etapes-fil" aria-hidden="true"><li class="actif"><span class="etape-num chiffres">1</span><span class="etape-nom">L&#39;événement</span></li><li><span class="etape-num chiffres">2</span><span class="etape-nom">La date et le lieu</span></li><li><span class="etape-num chiffres">3</span><span class="etape-nom">Le forfait</span></li><li><span class="etape-num chiffres">4</span><span class="etape-nom">Vos coordonnées</span></li></ol>
+        <fieldset class="etape" data-etape="1">
+          <legend class="etape-titre">1. L&#39;événement</legend>
+          <div class="options options--2">
+            <label class="option"><input type="radio" name="evenement" value="mariage" required data-nom="Mariage"><span class="option-nom">Mariage</span></label><label class="option"><input type="radio" name="evenement" value="bapteme" required data-nom="Baptême"><span class="option-nom">Baptême</span></label><label class="option"><input type="radio" name="evenement" value="anniversaire" required data-nom="Anniversaire"><span class="option-nom">Anniversaire</span></label><label class="option"><input type="radio" name="evenement" value="autre" required data-nom="Autre événement"><span class="option-nom">Autre événement</span></label>
+          </div>
+          <p class="champ-erreur" data-erreur-etape aria-live="polite"></p>
+          <div class="etape-nav"><button type="button" class="bouton" data-suivant>Étape suivante</button></div>
+        </fieldset>
+        <fieldset class="etape" data-etape="2" hidden>
+          <legend class="etape-titre">2. La date et le lieu</legend>
+          <div class="champs-2">
+            <div class="champ"><label for="d-date">Date de l&#39;événement</label><input id="d-date" name="date" type="date" required data-date-future data-message-passee="Choisissez une date à venir."></div>
+            <div class="champ"><label for="d-commune">Commune</label><input id="d-commune" name="commune" list="communes" autocomplete="address-level2" required></div>
+          </div>
+          <datalist id="communes"><option value="Tarbes"></option><option value="Lourdes"></option><option value="Bagnères-de-Bigorre"></option><option value="Lannemezan"></option><option value="Pau"></option></datalist>
+          <p class="champ-erreur" data-erreur-etape aria-live="polite"></p>
+          <div class="etape-nav"><button type="button" class="bouton bouton--contour" data-precedent>Étape précédente</button><button type="button" class="bouton" data-suivant>Étape suivante</button></div>
+        </fieldset>
+        <fieldset class="etape" data-etape="3" hidden>
+          <legend class="etape-titre">3. Le forfait</legend>
+          <div class="options">
+            <label class="option" data-type="mariage"><input type="radio" name="forfait" value="mariage-demi" required data-prix-valeur="600" data-nom="Mariage — demi-journée"><span class="option-nom">Mariage — demi-journée</span><span class="option-detail">4 h · <span class="prix " data-prix>600 €</span></span></label><label class="option" data-type="mariage"><input type="radio" name="forfait" value="mariage-journee" required data-prix-valeur="1100" data-nom="Mariage — journée complète"><span class="option-nom">Mariage — journée complète</span><span class="option-detail">8 h · <span class="prix " data-prix>1 100 €</span></span></label><label class="option" data-type="bapteme"><input type="radio" name="forfait" value="fete-demi" required data-prix-valeur="500" data-nom="Baptême, anniversaire — demi-journée"><span class="option-nom">Baptême, anniversaire — demi-journée</span><span class="option-detail">Demi-journée · <span class="prix " data-prix>500 €</span></span></label><label class="option" data-type="bapteme"><input type="radio" name="forfait" value="fete-journee" required data-prix-valeur="900" data-nom="Baptême, anniversaire — journée complète"><span class="option-nom">Baptême, anniversaire — journée complète</span><span class="option-detail">Journée · <span class="prix " data-prix>900 €</span></span></label>
+          </div>
+          <p class="champ-erreur" data-erreur-etape aria-live="polite"></p>
+          <div class="etape-nav"><button type="button" class="bouton bouton--contour" data-precedent>Étape précédente</button><button type="button" class="bouton" data-suivant>Étape suivante</button></div>
+        </fieldset>
+        <fieldset class="etape" data-etape="4" hidden>
+          <legend class="etape-titre">4. Vos coordonnées</legend>
+          <div class="champs-2">
+            <div class="champ"><label for="d-nom">Nom</label><input id="d-nom" name="nom" autocomplete="family-name" required></div>
+            <div class="champ"><label for="d-prenom">Prénom</label><input id="d-prenom" name="prenom" autocomplete="given-name" required></div>
+          </div>
+          <div class="champ"><label for="d-email">E-mail</label><input id="d-email" name="email" type="email" autocomplete="email" required></div>
+          <div class="champ"><label for="d-tel">Téléphone (facultatif)</label><input id="d-tel" name="tel" type="tel" autocomplete="tel"></div>
+          <div class="champ"><label for="d-message">Votre message (facultatif)</label><textarea id="d-message" name="message" rows="4"></textarea></div>
+          <p class="mention-donnees">Vos données servent seulement à répondre à votre demande. <a href="/mentions-legales#confidentialite">Politique de confidentialité</a> (à compléter).</p>
+          <div class="etape-nav"><button type="button" class="bouton bouton--contour" data-precedent>Étape précédente</button><button type="submit" class="bouton">Envoyer la demande</button></div>
+          <p data-message-envoi role="status" tabindex="-1" hidden data-texte="Demande simulée : rien n&#39;a été envoyé. Sur le site final, elle partira vers PausePhoto65."></p>
+        </fieldset>
+      </form>
+      <aside class="recap" aria-label="Récapitulatif" data-recap data-a-choisir="à choisir">
+        <p class="recap-titre">Récapitulatif</p>
+        <dl class="recap-liste" aria-live="polite">
+          <div><dt>Type d&#39;événement</dt><dd data-recap-evenement>à choisir</dd></div>
+          <div><dt>Date de l&#39;événement</dt><dd data-recap-date>à choisir</dd></div>
+          <div><dt>Commune</dt><dd data-recap-commune>à choisir</dd></div>
+          <div class="recap-total"><dt>Forfait</dt><dd data-recap-forfait data-prix>à choisir</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-haut">
+    <p class="pied-mot" aria-hidden="true">Pause, <em>pose</em>.</p>
+  </div>
+  <div class="conteneur pied-grille">
+    <div>
+      <img class="pied-logo" src="/assets/images/logo/logo-144.webp" alt="Logo de PausePhoto65" width="72" height="72" loading="lazy">
+      <p class="pied-titre">PausePhoto65</p>
+      <p>62 rue André Fourcade<br>65000 Tarbes<br><a href="mailto:Pausephoto65@gmail.com">Pausephoto65@gmail.com</a></p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p class="pied-titre">Sommaire</p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/galerie" data-libelle="Galerie">Galerie</a></li><li><a href="/seances" data-libelle="Séances &amp; tarifs">Séances &amp; tarifs</a></li><li><a href="/evenements" data-libelle="Événements" aria-current="page">Événements</a></li><li><a href="/a-propos" data-libelle="À propos &amp; contact">À propos &amp; contact</a></li><li><a href="/mentions-legales" data-libelle="Mentions légales">Mentions légales</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Réseaux</p>
+      <ul><li><a href="https://www.instagram.com/pausephoto65/" target="_blank" rel="noopener">Instagram<span class="visuellement-cache"> (nouvel onglet)</span></a></li><li><a href="https://www.facebook.com/pausephoto65/" target="_blank" rel="noopener">Facebook<span class="visuellement-cache"> (nouvel onglet)</span></a></li></ul>
+    </div>
+    <div>
+      <p class="pied-titre">Confort</p>
+      <ul>
+        <li><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></li>
+        <li><a href="#haut" data-sans-transition>Retour en haut</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas"><p>Maquette : les informations marquées « à compléter » seront fournies par PausePhoto65.</p><p>© PausePhoto65</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="mailto:Pausephoto65@gmail.com">Écrire</a>
+  <a class="bouton" href="/seances#reservation" data-libelle="Séances &amp; tarifs">Réserver</a>
+</div>
+</body>
+</html>

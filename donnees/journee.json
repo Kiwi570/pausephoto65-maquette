@@ -1,0 +1,30 @@
+[
+ {
+  "heure": 10,
+  "nom": "Préparatifs"
+ },
+ {
+  "heure": 14,
+  "nom": "Cérémonie"
+ },
+ {
+  "heure": 15.5,
+  "nom": "Photos de groupe"
+ },
+ {
+  "heure": 16.5,
+  "nom": "Portraits du couple"
+ },
+ {
+  "heure": 18,
+  "nom": "Vin d’honneur"
+ },
+ {
+  "heure": 20,
+  "nom": "Repas"
+ },
+ {
+  "heure": 22.5,
+  "nom": "Soirée"
+ }
+]

@@ -1,0 +1,27 @@
+{
+ "@context": "https://schema.org",
+ "@type": "LocalBusiness",
+ "name": "PausePhoto65",
+ "description": "Photographe à Tarbes, dans les Hautes-Pyrénées : portraits individuels et de famille, portraits professionnels, mariages et événements, au studio ou en extérieur.",
+ "url": "https://pausephoto65-maquette.vercel.app/",
+ "email": "Pausephoto65@gmail.com",
+ "address": {
+  "@type": "PostalAddress",
+  "streetAddress": "62 rue André Fourcade",
+  "postalCode": "65000",
+  "addressLocality": "Tarbes",
+  "addressCountry": "FR"
+ },
+ "areaServed": [
+  "Tarbes",
+  "Lourdes",
+  "Bagnères-de-Bigorre",
+  "Lannemezan",
+  "Pau"
+ ],
+ "priceRange": "75 € – 1 100 €",
+ "sameAs": [
+  "https://www.facebook.com/pausephoto65/",
+  "https://www.instagram.com/pausephoto65/"
+ ]
+}

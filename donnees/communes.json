@@ -1,0 +1,37 @@
+[
+ {
+  "id": "tarbes",
+  "nom": "Tarbes",
+  "lat": 43.2328,
+  "lon": 0.0781,
+  "km": 0
+ },
+ {
+  "id": "lourdes",
+  "nom": "Lourdes",
+  "lat": 43.0947,
+  "lon": -0.0458,
+  "km": 18
+ },
+ {
+  "id": "bagneres",
+  "nom": "Bagnères-de-Bigorre",
+  "lat": 43.065,
+  "lon": 0.15,
+  "km": 20
+ },
+ {
+  "id": "lannemezan",
+  "nom": "Lannemezan",
+  "lat": 43.125,
+  "lon": 0.3842,
+  "km": 28
+ },
+ {
+  "id": "pau",
+  "nom": "Pau",
+  "lat": 43.2951,
+  "lon": -0.3708,
+  "km": 37
+ }
+]

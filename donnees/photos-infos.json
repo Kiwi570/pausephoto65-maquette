@@ -1,0 +1,298 @@
+{
+ "photos/logo-la-roseraie": {
+  "couleur": "#a8a98e",
+  "ratio": 1.0021
+ },
+ "photos/logo-pinkbaroque": {
+  "couleur": "#c7c0c4",
+  "ratio": 1.2127
+ },
+ "photos/photographe-automne": {
+  "couleur": "#796346",
+  "ratio": 1.5
+ },
+ "photos/photographe-dos-automne": {
+  "couleur": "#5f4932",
+  "ratio": 0.7202
+ },
+ "photos/portrait-photographe-studio": {
+  "couleur": "#383031",
+  "ratio": 0.6667
+ },
+ "photos/bapteme-maman-bebe-eglise": {
+  "couleur": "#755e4f",
+  "ratio": 0.6667
+ },
+ "photos/eglise-bouquet-blanc": {
+  "couleur": "#857054",
+  "ratio": 0.6667
+ },
+ "photos/papa-bebe-exterieur": {
+  "couleur": "#74675d",
+  "ratio": 0.9428
+ },
+ "photos/salle-mariage-guirlandes": {
+  "couleur": "#786657",
+  "ratio": 0.6667
+ },
+ "photos/table-bapteme-dragees": {
+  "couleur": "#858a7a",
+  "ratio": 0.7366
+ },
+ "photos/table-bapteme-panda": {
+  "couleur": "#7a7966",
+  "ratio": 0.9738
+ },
+ "photos/coquelicots-chapeau-dos": {
+  "couleur": "#c0a672",
+  "ratio": 0.8097
+ },
+ "photos/coquelicots-chapeau-sourire": {
+  "couleur": "#d39d7a",
+  "ratio": 0.7719
+ },
+ "photos/famille-maman-bebe-canape": {
+  "couleur": "#968175",
+  "ratio": 0.823
+ },
+ "photos/famille-nouveau-ne-couleur": {
+  "couleur": "#7c5a4a",
+  "ratio": 0.7557
+ },
+ "photos/famille-nouveau-ne-nb": {
+  "couleur": "#4d4d4d",
+  "ratio": 0.7351
+ },
+ "photos/grossesse-mains-coeur": {
+  "couleur": "#a78564",
+  "ratio": 0.7418
+ },
+ "photos/grossesse-profil": {
+  "couleur": "#977a62",
+  "ratio": 0.7125
+ },
+ "photos/regard-epaule": {
+  "couleur": "#6c5142",
+  "ratio": 0.6667
+ },
+ "photos/sourire-fleurs-accoudee": {
+  "couleur": "#966d5d",
+  "ratio": 1.5
+ },
+ "photos/studio-assise-fond-blanc": {
+  "couleur": "#a69fa7",
+  "ratio": 0.755
+ },
+ "photos/studio-blouson-cuir-assise": {
+  "couleur": "#b19986",
+  "ratio": 0.7516
+ },
+ "photos/studio-blouson-cuir-main": {
+  "couleur": "#766457",
+  "ratio": 0.6833
+ },
+ "photos/studio-chaise-pull-blanc": {
+  "couleur": "#a9a2a9",
+  "ratio": 0.7573
+ },
+ "photos/studio-dos-noir": {
+  "couleur": "#a48877",
+  "ratio": 0.6873
+ },
+ "photos/studio-lumiere-fenetre": {
+  "couleur": "#3e383b",
+  "ratio": 0.7262
+ },
+ "photos/studio-nb-assise-sol": {
+  "couleur": "#bebebe",
+  "ratio": 1.5
+ },
+ "photos/studio-pouf-pull-gris": {
+  "couleur": "#d6c3af",
+  "ratio": 0.7199
+ },
+ "photos/studio-robe-noire-sourire": {
+  "couleur": "#a2846c",
+  "ratio": 1.0605
+ },
+ "photos/studio-robe-satin-dos": {
+  "couleur": "#d5b396",
+  "ratio": 0.8278
+ },
+ "photos/blazer-profil": {
+  "couleur": "#a68e7c",
+  "ratio": 0.8365
+ },
+ "photos/blazer-sourire": {
+  "couleur": "#958374",
+  "ratio": 0.6976
+ },
+ "photos/creatrice-atelier": {
+  "couleur": "#cdae94",
+  "ratio": 0.7704
+ },
+ "photos/creatrice-cadre-coeur": {
+  "couleur": "#73716d",
+  "ratio": 0.756
+ },
+ "photos/creatrice-cadre-exterieur": {
+  "couleur": "#666a5b",
+  "ratio": 0.6667
+ },
+ "photos/creatrice-cadre-fleurs-bleues": {
+  "couleur": "#b1b3b5",
+  "ratio": 0.8636
+ },
+ "photos/creatrice-cadre-mains": {
+  "couleur": "#726b65",
+  "ratio": 0.7981
+ },
+ "photos/creatrice-pinceau": {
+  "couleur": "#a28e75",
+  "ratio": 1.5
+ },
+ "photos/creatrice-table-dessus": {
+  "couleur": "#b18a6e",
+  "ratio": 1.5
+ },
+ "photos/creatrice-trois-cadres": {
+  "couleur": "#9b998d",
+  "ratio": 0.7481
+ },
+ "photos/detail-baskets": {
+  "couleur": "#a89889",
+  "ratio": 1.1514
+ },
+ "photos/cote-brume": {
+  "couleur": "#96989d",
+  "ratio": 0.667
+ },
+ "photos/coucher-soleil-collines": {
+  "couleur": "#7c573e",
+  "ratio": 2.0
+ },
+ "photos/crepuscule-mer": {
+  "couleur": "#4c4164",
+  "ratio": 0.667
+ },
+ "photos/lisbonne-pont-colonnes": {
+  "couleur": "#7b858e",
+  "ratio": 0.7689
+ },
+ "photos/lisbonne-pont-portrait": {
+  "couleur": "#c1b4a7",
+  "ratio": 1.5298
+ },
+ "photos/lisbonne-rocher": {
+  "couleur": "#76674e",
+  "ratio": 0.6667
+ },
+ "photos/lisbonne-rue": {
+  "couleur": "#635c58",
+  "ratio": 0.7225
+ },
+ "photos/oeil-chat": {
+  "couleur": "#79746c",
+  "ratio": 1.7809
+ },
+ "photos/oiseaux-rocher": {
+  "couleur": "#bfbdbb",
+  "ratio": 1.4993
+ },
+ "photos/blouson-cuir-debout": {
+  "couleur": "#bda38c",
+  "ratio": 0.7593
+ },
+ "photos/chaise-lumiere-fenetre": {
+  "couleur": "#87776b",
+  "ratio": 0.7
+ },
+ "photos/automne-famille-bebe": {
+  "couleur": "#8b7865",
+  "ratio": 0.6958
+ },
+ "photos/automne-foret-assise": {
+  "couleur": "#554c42",
+  "ratio": 1.5
+ },
+ "photos/automne-foret-debout": {
+  "couleur": "#575557",
+  "ratio": 0.7032
+ },
+ "photos/hiver-noel-enfants": {
+  "couleur": "#876d60",
+  "ratio": 0.6667
+ },
+ "photos/hiver-noel-maman-fille": {
+  "couleur": "#816a59",
+  "ratio": 0.7859
+ },
+ "photos/paques-decor-studio": {
+  "couleur": "#987c66",
+  "ratio": 0.7372
+ },
+ "photos/printemps-colza-champ": {
+  "couleur": "#768e7f",
+  "ratio": 0.6667
+ },
+ "photos/printemps-colza-fleur": {
+  "couleur": "#688079",
+  "ratio": 0.6667
+ },
+ "photos/studio-carte-soleil": {
+  "couleur": "#977a5f",
+  "ratio": 0.6667
+ },
+ "grok/album-ancien": {
+  "couleur": "#b49d84",
+  "ratio": 1.4898
+ },
+ "grok/appareil-argentique": {
+  "couleur": "#7d6044",
+  "ratio": 0.6712
+ },
+ "grok/bague-objectif": {
+  "couleur": "#886e54",
+  "ratio": 1.4898
+ },
+ "grok/bokeh-dore": {
+  "couleur": "#764c2b",
+  "ratio": 1.4898
+ },
+ "grok/bokeh-dore-mobile": {
+  "couleur": "#66462d",
+  "ratio": 0.6712
+ },
+ "grok/carnet": {
+  "couleur": "#ad8f6e",
+  "ratio": 1.4898
+ },
+ "grok/carnet-mobile": {
+  "couleur": "#a07f60",
+  "ratio": 0.6712
+ },
+ "grok/loge-maquillage": {
+  "couleur": "#ad9276",
+  "ratio": 0.6712
+ },
+ "grok/studio-vide": {
+  "couleur": "#9f8467",
+  "ratio": 1.4898
+ },
+ "grok/studio-vide-mobile": {
+  "couleur": "#997856",
+  "ratio": 0.6712
+ },
+ "grok/table-soir": {
+  "couleur": "#7c603f",
+  "ratio": 1.4898
+ },
+ "grok/table-soir-mobile": {
+  "couleur": "#a08667",
+  "ratio": 0.6712
+ },
+ "grok/tirages-table": {
+  "couleur": "#b3a28e",
+  "ratio": 1.4898
+ }
+}
