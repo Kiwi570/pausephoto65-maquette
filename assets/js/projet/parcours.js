@@ -1,7 +1,7 @@
 /* Parcours de PausePhoto65 : formulaires en étapes (réservation, demande de date), calendrier,
    récapitulatif en direct, guide « Quelle séance pour moi ? » et sa bague, fil de la journée,
    statut des séances de saison calculé à la date du jour, à l'heure de Tarbes. */
-import { etat, allerAncre } from '../socle/index.js?v=1';
+import { etat, allerAncre } from '../socle/index.js?v=2';
 
 const FUSEAU = 'Europe/Paris';
 
@@ -315,6 +315,11 @@ function journee() {
     j.querySelectorAll('[data-duree]').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
     maj();
   }));
+  /* La liste des moments peut changer de hauteur : les positions de défilement sont alors recalculées. */
+  let hauteur = j.offsetHeight;
+  const apres = () => { const h = j.offsetHeight; if (Math.abs(h - hauteur) > 1 && window.ScrollTrigger) { hauteur = h; window.ScrollTrigger.refresh(); } };
+  j.addEventListener('click', (e) => { if (e.target.closest('[data-duree]')) requestAnimationFrame(apres); });
+  curseur.addEventListener('change', apres);
   curseur.addEventListener('input', maj);
   new ResizeObserver(() => maj()).observe(piste);
   maj();

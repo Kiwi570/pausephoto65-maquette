@@ -1,7 +1,7 @@
 /* Événements : présence discrète, fil de la journée (plage de 4 h ou 8 h sur une journée type, exemple),
    quatre forfaits, petits plus, demande de date en quatre étapes avec récapitulatif. */
 import { html } from '../../outils/gabarit.mjs';
-import { photo, prix, sur, filEtapes, icones } from '../gabarits/projet.mjs';
+import { photo, prix, sur, filEtapes, icones, bandeau } from '../gabarits/projet.mjs';
 
 export const page = { cle: 'evenements', fichier: 'evenements', imagePartage: 'photos/bapteme-maman-bebe-eglise-1280.webp', intro: 'photos/bapteme-maman-bebe-eglise' };
 
@@ -21,6 +21,8 @@ export default (c) => {
   </div>
   ${photo(c, { nom: 'photos/bapteme-maman-bebe-eglise', alt: alt(c, 'bapteme-maman-bebe-eglise'), cadrage: '50% 35%', cadrageMobile: '50% 35%', priorite: true, classe: 'page-tete-media', sizes: '(max-width: 760px) 92vw, 42vw', attrs: 'data-hero' })}
 </section>
+
+${bandeau(c.s('evenements.bandeau').split(' · '), 1)}
 
 <section class="section approche" id="approche">
   <div class="conteneur approche-grille">

@@ -2,6 +2,27 @@
 
 Chaque version ajoute sa partie en tête de ce fichier, construite en comparant l'archive précédente et la nouvelle, jamais de mémoire.
 
+## v2 — un site plus vivant
+
+**Accueil : premier écran refait**
+- Pluie de tirages : un grand titre centré « Faites une pause. », entouré de dix tirages photo (six sur téléphone) qui tombent à l'arrivée et s'éparpillent vers les bords au défilement.
+- Les tirages s'attrapent et se lancent à la souris ou au doigt : ils glissent, rebondissent sur les bords et s'arrêtent. Une petite note « Attrapez une photo, lancez-la » apparaît sur ordinateur.
+- Plus de grand vide au milieu sur les grands écrans.
+
+**Effets ajoutés sur tout le site**
+- Photos qui se révèlent : un rideau qui monte, un léger zoom et le flou qui se règle, à l'arrivée de chaque photo dans l'écran.
+- Curseur appareil photo : un viseur dont les crochets se ferment sur les photos, un déclic à chaque clic et un compteur de poses qui descend de 36 à 1.
+- Bandeaux de grands mots sur chaque page (séances, événements, univers, communes) : ils défilent en continu, plus vite quand on fait défiler la page, et changent de sens avec elle.
+- Titres de section qui s'écrivent lettre à lettre à leur arrivée.
+
+**À manipuler**
+- Accueil : la planche contact arrive en pile au centre et s'étale à sa place au défilement, puis les cercles au crayon se tracent.
+- Accueil : les photos des séances se retournent au survol (au toucher sur téléphone) ; au dos, le nom, le prix et la durée.
+- Galerie : les cinq photos d'ouverture se déplacent et se lancent à la souris (sur ordinateur).
+
+**Inchangé**
+- Textes, prix, pages, formulaires simulés et mode calme (qui coupe tous ces effets).
+
 ## v1 — la base
 
 **Direction artistique « Temps de pose »**

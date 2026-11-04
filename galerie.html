@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1" data-gabarit="galerie" data-page="galerie" data-curseur>
+<html lang="fr" data-v="2" data-gabarit="galerie" data-page="galerie" data-curseur>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -41,14 +41,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/manrope.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#f2ece3">
 <link rel="icon" href="/assets/images/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="/assets/images/favicon-48.png" sizes="48x48" type="image/png">
@@ -122,7 +122,8 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     </div>
     <p class="actions" data-anime="gsap" data-entree><a class="bouton" href="/seances#reservation" data-libelle="Séances &amp; tarifs" data-action-principale data-magnetique>Réserver une séance</a> <span class="info-cle" data-info-cle>Séances d&#39;une heure dès 80 €</span></p>
   </div>
-  <div class="mosaique" data-visuel>
+  <div class="mosaique" data-visuel data-manipuler>
+    <p class="pluie-indice pluie-indice--mosaique" aria-hidden="true" data-audit-ignorer>Déplacez les photos</p>
     <figure data-hero data-mise-au-point class="media mosaique-photo mosaique-photo--1" style="--flou:url(/assets/images/photos/studio-lumiere-fenetre-flou.webp);--cadrage:50% 35%">
   <picture>
     <img src="/assets/images/photos/studio-lumiere-fenetre-1280.webp" srcset="/assets/images/photos/studio-lumiere-fenetre-640.webp 640w, /assets/images/photos/studio-lumiere-fenetre-1280.webp 1280w, /assets/images/photos/studio-lumiere-fenetre-1920.webp 1920w" sizes="(max-width: 760px) 44vw, 22vw" alt="Jeune femme assise près d&#39;une chaise, la lumière d&#39;une fenêtre dessinée sur le fond sombre" width="1280" height="1763" fetchpriority="high" loading="eager" decoding="async">
@@ -146,6 +147,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 </figure>
   </div>
 </section>
+<div class="bandeau" data-bandeau data-sens="-1" aria-hidden="true" data-audit-ignorer><div class="bandeau-piste"><div class="bandeau-suite"><span class="bandeau-mot">Portraits</span><span class="bandeau-sep"></span><span class="bandeau-mot bandeau-mot--trait">Regard personnel</span><span class="bandeau-sep"></span><span class="bandeau-mot">Portrait pro</span><span class="bandeau-sep"></span><span class="bandeau-mot bandeau-mot--trait">Studio</span><span class="bandeau-sep"></span><span class="bandeau-mot">Extérieur</span><span class="bandeau-sep"></span></div><div class="bandeau-suite"><span class="bandeau-mot">Portraits</span><span class="bandeau-sep"></span><span class="bandeau-mot bandeau-mot--trait">Regard personnel</span><span class="bandeau-sep"></span><span class="bandeau-mot">Portrait pro</span><span class="bandeau-sep"></span><span class="bandeau-mot bandeau-mot--trait">Studio</span><span class="bandeau-sep"></span><span class="bandeau-mot">Extérieur</span><span class="bandeau-sep"></span></div></div></div>
 <section class="salle ecran epingle" id="portraits" data-salle="portraits" data-entete-cache style="--teinte:#6c5142">
   <div class="salle-tete conteneur">
     <p class="salle-num chiffres" aria-hidden="true">01</p>

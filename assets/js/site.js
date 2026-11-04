@@ -1,13 +1,14 @@
 /* PausePhoto65 — effets du projet. Le socle gère l'ouverture, les transitions, l'en-tête, le menu,
    le mode calme, les boucles et les mesures ; ce fichier n'orchestre que ce qui est propre au client. */
-import { demarrer, etat, quand } from './socle/index.js?v=1';
-import { timelineIntro, nettoyerIntro, animerVoile } from './projet/iris.js?v=1';
-import { initMiseAuPoint, observer, lancer, toutNet, presser } from './projet/mise-au-point.js?v=1';
-import { parallaxes, magnetiques, inclinaisons, curseurViseur, pausePose, planche, tirages, faq } from './projet/effets.js?v=1';
-import { initGalerie } from './projet/galerie.js?v=1';
-import { initParcours } from './projet/parcours.js?v=1';
-import { initSoleil } from './projet/soleil.js?v=1';
-import { initCarte, initAlbum } from './projet/lieux.js?v=1';
+import { demarrer, etat, quand } from './socle/index.js?v=2';
+import { timelineIntro, nettoyerIntro, animerVoile } from './projet/iris.js?v=2';
+import { initMiseAuPoint, observer, lancer, toutNet, presser } from './projet/mise-au-point.js?v=2';
+import { parallaxes, magnetiques, inclinaisons, curseurViseur, pausePose, planche, tirages, faq } from './projet/effets.js?v=2';
+import { initGalerie } from './projet/galerie.js?v=2';
+import { initParcours } from './projet/parcours.js?v=2';
+import { initSoleil } from './projet/soleil.js?v=2';
+import { initCarte, initAlbum } from './projet/lieux.js?v=2';
+import { initPluie, initManipuler, bandeaux, lettres, retourner } from './projet/vivant.js?v=2';
 
 const gsap = window.gsap;
 const ST = window.ScrollTrigger;
@@ -57,6 +58,13 @@ demarrer({
     if (!gsap || !ST) { toutNet(); return; }
     initGalerie(gsap, ST);
     initAlbum(gsap, ST, etat.calme);
+    const pluie = initPluie(gsap, ST, etat.calme);
+    retourner();
+    if (!etat.calme) {
+      bandeaux(gsap, false);
+      initManipuler(gsap, false);
+      if (etat.arrivee !== 'retour') lettres(gsap, ST);
+    }
     faq();
     pausePose(gsap, ST, etat.calme);
     if (!etat.calme) {
@@ -72,7 +80,7 @@ demarrer({
     if (etat.arrivee === 'voile') animerVoile(gsap, 'ouvrir');
     /* Les autres photos font leur mise au point à leur entrée dans l'écran, une fois la page découverte. */
     quand('pret', ({ mode }) => {
-      if (mode === 'jouee' || mode === 'voile') observer(); else toutNet();
+      if (mode === 'jouee' || mode === 'voile') { observer(); pluie.tomber(); } else { toutNet(); pluie.poser(); }
       /* Rechargement : si la page n'a pas fini de charger à la fin de l'intro, le navigateur ne doit pas
          ramener l'ancienne position (l'intro repart du haut) ; la restauration revient après le chargement. */
       const nav = performance.getEntriesByType('navigation')[0];

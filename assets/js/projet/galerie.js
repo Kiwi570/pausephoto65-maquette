@@ -1,7 +1,7 @@
 /* Galerie : salles horizontales épinglées (ordinateur), teinte du fond qui suit la photo au centre,
    filtres gardés dans l'adresse (?univers=), visionneuse plein écran (photo entière, flèches, glisser, Échap,
    focus gardé puis rendu, un lien par photo : #photo-…). */
-import { etat, rafraichir, aller, suivre, lacher, bloquerDefilement, debloquerDefilement, quand } from '../socle/index.js?v=1';
+import { etat, rafraichir, aller, suivre, lacher, bloquerDefilement, debloquerDefilement, quand } from '../socle/index.js?v=2';
 
 const html = document.documentElement;
 

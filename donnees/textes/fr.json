@@ -92,7 +92,8 @@
    "texte": "Portraits et événements : photographe à Tarbes, dans les Hautes-Pyrénées, au studio ou en extérieur.",
    "action": "Réserver une séance",
    "info": "Séances d'une heure dès 80 €",
-   "galerie": "Voir la galerie"
+   "galerie": "Voir la galerie",
+   "indice": "Attrapez une photo, lancez-la"
   },
   "manifeste": {
    "sur": "Son regard",
@@ -115,7 +116,9 @@
    "renaissancePour": "Une demi-journée accompagnée, maquillage compris",
    "renaissanceDuree": "environ 4 h",
    "tout": "Toutes les séances et le guide",
-   "renaissanceLien": "Découvrir la séance"
+   "renaissanceLien": "Découvrir la séance",
+   "dos": "Au dos du tirage",
+   "dosNote": "Au studio ou en extérieur"
   },
   "evenements": {
    "sur": "Vos événements",
@@ -148,7 +151,9 @@
    "reserver": "Réserver une séance",
    "date": "Demander une date",
    "ecrire": "Écrire"
-  }
+  },
+  "bandeau1": "Portrait · Famille · Mariage · Baptême · Studio · Extérieur · Tarbes",
+  "bandeau2": "Heure dorée · Hautes-Pyrénées · Lourdes · Bagnères-de-Bigorre · Pau · Lannemezan"
  },
  "heure": {
   "titre": "Aujourd'hui à Tarbes",
@@ -178,7 +183,9 @@
   "finTitre": "Une de ces images vous ressemble ?",
   "finTexte": "Chaque séance commence par un échange : vos envies, le lieu, la lumière.",
   "finReserver": "Réserver une séance",
-  "finEcrire": "Écrire"
+  "finEcrire": "Écrire",
+  "bandeau": "Portraits · Regard personnel · Portrait pro · Studio · Extérieur",
+  "indice": "Déplacez les photos"
  },
  "seances": {
   "titre": "Choisissez votre séance",
@@ -281,7 +288,8 @@
    "texte": "Écrivez à PausePhoto65 : un premier échange suffit souvent à trouver la bonne séance.",
    "ecrire": "Écrire",
    "galerie": "Revoir la galerie"
-  }
+  },
+  "bandeau": "Solo · Duo · Famille · Portrait pro · Renaissance · Saisons"
  },
  "evenements": {
   "titre": "Votre journée, sans poses forcées.",
@@ -351,7 +359,8 @@
    "envoye": "Demande simulée : rien n'a été envoyé. Sur le site final, elle partira vers PausePhoto65.",
    "donnees": "Vos données servent seulement à répondre à votre demande. <a href=\"/mentions-legales#confidentialite\">Politique de confidentialité</a> (à compléter).",
    "datePassee": "Choisissez une date à venir."
-  }
+  },
+  "bandeau": "Mariage · Baptême · Anniversaire · Émotions spontanées · Photos de groupe"
  },
  "apropos": {
   "titre": "Derrière l'objectif",
@@ -414,7 +423,8 @@
    "envoyer": "Envoyer le message",
    "envoye": "Message simulé : rien n'a été envoyé. Sur le site final, il partira vers PausePhoto65.",
    "donnees": "Vos données servent seulement à répondre à votre message. <a href=\"/mentions-legales#confidentialite\">Politique de confidentialité</a> (à compléter)."
-  }
+  },
+  "bandeau": "Tarbes · Lourdes · Bagnères-de-Bigorre · Lannemezan · Pau"
  },
  "mentions": {
   "titre": "Mentions légales",

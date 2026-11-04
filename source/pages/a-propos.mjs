@@ -1,7 +1,7 @@
 /* À propos & contact : la photographe, l'album de famille (vraies photos posées dans les coins de l'album),
    sa façon de faire, collaboratrices, zone de déplacement (carte), formulaire de contact simulé. */
 import { html } from '../../outils/gabarit.mjs';
-import { photo, sur, externe, icones, citation } from '../gabarits/projet.mjs';
+import { photo, sur, externe, icones, citation, bandeau } from '../gabarits/projet.mjs';
 
 export const page = { cle: 'a-propos', fichier: 'a-propos', imagePartage: 'photos/portrait-photographe-studio-1280.webp', intro: 'photos/portrait-photographe-studio' };
 
@@ -42,6 +42,8 @@ export default (c) => {
   </div>
   ${photo(c, { nom: 'photos/portrait-photographe-studio', alt: alt(c, 'portrait-photographe-studio'), cadrage: '50% 30%', cadrageMobile: '50% 25%', priorite: true, classe: 'page-tete-media', sizes: '(max-width: 760px) 92vw, 40vw', attrs: 'data-hero' })}
 </section>
+
+${bandeau(c.s('apropos.bandeau').split(' · '), -1)}
 
 <section class="section album-section" id="album">
   <div class="conteneur album-grille">

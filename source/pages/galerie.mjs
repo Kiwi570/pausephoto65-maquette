@@ -1,7 +1,7 @@
 /* Galerie : trois salles qui défilent à l'horizontale (épinglées sur ordinateur, glissées au doigt sur téléphone),
    filtres gardés dans l'adresse (?univers=), visionneuse plein écran : chaque photo entière, un lien par photo. */
 import { html, brut, typo } from '../../outils/gabarit.mjs';
-import { photo, sur, icones, largeurs } from '../gabarits/projet.mjs';
+import { photo, sur, icones, largeurs, bandeau } from '../gabarits/projet.mjs';
 
 export const page = { cle: 'galerie', fichier: 'galerie', imagePartage: 'photos/studio-lumiere-fenetre-1280.webp', intro: 'photos/studio-lumiere-fenetre' };
 
@@ -20,10 +20,13 @@ export default (c) => {
     </div>
     <p class="actions" data-anime="gsap" data-entree><a class="bouton" href="${c.url('seances', 'reservation')}" data-libelle="${c.libelle('seances')}" data-action-principale data-magnetique>${c.t('galerie.action')}</a> <span class="info-cle" data-info-cle>${c.t('galerie.info', { n })}</span></p>
   </div>
-  <div class="mosaique" data-visuel>
+  <div class="mosaique" data-visuel data-manipuler>
+    <p class="pluie-indice pluie-indice--mosaique" aria-hidden="true" data-audit-ignorer>${c.t('galerie.indice')}</p>
     ${mosaique.map((m, i) => photo(c, { nom: 'photos/' + m, alt: c.donnees.alts[m], cadrage: '50% 35%', classe: `mosaique-photo mosaique-photo--${i + 1}`, priorite: i === 0, sizes: '(max-width: 760px) 44vw, 22vw', attrs: i === 0 ? 'data-hero' : '' }))}
   </div>
 </section>
+
+${bandeau(c.s('galerie.bandeau').split(' · '), -1)}
 
 ${c.donnees.univers.map((u, k) => {
   const photos = g.filter((x) => x.univers === u.id);

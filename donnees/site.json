@@ -2,7 +2,7 @@
   "nom": "PausePhoto65",
   "adresse": "https://pausephoto65-maquette.vercel.app",
   "siteActuel": "pausephoto65.fr",
-  "version": 1,
+  "version": 2,
   "langues": ["fr"],
   "navigation": ["accueil", "galerie", "seances", "evenements", "a-propos"],
   "actionEntete": { "page": "seances", "ancre": "reservation" },

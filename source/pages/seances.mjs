@@ -1,7 +1,7 @@
 /* Séances & tarifs : guide « Quelle séance pour moi ? » (bague de mise au point), séances d'une heure,
    séance Renaissance, saisons (statut calculé à la date du jour), studio, réservation simulée en trois étapes, FAQ. */
 import { html } from '../../outils/gabarit.mjs';
-import { photo, prix, euros, sur, filEtapes, icones } from '../gabarits/projet.mjs';
+import { photo, prix, euros, sur, filEtapes, icones, bandeau } from '../gabarits/projet.mjs';
 
 export const page = { cle: 'seances', fichier: 'seances', imagePartage: 'photos/studio-robe-noire-sourire-1280.webp', intro: 'photos/studio-robe-noire-sourire' };
 
@@ -26,6 +26,8 @@ export default (c) => {
   </div>
   ${photo(c, { nom: 'photos/studio-robe-noire-sourire', alt: alt(c, 'studio-robe-noire-sourire'), cadrage: '50% 30%', cadrageMobile: '50% 25%', priorite: true, classe: 'page-tete-media', sizes: '(max-width: 760px) 92vw, 42vw', attrs: 'data-hero' })}
 </section>
+
+${bandeau(c.s('seances.bandeau').split(' · '), -1)}
 
 <section class="section guide" id="guide" data-guide>
   <div class="conteneur guide-grille">

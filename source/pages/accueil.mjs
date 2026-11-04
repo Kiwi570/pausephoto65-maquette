@@ -1,11 +1,25 @@
 /* Accueil : ouverture en diaphragme, Pause/Pose, planche contact, séances, événements, saisons,
    la photographe, la lumière du jour, appel final. */
 import { html } from '../../outils/gabarit.mjs';
-import { photo, prix, sur, icones, citation } from '../gabarits/projet.mjs';
+import { photo, prix, euros, sur, icones, citation, bandeau } from '../gabarits/projet.mjs';
 
 export const page = { cle: 'accueil', fichier: 'index', imagePartage: 'photos/regard-epaule-1280.webp', intro: 'photos/regard-epaule' };
 
 const alt = (c, n) => c.donnees.alts[n.replace(/^photos\//, '')] || '';
+
+/* Pluie de tirages du premier écran : [photo, cadrage, ordinateur [x %, y %, rotation, taille], téléphone [x, y, rotation, petit écran] ou rien]. */
+const PLUIE = [
+  ['regard-epaule', '50% 35%', [9, 26, -9, 1.15], [14, 14, -8, 1]],
+  ['coquelicots-chapeau-sourire', '50% 30%', [22, 11, 6, 0.9], null],
+  ['studio-blouson-cuir-main', '50% 30%', [79, 12, -6, 0.95], [86, 14, 7, 1]],
+  ['famille-maman-bebe-canape', '50% 35%', [92, 34, 8, 1.1], null],
+  ['printemps-colza-champ', '50% 40%', [7, 68, 7, 1], [11, 87, 6]],
+  ['blazer-sourire', '50% 30%', [21, 89, -6, 0.95], [50, 91, -4]],
+  ['bapteme-maman-bebe-eglise', '50% 35%', [85, 72, -8, 1.05], [89, 86, -7]],
+  ['lisbonne-pont-portrait', '40% 40%', [96, 92, 5, 0.85], null],
+  ['automne-foret-debout', '50% 30%', [68, 94, 9, 0.8], null],
+  ['creatrice-cadre-coeur', '50% 40%', [36, 95, -4, 0.75], [50, 12, 4]],
+];
 
 const PLANCHE = [
   ['studio-blouson-cuir-main', 'portraits'], ['studio-dos-noir'], ['bapteme-maman-bebe-eglise'], ['lisbonne-rocher', 'regard'],
@@ -16,21 +30,26 @@ const PLANCHE = [
 export default (c) => {
   const univers = Object.fromEntries(c.donnees.univers.map((u) => [u.id, u]));
   return html`
-<section class="hero ecran" id="ouverture">
-  <div class="hero-titre-bloc">
+<section class="hero hero--pluie ecran" id="ouverture" data-pluie>
+  <div class="pluie" aria-hidden="true" data-audit-ignorer>
+    ${PLUIE.map(([n, cad, d, m], i) => html`<div class="pluie-tirage" style="--x:${d[0]}%;--y:${d[1]}%;--r:${d[2]}deg;--w:${d[3]}${m ? html`;--xm:${m[0]}%;--ym:${m[1]}%;--rm:${m[2]}deg` : ''}"${m ? html` data-m${m[3] ? html` data-m-petit` : ''}` : ''}><figure class="pluie-cadre" style="--cadrage:${cad}"><img src="/assets/images/photos/${n}-640.webp" alt="" width="640" height="${Math.round(640 / c.donnees['photos-infos']['photos/' + n].ratio)}" decoding="async" draggable="false"${i > 5 ? html` loading="lazy"` : ''}></figure></div>`)}
+    <p class="pluie-indice">${c.t('accueil.hero.indice')}</p>
+  </div>
+  <div class="hero-centre">
     <p class="sur hero-sur" data-anime="gsap" data-entree><span class="sur-trait" aria-hidden="true"></span>${c.t('commun.introLigne')}</p>
     <h1 class="hero-titre" data-superpose><span class="ligne-masque"><span class="hero-ligne" data-anime="gsap">${c.t('accueil.hero.titre1')}</span></span><span class="ligne-masque"><span class="hero-ligne hero-ligne--accent" data-anime="gsap">${c.t('accueil.hero.titre2')}</span></span></h1>
-  </div>
-  ${photo(c, { nom: 'photos/regard-epaule', alt: alt(c, 'regard-epaule'), cadrage: '50% 40%', priorite: true, classe: 'hero-media', sizes: '(max-width: 760px) 92vw, (max-width: 1100px) 40vw, 32vw', attrs: 'data-hero' })}
-  <div class="hero-cote" data-anime="gsap">
-    <p class="hero-texte">${c.t('accueil.hero.texte')}</p>
-    <p class="hero-actions">
-      <a class="bouton" href="${c.url('seances', 'reservation')}" data-libelle="${c.libelle('seances')}" data-action-principale data-magnetique>${c.t('accueil.hero.action')}</a>
-      ${c.lien('galerie', { classe: 'lien-fleche', texte: html`${c.t('accueil.hero.galerie')} ${icones.fleche}` })}
-    </p>
-    <p class="hero-info" data-info-cle>${c.t('accueil.hero.info')}</p>
+    <div class="hero-cote" data-anime="gsap">
+      <p class="hero-texte">${c.t('accueil.hero.texte')}</p>
+      <p class="hero-actions">
+        <a class="bouton" href="${c.url('seances', 'reservation')}" data-libelle="${c.libelle('seances')}" data-action-principale data-magnetique>${c.t('accueil.hero.action')}</a>
+        ${c.lien('galerie', { classe: 'lien-fleche', texte: html`${c.t('accueil.hero.galerie')} ${icones.fleche}` })}
+      </p>
+      <p class="hero-info" data-info-cle>${c.t('accueil.hero.info')}</p>
+    </div>
   </div>
 </section>
+
+${bandeau(c.s('accueil.bandeau1').split(' · '), -1)}
 
 <section class="section manifeste" id="pause-pose">
   <div class="conteneur manifeste-grille">
@@ -59,7 +78,7 @@ export default (c) => {
     <p data-anime>${c.t('accueil.regards.texte')}</p>
   </div>
   <div class="conteneur">
-    <ol class="planche" data-planche>
+    <ol class="planche" data-planche data-superpose>
       ${PLANCHE.map(([n, u], i) => {
         const num = String(i + 12).padStart(2, '0');
         const vue = photo(c, { nom: 'photos/' + n, alt: u ? '' : alt(c, n), cadrage: '50% 35%', classe: 'vue-media', ratio: '2 / 3', sizes: '(max-width: 760px) 30vw, 15vw', mise: false });
@@ -79,14 +98,17 @@ export default (c) => {
       <p data-anime>${c.t('accueil.seances.texte')}</p>
     </div>
     <ul class="cartes-seances">
-      ${c.donnees.seances.map((s) => html`<li class="carte-seance" data-anime data-inclinaison>
-        ${photo(c, { nom: s.photo, alt: alt(c, s.photo), cadrage: s.cadrage, classe: 'carte-seance-media', ratio: '4 / 5', sizes: '(max-width: 760px) 80vw, 22vw' })}
+      ${c.donnees.seances.map((s) => html`<li class="carte-seance" data-anime>
+        <div class="carte-tirage" data-retourner>
+          <div class="carte-face">${photo(c, { nom: s.photo, alt: alt(c, s.photo), cadrage: s.cadrage, classe: 'carte-seance-media', ratio: '4 / 5', sizes: '(max-width: 760px) 80vw, 22vw' })}</div>
+          <div class="carte-dos" aria-hidden="true"><p class="carte-dos-sur">${c.t('accueil.seances.dos')}</p><p class="carte-dos-nom">${s.nom}</p><p class="carte-dos-pour">${s.pour}</p><p class="carte-dos-prix chiffres">${euros(s.prix)} · ${s.duree}</p><p class="carte-dos-note">${c.t('accueil.seances.dosNote')}</p></div>
+        </div>
         <h3>${s.nom}</h3>
         <p class="carte-seance-pour">${s.pour}</p>
         <p class="carte-seance-ligne"><span>${s.duree}</span>${prix(s.prix)}</p>
         ${c.lien('seances', { ancre: 'reservation', params: `seance=${s.id}`, classe: 'lien-fleche', texte: html`${c.t('commun.fiche')} ${icones.fleche}` })}
       </li>`)}
-      <li class="carte-seance carte-seance--large" data-anime data-inclinaison>
+      <li class="carte-seance carte-seance--large" data-anime>
         ${photo(c, { nom: 'photos/chaise-lumiere-fenetre', alt: alt(c, 'chaise-lumiere-fenetre'), cadrage: '50% 30%', classe: 'carte-seance-media', ratio: '4 / 5', sizes: '(max-width: 760px) 80vw, 22vw' })}
         <h3>${c.t('accueil.seances.renaissance')}</h3>
         <p class="carte-seance-pour">${c.t('accueil.seances.renaissancePour')}</p>
@@ -149,6 +171,8 @@ export default (c) => {
     ${photo(c, { nom: 'photos/portrait-photographe-studio', alt: alt(c, 'portrait-photographe-studio'), cadrage: '50% 30%', classe: 'photographe-media', ratio: '2 / 3', sizes: '(max-width: 760px) 92vw, 36vw', attrs: 'data-parallaxe-interne' })}
   </div>
 </section>
+
+${bandeau(c.s('accueil.bandeau2').split(' · '), 1)}
 
 <section class="section lumiere" id="lumiere">
   <div class="conteneur lumiere-grille">

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1" data-gabarit="accueil" data-page="accueil" data-curseur>
+<html lang="fr" data-v="2" data-gabarit="accueil" data-page="accueil" data-curseur>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -41,14 +41,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/manrope.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#f2ece3">
 <link rel="icon" href="/assets/images/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="/assets/images/favicon-48.png" sizes="48x48" type="image/png">
@@ -112,25 +112,25 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   </div>
 </div>
 <main id="contenu" tabindex="-1">
-<section class="hero ecran" id="ouverture">
-  <div class="hero-titre-bloc">
+<section class="hero hero--pluie ecran" id="ouverture" data-pluie>
+  <div class="pluie" aria-hidden="true" data-audit-ignorer>
+    <div class="pluie-tirage" style="--x:9%;--y:26%;--r:-9deg;--w:1.15;--xm:14%;--ym:14%;--rm:-8deg" data-m data-m-petit><figure class="pluie-cadre" style="--cadrage:50% 35%"><img src="/assets/images/photos/regard-epaule-640.webp" alt="" width="640" height="960" decoding="async" draggable="false"></figure></div><div class="pluie-tirage" style="--x:22%;--y:11%;--r:6deg;--w:0.9"><figure class="pluie-cadre" style="--cadrage:50% 30%"><img src="/assets/images/photos/coquelicots-chapeau-sourire-640.webp" alt="" width="640" height="829" decoding="async" draggable="false"></figure></div><div class="pluie-tirage" style="--x:79%;--y:12%;--r:-6deg;--w:0.95;--xm:86%;--ym:14%;--rm:7deg" data-m data-m-petit><figure class="pluie-cadre" style="--cadrage:50% 30%"><img src="/assets/images/photos/studio-blouson-cuir-main-640.webp" alt="" width="640" height="937" decoding="async" draggable="false"></figure></div><div class="pluie-tirage" style="--x:92%;--y:34%;--r:8deg;--w:1.1"><figure class="pluie-cadre" style="--cadrage:50% 35%"><img src="/assets/images/photos/famille-maman-bebe-canape-640.webp" alt="" width="640" height="778" decoding="async" draggable="false"></figure></div><div class="pluie-tirage" style="--x:7%;--y:68%;--r:7deg;--w:1;--xm:11%;--ym:87%;--rm:6deg" data-m><figure class="pluie-cadre" style="--cadrage:50% 40%"><img src="/assets/images/photos/printemps-colza-champ-640.webp" alt="" width="640" height="960" decoding="async" draggable="false"></figure></div><div class="pluie-tirage" style="--x:21%;--y:89%;--r:-6deg;--w:0.95;--xm:50%;--ym:91%;--rm:-4deg" data-m><figure class="pluie-cadre" style="--cadrage:50% 30%"><img src="/assets/images/photos/blazer-sourire-640.webp" alt="" width="640" height="917" decoding="async" draggable="false"></figure></div><div class="pluie-tirage" style="--x:85%;--y:72%;--r:-8deg;--w:1.05;--xm:89%;--ym:86%;--rm:-7deg" data-m><figure class="pluie-cadre" style="--cadrage:50% 35%"><img src="/assets/images/photos/bapteme-maman-bebe-eglise-640.webp" alt="" width="640" height="960" decoding="async" draggable="false" loading="lazy"></figure></div><div class="pluie-tirage" style="--x:96%;--y:92%;--r:5deg;--w:0.85"><figure class="pluie-cadre" style="--cadrage:40% 40%"><img src="/assets/images/photos/lisbonne-pont-portrait-640.webp" alt="" width="640" height="418" decoding="async" draggable="false" loading="lazy"></figure></div><div class="pluie-tirage" style="--x:68%;--y:94%;--r:9deg;--w:0.8"><figure class="pluie-cadre" style="--cadrage:50% 30%"><img src="/assets/images/photos/automne-foret-debout-640.webp" alt="" width="640" height="910" decoding="async" draggable="false" loading="lazy"></figure></div><div class="pluie-tirage" style="--x:36%;--y:95%;--r:-4deg;--w:0.75;--xm:50%;--ym:12%;--rm:4deg" data-m><figure class="pluie-cadre" style="--cadrage:50% 40%"><img src="/assets/images/photos/creatrice-cadre-coeur-640.webp" alt="" width="640" height="847" decoding="async" draggable="false" loading="lazy"></figure></div>
+    <p class="pluie-indice">Attrapez une photo, lancez-la</p>
+  </div>
+  <div class="hero-centre">
     <p class="sur hero-sur" data-anime="gsap" data-entree><span class="sur-trait" aria-hidden="true"></span>Photographe à Tarbes</p>
     <h1 class="hero-titre" data-superpose><span class="ligne-masque"><span class="hero-ligne" data-anime="gsap">Faites une</span></span><span class="ligne-masque"><span class="hero-ligne hero-ligne--accent" data-anime="gsap">pause.</span></span></h1>
-  </div>
-  <figure data-hero data-mise-au-point class="media hero-media" style="--flou:url(/assets/images/photos/regard-epaule-flou.webp);--cadrage:50% 40%">
-  <picture>
-    <img src="/assets/images/photos/regard-epaule-1280.webp" srcset="/assets/images/photos/regard-epaule-640.webp 640w, /assets/images/photos/regard-epaule-1280.webp 1280w, /assets/images/photos/regard-epaule-1920.webp 1920w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 40vw, 32vw" alt="Portrait rapproché d&#39;une femme qui regarde par-dessus son épaule, boucles d&#39;oreilles fleuries" width="1280" height="1920" fetchpriority="high" loading="eager" decoding="async">
-  </picture>
-</figure>
-  <div class="hero-cote" data-anime="gsap">
-    <p class="hero-texte">Portraits et événements : photographe à Tarbes, dans les Hautes-Pyrénées, au studio ou en extérieur.</p>
-    <p class="hero-actions">
-      <a class="bouton" href="/seances#reservation" data-libelle="Séances &amp; tarifs" data-action-principale data-magnetique>Réserver une séance</a>
-      <a href="/galerie" class="lien-fleche" data-libelle="Galerie">Voir la galerie <svg class="icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-    </p>
-    <p class="hero-info" data-info-cle>Séances d&#39;une heure dès 80 €</p>
+    <div class="hero-cote" data-anime="gsap">
+      <p class="hero-texte">Portraits et événements : photographe à Tarbes, dans les Hautes-Pyrénées, au studio ou en extérieur.</p>
+      <p class="hero-actions">
+        <a class="bouton" href="/seances#reservation" data-libelle="Séances &amp; tarifs" data-action-principale data-magnetique>Réserver une séance</a>
+        <a href="/galerie" class="lien-fleche" data-libelle="Galerie">Voir la galerie <svg class="icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </p>
+      <p class="hero-info" data-info-cle>Séances d&#39;une heure dès 80 €</p>
+    </div>
   </div>
 </section>
+<div class="bandeau" data-bandeau data-sens="-1" aria-hidden="true" data-audit-ignorer><div class="bandeau-piste"><div class="bandeau-suite"><span class="bandeau-mot">Portrait</span><span class="bandeau-sep"></span><span class="bandeau-mot bandeau-mot--trait">Famille</span><span class="bandeau-sep"></span><span class="bandeau-mot">Mariage</span><span class="bandeau-sep"></span><span class="bandeau-mot bandeau-mot--trait">Baptême</span><span class="bandeau-sep"></span><span class="bandeau-mot">Studio</span><span class="bandeau-sep"></span><span class="bandeau-mot bandeau-mot--trait">Extérieur</span><span class="bandeau-sep"></span><span class="bandeau-mot">Tarbes</span><span class="bandeau-sep"></span></div><div class="bandeau-suite"><span class="bandeau-mot">Portrait</span><span class="bandeau-sep"></span><span class="bandeau-mot bandeau-mot--trait">Famille</span><span class="bandeau-sep"></span><span class="bandeau-mot">Mariage</span><span class="bandeau-sep"></span><span class="bandeau-mot bandeau-mot--trait">Baptême</span><span class="bandeau-sep"></span><span class="bandeau-mot">Studio</span><span class="bandeau-sep"></span><span class="bandeau-mot bandeau-mot--trait">Extérieur</span><span class="bandeau-sep"></span><span class="bandeau-mot">Tarbes</span><span class="bandeau-sep"></span></div></div></div>
 <section class="section manifeste" id="pause-pose">
   <div class="conteneur manifeste-grille">
     <div class="manifeste-texte">
@@ -169,7 +169,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <p data-anime>Les vues entourées au crayon mènent chacune à un univers de la galerie.</p>
   </div>
   <div class="conteneur">
-    <ol class="planche" data-planche>
+    <ol class="planche" data-planche data-superpose>
       <li class="vue vue--choisie"><span class="vue-num" aria-hidden="true">12</span><a class="vue-lien" href="/galerie#portraits" data-libelle="Galerie"><span class="vue-cadre"><figure class="media vue-media" style="--flou:url(/assets/images/photos/studio-blouson-cuir-main-flou.webp);--cadrage:50% 35%;aspect-ratio:2 / 3">
   <picture>
     <img src="/assets/images/photos/studio-blouson-cuir-main-1280.webp" srcset="/assets/images/photos/studio-blouson-cuir-main-640.webp 640w, /assets/images/photos/studio-blouson-cuir-main-1280.webp 1280w, /assets/images/photos/studio-blouson-cuir-main-1920.webp 1920w" sizes="(max-width: 760px) 30vw, 15vw" alt="" width="1280" height="1873" loading="lazy" decoding="async">
@@ -230,48 +230,60 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <p data-anime>Au studio ou en extérieur : en solo, à deux, en famille ou pour votre activité.</p>
     </div>
     <ul class="cartes-seances">
-      <li class="carte-seance" data-anime data-inclinaison>
-        <figure data-mise-au-point class="media carte-seance-media" style="--flou:url(/assets/images/photos/studio-chaise-pull-blanc-flou.webp);--cadrage:50% 30%;aspect-ratio:4 / 5">
+      <li class="carte-seance" data-anime>
+        <div class="carte-tirage" data-retourner>
+          <div class="carte-face"><figure data-mise-au-point class="media carte-seance-media" style="--flou:url(/assets/images/photos/studio-chaise-pull-blanc-flou.webp);--cadrage:50% 30%;aspect-ratio:4 / 5">
   <picture>
     <img src="/assets/images/photos/studio-chaise-pull-blanc-1280.webp" srcset="/assets/images/photos/studio-chaise-pull-blanc-640.webp 640w, /assets/images/photos/studio-chaise-pull-blanc-1280.webp 1280w, /assets/images/photos/studio-chaise-pull-blanc-1920.webp 1920w" sizes="(max-width: 760px) 80vw, 22vw" alt="Jeune femme assise sur une chaise, pull blanc, la main contre la joue" width="1280" height="1690" loading="lazy" decoding="async">
   </picture>
-</figure>
+</figure></div>
+          <div class="carte-dos" aria-hidden="true"><p class="carte-dos-sur">Au dos du tirage</p><p class="carte-dos-nom">Séance solo</p><p class="carte-dos-pour">Une séance rien que pour vous</p><p class="carte-dos-prix chiffres">80 € · 1 h</p><p class="carte-dos-note">Au studio ou en extérieur</p></div>
+        </div>
         <h3>Séance solo</h3>
         <p class="carte-seance-pour">Une séance rien que pour vous</p>
         <p class="carte-seance-ligne"><span>1 h</span><span class="prix " data-prix>80 €</span></p>
         <a href="/seances?seance=solo#reservation" class="lien-fleche" data-libelle="Séances &amp; tarifs">Réserver cette séance <svg class="icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-      </li><li class="carte-seance" data-anime data-inclinaison>
-        <figure data-mise-au-point class="media carte-seance-media" style="--flou:url(/assets/images/photos/famille-maman-bebe-canape-flou.webp);--cadrage:50% 35%;aspect-ratio:4 / 5">
+      </li><li class="carte-seance" data-anime>
+        <div class="carte-tirage" data-retourner>
+          <div class="carte-face"><figure data-mise-au-point class="media carte-seance-media" style="--flou:url(/assets/images/photos/famille-maman-bebe-canape-flou.webp);--cadrage:50% 35%;aspect-ratio:4 / 5">
   <picture>
     <img src="/assets/images/photos/famille-maman-bebe-canape-1280.webp" srcset="/assets/images/photos/famille-maman-bebe-canape-640.webp 640w, /assets/images/photos/famille-maman-bebe-canape-1280.webp 1280w, /assets/images/photos/famille-maman-bebe-canape-1920.webp 1920w" sizes="(max-width: 760px) 80vw, 22vw" alt="Maman qui serre son bébé contre elle sur un canapé" width="1280" height="1555" loading="lazy" decoding="async">
   </picture>
-</figure>
+</figure></div>
+          <div class="carte-dos" aria-hidden="true"><p class="carte-dos-sur">Au dos du tirage</p><p class="carte-dos-nom">Séance duo</p><p class="carte-dos-pour">En couple, entre sœurs, parent et enfant</p><p class="carte-dos-prix chiffres">90 € · 1 h</p><p class="carte-dos-note">Au studio ou en extérieur</p></div>
+        </div>
         <h3>Séance duo</h3>
         <p class="carte-seance-pour">En couple, entre sœurs, parent et enfant</p>
         <p class="carte-seance-ligne"><span>1 h</span><span class="prix " data-prix>90 €</span></p>
         <a href="/seances?seance=duo#reservation" class="lien-fleche" data-libelle="Séances &amp; tarifs">Réserver cette séance <svg class="icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-      </li><li class="carte-seance" data-anime data-inclinaison>
-        <figure data-mise-au-point class="media carte-seance-media" style="--flou:url(/assets/images/photos/automne-famille-bebe-flou.webp);--cadrage:50% 35%;aspect-ratio:4 / 5">
+      </li><li class="carte-seance" data-anime>
+        <div class="carte-tirage" data-retourner>
+          <div class="carte-face"><figure data-mise-au-point class="media carte-seance-media" style="--flou:url(/assets/images/photos/automne-famille-bebe-flou.webp);--cadrage:50% 35%;aspect-ratio:4 / 5">
   <picture>
     <img src="/assets/images/photos/automne-famille-bebe-1280.webp" srcset="/assets/images/photos/automne-famille-bebe-640.webp 640w, /assets/images/photos/automne-famille-bebe-1280.webp 1280w, /assets/images/photos/automne-famille-bebe-1920.webp 1920w" sizes="(max-width: 760px) 80vw, 22vw" alt="Un couple et son bébé en forêt, à l&#39;automne" width="1280" height="1840" loading="lazy" decoding="async">
   </picture>
-</figure>
+</figure></div>
+          <div class="carte-dos" aria-hidden="true"><p class="carte-dos-sur">Au dos du tirage</p><p class="carte-dos-nom">Séance famille &amp; aînés</p><p class="carte-dos-pour">Parents, enfants, grands-parents</p><p class="carte-dos-prix chiffres">100 € · 1 h</p><p class="carte-dos-note">Au studio ou en extérieur</p></div>
+        </div>
         <h3>Séance famille &amp; aînés</h3>
         <p class="carte-seance-pour">Parents, enfants, grands-parents</p>
         <p class="carte-seance-ligne"><span>1 h</span><span class="prix " data-prix>100 €</span></p>
         <a href="/seances?seance=famille#reservation" class="lien-fleche" data-libelle="Séances &amp; tarifs">Réserver cette séance <svg class="icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-      </li><li class="carte-seance" data-anime data-inclinaison>
-        <figure data-mise-au-point class="media carte-seance-media" style="--flou:url(/assets/images/photos/creatrice-cadre-coeur-flou.webp);--cadrage:50% 40%;aspect-ratio:4 / 5">
+      </li><li class="carte-seance" data-anime>
+        <div class="carte-tirage" data-retourner>
+          <div class="carte-face"><figure data-mise-au-point class="media carte-seance-media" style="--flou:url(/assets/images/photos/creatrice-cadre-coeur-flou.webp);--cadrage:50% 40%;aspect-ratio:4 / 5">
   <picture>
     <img src="/assets/images/photos/creatrice-cadre-coeur-1280.webp" srcset="/assets/images/photos/creatrice-cadre-coeur-640.webp 640w, /assets/images/photos/creatrice-cadre-coeur-1280.webp 1280w, /assets/images/photos/creatrice-cadre-coeur-1920.webp 1920w" sizes="(max-width: 760px) 80vw, 22vw" alt="Créatrice qui présente un cadre de fleurs pressées en forme de cœur" width="1280" height="1693" loading="lazy" decoding="async">
   </picture>
-</figure>
+</figure></div>
+          <div class="carte-dos" aria-hidden="true"><p class="carte-dos-sur">Au dos du tirage</p><p class="carte-dos-nom">Portrait pro ou petits créateurs</p><p class="carte-dos-pour">Pour votre activité : CV, LinkedIn, communication, créations</p><p class="carte-dos-prix chiffres">80 € · 1 h</p><p class="carte-dos-note">Au studio ou en extérieur</p></div>
+        </div>
         <h3>Portrait pro ou petits créateurs</h3>
         <p class="carte-seance-pour">Pour votre activité : CV, LinkedIn, communication, créations</p>
         <p class="carte-seance-ligne"><span>1 h</span><span class="prix " data-prix>80 €</span></p>
         <a href="/seances?seance=pro#reservation" class="lien-fleche" data-libelle="Séances &amp; tarifs">Réserver cette séance <svg class="icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       </li>
-      <li class="carte-seance carte-seance--large" data-anime data-inclinaison>
+      <li class="carte-seance carte-seance--large" data-anime>
         <figure data-mise-au-point class="media carte-seance-media" style="--flou:url(/assets/images/photos/chaise-lumiere-fenetre-flou.webp);--cadrage:50% 30%;aspect-ratio:4 / 5">
   <picture>
     <img src="/assets/images/photos/chaise-lumiere-fenetre-1280.webp" srcset="/assets/images/photos/chaise-lumiere-fenetre-640.webp 640w, /assets/images/photos/chaise-lumiere-fenetre-1280.webp 1280w, /assets/images/photos/chaise-lumiere-fenetre-1920.webp 1920w" sizes="(max-width: 760px) 80vw, 22vw" alt="Jeune femme assise à califourchon sur une chaise, lumière de fenêtre sur le fond" width="1280" height="1828" loading="lazy" decoding="async">
@@ -387,6 +399,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 </figure>
   </div>
 </section>
+<div class="bandeau" data-bandeau data-sens="1" aria-hidden="true" data-audit-ignorer><div class="bandeau-piste"><div class="bandeau-suite"><span class="bandeau-mot">Heure dorée</span><span class="bandeau-sep"></span><span class="bandeau-mot bandeau-mot--trait">Hautes-Pyrénées</span><span class="bandeau-sep"></span><span class="bandeau-mot">Lourdes</span><span class="bandeau-sep"></span><span class="bandeau-mot bandeau-mot--trait">Bagnères-de-Bigorre</span><span class="bandeau-sep"></span><span class="bandeau-mot">Pau</span><span class="bandeau-sep"></span><span class="bandeau-mot bandeau-mot--trait">Lannemezan</span><span class="bandeau-sep"></span></div><div class="bandeau-suite"><span class="bandeau-mot">Heure dorée</span><span class="bandeau-sep"></span><span class="bandeau-mot bandeau-mot--trait">Hautes-Pyrénées</span><span class="bandeau-sep"></span><span class="bandeau-mot">Lourdes</span><span class="bandeau-sep"></span><span class="bandeau-mot bandeau-mot--trait">Bagnères-de-Bigorre</span><span class="bandeau-sep"></span><span class="bandeau-mot">Pau</span><span class="bandeau-sep"></span><span class="bandeau-mot bandeau-mot--trait">Lannemezan</span><span class="bandeau-sep"></span></div></div></div>
 <section class="section lumiere" id="lumiere">
   <div class="conteneur lumiere-grille">
     <div class="lumiere-texte">

@@ -54,3 +54,9 @@ export const citation = (c, cle, classe = '') => html`<blockquote class="citatio
 export function filEtapes(c, cles) {
   return html`<ol class="etapes-fil" aria-hidden="true">${cles.map((k, i) => html`<li${i ? '' : html` class="actif"`}><span class="etape-num chiffres">${i + 1}</span><span class="etape-nom">${c.s(k).replace(/^\d+\.\s*/, '')}</span></li>`)}</ol>`;
 }
+
+/* Bandeau de grands mots qui défilent (décoratif : le défilement en accélère la course et en change le sens). */
+export function bandeau(mots, sens = -1) {
+  const suite = html`${mots.map((m, i) => html`<span class="bandeau-mot${i % 2 ? ' bandeau-mot--trait' : ''}">${m}</span><span class="bandeau-sep"></span>`)}`;
+  return html`<div class="bandeau" data-bandeau data-sens="${sens}" aria-hidden="true" data-audit-ignorer><div class="bandeau-piste"><div class="bandeau-suite">${suite}</div><div class="bandeau-suite">${suite}</div></div></div>`;
+}

@@ -53,16 +53,30 @@ export function inclinaisons(gsap) {
   });
 }
 
-/* Curseur : des crochets de mise au point se referment autour des photos survolées. */
+/* Curseur appareil photo : des crochets de mise au point se referment autour des photos survolées ;
+   chaque clic est un déclic (petit éclair autour du viseur) et le compteur de poses descend de 36 à 1. */
 export function curseurViseur() {
   if (!souris()) return;
+  let poses = 36;
   const viser = (e) => {
     const c = document.querySelector('.curseur');
     if (!c) return;
-    const photo = e.target.closest && e.target.closest('[data-mise-au-point], .cadre, .vue-lien, .tirage');
+    if (!c.dataset.poses) c.dataset.poses = String(poses);
+    const photo = e.target.closest && e.target.closest('[data-mise-au-point], .cadre, .vue-lien, .tirage, .pluie-cadre, .carte-tirage');
     c.classList.toggle('curseur-photo', !!photo);
   };
   document.addEventListener('pointerover', viser, { passive: true });
+  let dernier = 0;
+  document.addEventListener('pointerdown', (e) => {
+    const c = document.querySelector('.curseur');
+    if (!c || e.pointerType !== 'mouse' || e.button !== 0) return;
+    const t = performance.now();
+    if (t - dernier < 350) return; /* deux déclics par seconde au plus */
+    dernier = t;
+    poses = poses <= 1 ? 36 : poses - 1;
+    c.dataset.poses = String(poses);
+    c.classList.remove('declic'); void c.offsetWidth; c.classList.add('declic');
+  }, { passive: true });
 }
 
 /* Pause → Pose : grand mot décoratif dessiné dans un canvas (police du site) ; au défilement, « au » s'efface,
@@ -119,13 +133,23 @@ export function pausePose(gsap, ST, calme) {
   });
 }
 
-/* Planche contact : les cercles au crayon se tracent sur les vues choisies. */
+/* Planche contact : les vues arrivent en pile au centre et s'étalent à leur place au défilement,
+   puis les cercles au crayon se tracent sur les vues choisies. */
 export function planche(gsap, ST) {
   const p = document.querySelector('[data-planche]');
   if (!p) return;
+  const vues = [...p.querySelectorAll('.vue')];
   const cercles = p.querySelectorAll('.vue-cercle path');
+  const k = () => (innerWidth > 760 ? 0.9 : 0.5);
+  /* Positions lues dans la mise en page (offsetLeft/Top), jamais dans l'état transformé. */
+  const dx = (i, el) => (p.clientWidth / 2 - (el.offsetLeft + el.offsetWidth / 2)) * k();
+  const dy = (i, el) => (p.clientHeight / 2 - (el.offsetTop + el.offsetHeight / 2)) * k();
+  gsap.fromTo(vues, { x: dx, y: dy, rotation: (i) => ((i * 37) % 23) - 11, scale: 0.88 }, {
+    x: 0, y: 0, rotation: 0, scale: 1, ease: 'power2.out', stagger: 0.015,
+    scrollTrigger: { trigger: p, start: 'top 95%', end: 'top 30%', scrub: 0.7, invalidateOnRefresh: true },
+  });
   ST.create({
-    trigger: p, start: 'top 72%', once: true,
+    trigger: p, start: 'top 30%', once: true,
     onEnter: () => gsap.fromTo(cercles, { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 1.1, ease: 'power2.inOut', stagger: 0.35 }),
   });
 }
