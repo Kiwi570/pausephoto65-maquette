@@ -5,10 +5,10 @@
    - Menu : Échap le ferme, le focus reste dedans puis revient au bouton, la page est bloquée derrière,
      le bouton revient à « Menu » après un choix.
    - La page en cours (aria-current="page", posé par le générateur) et la section en cours sont signalées. */
-import { html, etat } from './etat.js?v=2';
-import { mesures } from './mesures.js?v=2';
-import { bloquerDefilement, debloquerDefilement } from './defilement.js?v=2';
-import { suivre, lacher } from './gouttiere.js?v=2';
+import { html, etat } from './etat.js?v=3';
+import { mesures } from './mesures.js?v=3';
+import { bloquerDefilement, debloquerDefilement } from './defilement.js?v=3';
+import { suivre, lacher } from './gouttiere.js?v=3';
 
 let menu, bouton, entete;
 let ouvert = false;

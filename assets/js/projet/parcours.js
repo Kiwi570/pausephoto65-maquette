@@ -1,7 +1,7 @@
 /* Parcours de PausePhoto65 : formulaires en étapes (réservation, demande de date), calendrier,
    récapitulatif en direct, guide « Quelle séance pour moi ? » et sa bague, fil de la journée,
    statut des séances de saison calculé à la date du jour, à l'heure de Tarbes. */
-import { etat, allerAncre } from '../socle/index.js?v=2';
+import { etat, allerAncre } from '../socle/index.js?v=3';
 
 const FUSEAU = 'Europe/Paris';
 

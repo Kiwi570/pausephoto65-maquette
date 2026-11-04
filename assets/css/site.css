@@ -940,3 +940,6 @@ html.js:not(.calme) .mosaique.manipulable .pluie-indice--mosaique { opacity: 1; 
 /* Dos des tirages à toutes les tailles : nom, prix et durée (le reste est déjà sous la photo). */
 .carte-dos { padding: 12px; gap: 6px; }
 .carte-dos-pour, .carte-dos-note { display: none; }
+/* Accueil : tout le bloc central (texte, boutons, information) est centré sous le titre. */
+.hero--pluie .hero-centre > *, .hero--pluie .hero-cote { align-self: center; }
+.hero--pluie .hero-texte, .hero--pluie .hero-info { text-align: center; }

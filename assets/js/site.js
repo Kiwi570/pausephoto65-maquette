@@ -1,14 +1,14 @@
 /* PausePhoto65 — effets du projet. Le socle gère l'ouverture, les transitions, l'en-tête, le menu,
    le mode calme, les boucles et les mesures ; ce fichier n'orchestre que ce qui est propre au client. */
-import { demarrer, etat, quand } from './socle/index.js?v=2';
-import { timelineIntro, nettoyerIntro, animerVoile } from './projet/iris.js?v=2';
-import { initMiseAuPoint, observer, lancer, toutNet, presser } from './projet/mise-au-point.js?v=2';
-import { parallaxes, magnetiques, inclinaisons, curseurViseur, pausePose, planche, tirages, faq } from './projet/effets.js?v=2';
-import { initGalerie } from './projet/galerie.js?v=2';
-import { initParcours } from './projet/parcours.js?v=2';
-import { initSoleil } from './projet/soleil.js?v=2';
-import { initCarte, initAlbum } from './projet/lieux.js?v=2';
-import { initPluie, initManipuler, bandeaux, lettres, retourner } from './projet/vivant.js?v=2';
+import { demarrer, etat, quand } from './socle/index.js?v=3';
+import { timelineIntro, nettoyerIntro, animerVoile } from './projet/iris.js?v=3';
+import { initMiseAuPoint, observer, lancer, toutNet, presser } from './projet/mise-au-point.js?v=3';
+import { parallaxes, magnetiques, inclinaisons, curseurViseur, pausePose, planche, tirages, faq } from './projet/effets.js?v=3';
+import { initGalerie } from './projet/galerie.js?v=3';
+import { initParcours } from './projet/parcours.js?v=3';
+import { initSoleil } from './projet/soleil.js?v=3';
+import { initCarte, initAlbum } from './projet/lieux.js?v=3';
+import { initPluie, initManipuler, bandeaux, lettres, retourner } from './projet/vivant.js?v=3';
 
 const gsap = window.gsap;
 const ST = window.ScrollTrigger;

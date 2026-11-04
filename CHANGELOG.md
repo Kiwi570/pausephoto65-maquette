@@ -2,6 +2,10 @@
 
 Chaque version ajoute sa partie en tête de ce fichier, construite en comparant l'archive précédente et la nouvelle, jamais de mémoire.
 
+## v3 — correction de l'accueil
+
+- Premier écran de l'accueil : le texte, les deux boutons et l'information « Séances d'une heure dès 80 € » sont centrés sous le titre (ils étaient décalés vers la gauche sur ordinateur).
+
 ## v2 — un site plus vivant
 
 **Accueil : premier écran refait**
